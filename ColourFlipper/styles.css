@@ -54,7 +54,7 @@ a {
 }
 .colour {
     margin-top: 10px;
-    color: #ffcbe1;
+    color: white;
 }
 .container {
     display: flex;
@@ -71,6 +71,8 @@ a {
 }
 .btn {
     all: unset;
+    background-color: white;
+    color: black;
     text-transform: uppercase;
     letter-spacing: 3px;
     border: 2px solid black;
