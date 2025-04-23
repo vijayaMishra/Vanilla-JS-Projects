@@ -1,0 +1,35 @@
+.off-bulb {
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.on-bulb {
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    background-color: yellow;
+    filter: blur(6px);
+}
+.container { 
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.btn {
+    all: unset;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 6px;
+}
+.btn:active {
+    /* transform: translateY(2px); */
+    background-color: black;
+    color: gray;
+    box-shadow: 0 2px 0 #000;
+}
