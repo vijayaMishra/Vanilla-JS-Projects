@@ -1,0 +1,36 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+.moreDetails {
+    border: 1px solid red;
+    display: none;
+}
+.paragraph {
+    display: flex;
+    justify-content: center;
+}
+
+/* .moreDetails {
+    border: 1px solid red;
+    display: none;
+} */
+.textContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.moreBtn, .lessBtn {
+    /* all: unset; */
+    font-size: 15px;
+    border: none;
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+.moreDetailsBtn:active {
+    transform: scale(0.95);
+    color: #005600;
+}
+
