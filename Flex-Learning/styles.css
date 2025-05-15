@@ -1,0 +1,12 @@
+.flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    border: 10px solid rgb(65, 12, 12);
+    background-color: aquamarine;
+}
+
+.box {
+    border: 6px solid rgb(218, 159, 42);
+    background-color: rgb(81, 161, 231);
+}
