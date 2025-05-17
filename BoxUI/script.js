@@ -4,11 +4,11 @@ let outerBoxElement = document.querySelector(".outer-box");
 function movePosition(classPosition) {
     outerBoxElement.classList.remove("moveToLeft", "moveToTopLeft", "moveToTopRight", "moveToBottomRight", "moveToTopCenter", "moveToBottomCenter");
     outerBoxElement.classList.add(classPosition);
-    
+
 }
 
 leftButtonElement.addEventListener("click", function () {
-    movePosition("moveToLeft")
+    movePosition("moveToLeft");
 });
 
 const topLeftButtonElement = document.querySelector(".topLeftButton");
