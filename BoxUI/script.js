@@ -8,7 +8,7 @@ function movePosition(classPosition) {
 }
 
 leftButtonElement.addEventListener("click", function () {
-    movePosition("moveToLeft")
+    movePosition("moveToLeft");
 });
 
 const topLeftButtonElement = document.querySelector(".topLeftButton");
