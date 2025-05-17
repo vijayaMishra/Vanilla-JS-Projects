@@ -4,7 +4,7 @@ let outerBoxElement = document.querySelector(".outer-box");
 function movePosition(classPosition) {
     outerBoxElement.classList.remove("moveToLeft", "moveToTopLeft", "moveToTopRight", "moveToBottomRight", "moveToTopCenter", "moveToBottomCenter");
     outerBoxElement.classList.add(classPosition);
-
+    console.log('test')
 }
 
 leftButtonElement.addEventListener("click", function () {
