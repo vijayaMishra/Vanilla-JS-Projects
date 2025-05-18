@@ -6,6 +6,7 @@ function movePosition(classPosition) {
 
 }
 
+console.log('test commit author name')
 const leftButtonElement = document.querySelector(".leftButton");
 leftButtonElement.addEventListener("click", function () {
     movePosition("moveToLeft");
