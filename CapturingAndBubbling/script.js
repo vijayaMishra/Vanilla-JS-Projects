@@ -4,10 +4,12 @@ document.querySelector(".grandparent")
     }, false); //Bubbling
     
     document.querySelector(".parent")
-        .addEventListener("click", () => {
+        .addEventListener("click", (e) => {
+            e.stopPropagation();
             console.log("Parent called");
         }, false);
     document.querySelector(".child")
-        .addEventListener("click", () => {
+        .addEventListener("click", (e) => {
             console.log("Child called");
+            
         }, false);
