@@ -11,20 +11,7 @@ document.querySelector(".buttonContainer")
             "moveToTopCenter",
             "moveToBottomCenter"
         );
-
-        if(event.target.textContent === "Left") {
-            outerBoxElement.classList.add("moveToLeft");
-        } else if(event.target.textContent === "Top Left") {
-            outerBoxElement.classList.add("moveToTopLeft");
-        } else if(event.target.textContent === "Top Right") {
-            outerBoxElement.classList.add("moveToTopRight");
-        } else if(event.target.textContent === "Bottom Right") {
-            outerBoxElement.classList.add("moveToBottomRight");
-        } else if(event.target.textContent === "Top Center") {
-            outerBoxElement.classList.add("moveToTopCenter");
-        } else if(event.target.textContent === "Bottom Center") {
-            outerBoxElement.classList.add("moveToBottomCenter");
-        }
+        outerBoxElement.classList.add(event.target.dataset.addClass);
 
     });
 
