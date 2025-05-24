@@ -6,7 +6,9 @@
 header {
     font-size: 32px;
 }
-
+.buttonContainer {
+    /*border: 1px solid black;*/
+}
 .outer-box {
     width: 400px;
     height: 400px;

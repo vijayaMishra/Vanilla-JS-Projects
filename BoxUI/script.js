@@ -1,38 +1,30 @@
+//there should be one event  listener which will listen
 let outerBoxElement = document.querySelector(".outer-box");
+document.querySelector(".buttonContainer")
+    .addEventListener("click", function clickHandler(event) {
+        // console.log("Event +_+ ", event);
+        outerBoxElement.classList.remove(
+            "moveToLeft",
+            "moveToTopLeft",
+            "moveToTopRight",
+            "moveToBottomRight",
+            "moveToTopCenter",
+            "moveToBottomCenter"
+        );
 
-function movePosition(classPosition) {
-    outerBoxElement.classList.remove("moveToLeft", "moveToTopLeft", "moveToTopRight", "moveToBottomRight", "moveToTopCenter", "moveToBottomCenter");
-    outerBoxElement.classList.add(classPosition);
+        if(event.target.textContent === "Left") {
+            outerBoxElement.classList.add("moveToLeft");
+        } else if(event.target.textContent === "Top Left") {
+            outerBoxElement.classList.add("moveToTopLeft");
+        } else if(event.target.textContent === "Top Right") {
+            outerBoxElement.classList.add("moveToTopRight");
+        } else if(event.target.textContent === "Bottom Right") {
+            outerBoxElement.classList.add("moveToBottomRight");
+        } else if(event.target.textContent === "Top Center") {
+            outerBoxElement.classList.add("moveToTopCenter");
+        } else if(event.target.textContent === "Bottom Center") {
+            outerBoxElement.classList.add("moveToBottomCenter");
+        }
 
-}
+    });
 
-console.log('test commit author name')
-const leftButtonElement = document.querySelector(".leftButton");
-leftButtonElement.addEventListener("click", function () {
-    movePosition("moveToLeft");
-});
-
-const topLeftButtonElement = document.querySelector(".topLeftButton");
-topLeftButtonElement.addEventListener("click", function() {
-    movePosition("moveToTopLeft");
-});
-
-const topRightButtonElement = document.querySelector(".topRightButton");
-topRightButtonElement.addEventListener("click", function() {
-    movePosition("moveToTopRight");
-});
-
-const bottomRightElement = document.querySelector(".bottomRightButton");
-bottomRightElement.addEventListener("click", function() {
-    movePosition("moveToBottomRight");
-});
-
-const topCenterElement = document.querySelector(".topCenterButton");
-topCenterElement.addEventListener("click", function() {
-    movePosition("moveToTopCenter");
-});
-
-const bottomCenterElement = document.querySelector(".bottomCenterButton");
-bottomCenterElement.addEventListener("click", function() {
-    movePosition("moveToBottomCenter");
-});
