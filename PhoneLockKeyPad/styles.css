@@ -1,0 +1,50 @@
+button {
+    all: unset;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 30%;
+    height: 60px;
+    width: 80px;
+    background-color: white;
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.93);
+    background-color: gray;
+    /*border: 10px solid red;*/
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    height: 90vh;
+
+}
+.parentNumbersContainer {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.numbersContainer{
+    border: 2px solid greenyellow;
+}
+.zeroButton{
+    display: flex;
+    justify-content: center;
+}
+
+.numberParent{
+    display: flex;
+    justify-content: center;
+}
+
+.number {
+    border: 2px solid rebeccapurple;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
