@@ -9,7 +9,16 @@ document.querySelector(".numbersContainer")
         //numberOnScreen += event.target.textContent;
         //console.log("event.target.tagName",event.target.tagName);
         if(event.target.tagName === "BUTTON") {
-            numberOnScreen.innerHTML += event.target.textContent;
+            if(numberOnScreen.innerHTML.length < 6) {
+                numberOnScreen.innerHTML += event.target.textContent;
+            } else {
+                showToast();
+            }
         }
+        function showToast(){
+
+        }
+        console.log(numberOnScreen.innerHTML.length);
+
         // console.log("event.target",event.target);
     });
