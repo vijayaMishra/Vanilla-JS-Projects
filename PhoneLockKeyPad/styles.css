@@ -18,7 +18,7 @@ button:active{
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     border: 2px solid red;
     height: 90vh;
@@ -43,8 +43,9 @@ button:active{
     justify-content: center;
 }
 
-.number {
-    border: 2px solid rebeccapurple;
+.displayNumber {
+    border: 2px solid darkgray;
     letter-spacing: 3px;
     font-size: 40px;
+    margin-bottom: 130px;
 }
