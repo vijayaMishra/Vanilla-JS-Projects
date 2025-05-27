@@ -7,7 +7,9 @@ document.querySelector(".numbersContainer")
         console.log(numberOnScreen);
         //= event.target.textContent;
         //numberOnScreen += event.target.textContent;
-        console.log("event.target.tagName",event.target.tagName);
-        numberOnScreen.innerHTML += event.target.textContent;
-        console.log("event.target",event.target);
+        //console.log("event.target.tagName",event.target.tagName);
+        if(event.target.tagName === "BUTTON") {
+            numberOnScreen.innerHTML += event.target.textContent;
+        }
+        // console.log("event.target",event.target);
     });
