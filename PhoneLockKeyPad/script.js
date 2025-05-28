@@ -1,3 +1,4 @@
+const password = "220898";
 document.querySelector(".numbersContainer")
     .addEventListener("click", (event)=>{
         console.log(event.target.textContent);
@@ -15,10 +16,12 @@ document.querySelector(".numbersContainer")
                 showToast();
             }
         }
-        function showToast(){
-
+        if(numberOnScreen.innerHTML === password) {
+            const displayNumberELement = document.querySelector(".displayNumber");
+            displayNumberELement.classList.remove("displayNumber");
+            displayNumberELement.classList.add("displayGreenNumber");
         }
-        console.log(numberOnScreen.innerHTML.length);
+        console.log(numberOnScreen.innerHTML);
 
         // console.log("event.target",event.target);
     });
