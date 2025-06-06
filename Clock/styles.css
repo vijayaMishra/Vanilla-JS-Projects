@@ -1,0 +1,30 @@
+body {
+    height: 100vh; /*viewport height */
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    height: 90vh;
+}
+.clockNumber {
+    font-size: 300px;
+}
+button {
+    all: unset;
+    font-size: 22px;
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 12px;
+}
+button:active {
+    border: 2px solid white;
+    color: black;
+    background-color: whitesmoke;
+    /*transform: scale(0.95%);*/
+}
