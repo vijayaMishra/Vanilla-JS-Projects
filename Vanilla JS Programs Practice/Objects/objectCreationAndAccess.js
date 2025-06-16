@@ -25,3 +25,7 @@ if("age" in person) {
 
 // Loop through all keys in the person object and print key-value pairs.
 
+for(let key in person) {
+    console.log(key + ": " + person[key]);
+}
+
