@@ -8,5 +8,19 @@ const person = {
 console.log("Hi My name is ", person["name"], " aged ", person.age, " living in ", person["city"]);
 
 //Add a new property gender to the person object dynamically.
+
 person.gender = "F";
 console.log("Person {} ", person);
+
+// Delete the city property from the person object.
+
+// delete person["city"];
+delete person.city;
+console.log("Person {} ", person);
+
+// Check if the key "age" exists in the object.
+
+
+
+// Loop through all keys in the person object and print key-value pairs.
+
