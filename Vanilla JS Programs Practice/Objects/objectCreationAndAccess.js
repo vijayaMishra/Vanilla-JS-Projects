@@ -14,13 +14,14 @@ console.log("Person {} ", person);
 
 // Delete the city property from the person object.
 
-// delete person["city"];
-delete person.city;
+delete person.city; // delete person["city"];
 console.log("Person {} ", person);
 
 // Check if the key "age" exists in the object.
 
-
+if("age" in person) {
+    console.log("age is present");
+}
 
 // Loop through all keys in the person object and print key-value pairs.
 
