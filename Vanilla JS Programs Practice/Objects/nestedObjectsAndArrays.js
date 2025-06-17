@@ -28,12 +28,12 @@ let books = [
 //console.log(books[0].title);
 // 10. Print the titles of all books published after the year 2010.
 for(let key in books) {
-    if(books.year > 2010) {
+    if(books[key].year > 2010) {
         console.log(books[key].title);
     }
 }
 for(let i=0; i<books.length; i++) {
-    if(books.year > 2010) {
+    if(books[i].year > 2010) {
         console.log(books[i].title);
     }
 }
