@@ -1,9 +1,9 @@
-// Create an object student with name, rollNo, and marks (which is an object of subjects)
+// 6. Create an object student with name, rollNo, and marks (which is an object of subjects)
 
-//Access the maths marks from the marks object inside student.
+// 7. Access the maths marks from the marks object inside student.
 
-//Add a new subject science to student.marks.
+// 8. Add a new subject science to student.marks.
 
-//Create an array of objects, each representing a book with title, author, and year.
+// 9. Create an array of objects, each representing a book with title, author, and year.
 
-//Print the titles of all books published after the year 2010.
+// 10. Print the titles of all books published after the year 2010.
