@@ -25,3 +25,24 @@ let calculateAge = () =>  {
 console.log("Your birth year is =", calculateAge());
 
 // 13. Create an object counter with a value and methods: increment, decrement, and reset.
+let counter = {
+    value: 12
+}
+let increment = () => {
+    counter["value"] = counter["value"]+1;
+    return counter["value"];
+}
+let decrement = () => {
+    counter["value"] = counter["value"]-1;
+    return counter["value"];
+}
+let reset = () => {
+    counter["value"] = 0;
+    return counter["value"];
+}
+console.log(counter["value"]);
+console.log("Increment () fn call = ", increment());
+console.log("Decrement () fn call= ", decrement());
+console.log(reset());
+increment();
+console.log(counter.value);
