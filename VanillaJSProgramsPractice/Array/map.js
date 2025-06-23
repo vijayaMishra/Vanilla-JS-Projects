@@ -1,3 +1,4 @@
+//Ques. 1
 //array of objects
 const books = [
     {title: "Atomic Habits", author: "James Clear"},
@@ -24,7 +25,20 @@ for(let i = 0; i < Object.keys(books).length; i++) {
     booksWithCategory.push({ title: books[i].title, author: books[i].author, theme: "Personal Development"});
     if(booksWithCategory[i].title === "Rich Dad Poor Dad") {
         booksWithCategory[i].theme = "Finance";
+        console.log(booksWithCategory[i]);
+
     }
 }
 
 console.log("Books with Theme = ", booksWithCategory);
+
+//Ques. 2
+// input [10, -7, 6]
+// output [{key: 10}, {key: -7}, {key: 6}]
+const arr = [10, -7, 6];
+console.log("arr = ", arr);
+const arrOfObjects = [];
+for(let i = 0; i < arr.length; i++) {
+    arrOfObjects.push( {key: arr[i]} );
+}
+console.log("arrOfObjects", arrOfObjects);
