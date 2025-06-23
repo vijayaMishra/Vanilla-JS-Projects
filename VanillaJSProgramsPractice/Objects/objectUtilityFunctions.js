@@ -3,6 +3,16 @@ const person = {
     city: "Bengaluru",
     age: 10
 }
+console.log("person", person);
+
+const numberOfElementsInPersonObject = Object.keys(person).length;
+for(let i = 0; i < numberOfElementsInPersonObject; i++) {
+    console.log(Object.keys(person));
+}
+
+for(let key in person) {
+    console.log(key + ": " + person[key]);
+}
 console.log("person['city']", person["city"]);
 
 // 20. Use Object.keys() to list all keys of an object.
@@ -29,6 +39,7 @@ const values2 = keyValuePairs.map(keyValuePair => keyValuePair[1]);
 console.log("Value from keyValuePair", values2);
 
 // 23. Convert the [key, value] array back to an object using Object.fromEntries().
-
-
+//not required
+const originalObject = Object.fromEntries(keyValuePairs);
+console.log("Object.fromEntries(keyValuePairs)", originalObject);
 
