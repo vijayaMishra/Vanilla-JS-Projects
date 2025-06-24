@@ -45,7 +45,41 @@ for(let i = 0; i < students.length; i++) {
 }
 console.log("An array of all names: ", namesArray);
 console.log("An array of marks above 80: ", marksAbove80);
-// Filter students with marks above 80.
+// Filter students with marks above 80. -- done above
+
+//Ques. 5
+let items = [
+    { id: 1, category: "Fruit" },
+    { id: 2, category: "Vegetable" },
+    { id: 3, category: "Fruit" }
+];
+
+//Find how many items are of category "Fruit"
+let fruitItemsCount = 0;
+for(let i = 0; i < items.length; i++) {
+    if(items[i].category === "Fruit") {
+        fruitItemsCount++;
+    }
+}
+console.log("Fruit Items Count = ", fruitItemsCount);
+
+// Update the object with id 2 and set its category to "Grain".
+items[1].category = "Grain";
+console.log("Manual : ", items);
+
+for(let i = 0; i < items.length; i++) {
+    if(items[i].id === 2) {
+        items[i].category = "Grain";
+    }
+}
+console.log("Items through for loop: ", items);
+
+let orders = [
+    { orderId: 1001, amount: 250 },
+    { orderId: 1002, amount: 450 },
+    { orderId: 1003, amount: 300 }
+];
+//Calculate the total amount of all orders using reduce()
 
 
 
