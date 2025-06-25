@@ -20,3 +20,14 @@ console.log("Completed Tasks: ", completedTaskArray);
 console.log(tasks.filter(function(completedTask) {
     return completedTask.completed === true;
 }));
+
+//Q. 3
+const flowers = [
+  { name: "Rose", color: "red" },
+  { name: "Lotus", color: "pink" },
+  { name: "Sunflower", color: "yellow" },
+];
+const pinkFlower = flowers.filter(flower => flower.color === "pink");
+const pinkFlowerName = pinkFlower[0].name;
+console.log("Pink Flower Object in array", pinkFlower, " & Pink Flower Name is ", pinkFlowerName);
+
