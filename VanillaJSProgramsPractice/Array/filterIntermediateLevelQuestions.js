@@ -26,4 +26,32 @@ console.log("Book Titles =", bookTitles)
 
 // Perform case sensitive matches
 
-// Q. 3
+// Q. 3 Filter objects with array inside
+const students = [
+  { name: "Vijaya", subjects: ["Math", "Sanskrit"] },
+  { name: "Ankit", subjects: ["Science", "History"] },
+];
+
+// Return students who have "Sanskrit" as a subject.
+
+
+
+//Q. 4 Filter objects where a key may be missing
+const items = [
+  { name: "Pen", price: 10 },
+  { name: "Notebook" },
+  { name: "Bag", price: 200 },
+];
+
+//Return only the items which have a price.
+
+
+//Q. 5 BONUS Challenge Case-insensitive filter
+const fruits = [
+  { name: "Apple" },
+  { name: "banana" },
+  { name: "Banana" },
+];
+//  Filter all fruits whose name is exactly "banana", case-insensitive.
+
+
