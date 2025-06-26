@@ -33,7 +33,8 @@ const students = [
 ];
 
 // Return students who have "Sanskrit" as a subject.
-
+const sanskritStudentName = students.filter(student => student.subjects.includes("Sanskrit")).map(sanskritStudent => sanskritStudent.name);
+console.log("Sanskrit Student Name: ", sanskritStudentName);
 
 
 //Q. 4 Filter objects where a key may be missing
@@ -44,7 +45,7 @@ const items = [
 ];
 
 //Return only the items which have a price.
-
+console.log("Items with Price: ", items.filter(item => item.price !== undefined).map(itemWithPrice => itemWithPrice.name));
 
 //Q. 5 BONUS Challenge Case-insensitive filter
 const fruits = [
