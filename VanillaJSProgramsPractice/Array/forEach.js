@@ -81,3 +81,24 @@ people.forEach(person => {
     adults2.push(person.name);
 })
 console.log("Adults array = ", adults2);
+
+//Why this works? .forEach() doesn't return anything. But you're manually building adults[] array 
+//by pushing values when the conditions are met.
+
+//Create a new array with name and isAdult field using .map()
+const people1 = [
+  { name: 'Sita', age: 16 },
+  { name: 'Mandavi', age: 15 },
+  { name: 'Urmila', age: 18},
+  { name: 'Shrutakirti', age: 23}
+];
+// Output:
+// [
+//   { name: 'Sita', isAdult: false },
+//   { name: 'Mandavi', isAdult: false },
+//   { name: 'Urmila', isAdult: true },
+//   { name: 'Shrutakirti', isAdult: true },
+// ]
+people1.map((name, isAdult) => {
+    
+})
