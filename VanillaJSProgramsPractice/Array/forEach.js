@@ -99,6 +99,32 @@ const people1 = [
 //   { name: 'Urmila', isAdult: true },
 //   { name: 'Shrutakirti', isAdult: true },
 // ]
-people1.map((name, isAdult) => {
-    
-})
+const peopleWithNewPropertyArray = people1.map(person => ({
+    name: person.name,
+    isAdult: person.age >= 18
+}));
+console.log("People with new propery i.e., isAdult added array is: ", peopleWithNewPropertyArray);
+
+// ADVANCED LEVEL (Nested / Combined Usage)
+//Using .map() on nested arrays: flatten and double values
+const nums1 = [[1, 2], [3, 4]];
+// Output: [2, 4, 6, 8]
+
+
+
+//Count how many people are adults using .forEach()
+const group = [
+  { name: 'Hari', age: 15 },
+  { name: 'Lalita', age: 30 },
+  { name: 'Madhav', age: 19 }
+];
+// Output: 2 adults
+
+
+
+
+//Modify array of prices by adding 18% GST using .map()
+const prices = [100, 200, 300];
+// Output: [118, 236, 354]
+
+
