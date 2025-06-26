@@ -14,6 +14,7 @@ const books = [
   { title: "Bhagavad Gita", author: "Vyasa" },
   { title: "Ramayana", author: "Valmiki" },
   { title: "Gita for Kids", author: "Unknown" },
+  { title: "Book gita", author: "SP"}
 ];
 //Return all books where the title contains the word "Gita".
 const gitaBooks = books.filter(book => book.title.includes("Gita"));
@@ -25,6 +26,8 @@ console.log("Book Titles =", bookTitles)
 // ] Here, map comes into picture if you want all titles only from this array of objects
 
 // Perform case sensitive matches
+console.log("Book with 'Gita' in title: ",books.filter(book => book.title.includes("Gita")).map(bookTitle => bookTitle.title));
+console.log("Book with 'gita' in title: ",books.filter(book => book.title.includes("gita")).map(bookTitle => bookTitle.title));
 
 // Q. 3 Filter objects with array inside
 const students = [
@@ -54,5 +57,5 @@ const fruits = [
   { name: "Banana" },
 ];
 //  Filter all fruits whose name is exactly "banana", case-insensitive.
-
+console.log("Fruits whose name is exactly banana, case-insensitive: ", fruits.filter(fruit => fruit.name.toLowerCase() === "banana"));
 
