@@ -23,8 +23,8 @@ console.log(users.length);
 
 let books = [
   { title: "Gita", pages: 700 },
-  { title: "Bhagavatam", pages: 1200 },
-  { title: "Ramayan", pages: 1000 }
+  { title: "Bhagavatam", pages: 18000 },
+  { title: "Ramayan", pages: 24000 }
 ];
 console.log(books.length);
 

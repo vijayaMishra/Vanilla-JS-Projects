@@ -36,7 +36,6 @@ fruits.forEach(fruit => {
 // Q. 3 Convert all strings to uppercase using .map()
 const words = ['hello', 'world'];
 // Output: ['HELLO', 'WORLD']
-
 const upperCaseWords = words.map(word => word.toUpperCase());
 console.log("Upper case words: ", upperCaseWords);
 
@@ -107,9 +106,23 @@ console.log("People with new propery i.e., isAdult added array is: ", peopleWith
 
 // ADVANCED LEVEL (Nested / Combined Usage)
 //Using .map() on nested arrays: flatten and double values
-const nums1 = [[1, 2], [3, 4]];
-// Output: [2, 4, 6, 8]
+const nums2dArray = [[1, 2], [3, 4]];
+console.clear();
+console.log("input nums2d array", nums2dArray);
+console.log("nums1DArray", nums1DArray);
+nums2dArray.forEach(function convertTo1DArray(numsArray) {
+    console.log("numsArray", numsArray);
+    numsArray.forEach(function pushInto1DArray(num) {
+        console.log(`pushing ${num} into nums1DArray`);
+        nums1DArray.push(num);
+        console.log("nums1DArray", nums1DArray);
+    })
+})
 
+//flatten more arrays [[1, 2],[]
+// Output: [2, 4, 6, 8]
+nums1.map(num => num*2);
+console.log("Doubled numbers: ", nums1);
 
 
 //Count how many people are adults using .forEach()

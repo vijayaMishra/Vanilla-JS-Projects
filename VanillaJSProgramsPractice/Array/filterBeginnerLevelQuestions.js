@@ -18,7 +18,7 @@ const completedTaskArray = tasks.filter(completedTask => completedTask.completed
 console.log("Completed Tasks: ", completedTaskArray);
 
 console.log(tasks.filter(function(completedTask) {
-    return completedTask.completed === true;
+     return completedTask.completed === true;
 }));
 
 //Q. 3
