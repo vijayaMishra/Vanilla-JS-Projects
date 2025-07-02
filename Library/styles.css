@@ -7,3 +7,18 @@
 .myList {
     font-size: 30px;
 }
+
+.openAddBookDialogBtn {
+    all: unset;
+    padding: 20px;
+    margin: 20px;
+    font-size: 18px;
+    color: white;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 5%;
+}
+
+.openAddBookDialogBtn:active {
+    background-color: darkorange;
+}
