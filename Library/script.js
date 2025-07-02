@@ -10,3 +10,14 @@ books.forEach(book => {
     liElement.textContent = book.title; 
     ulMyListElement.appendChild(liElement);
 });
+
+const openAddBookDialogBtnElement = 
+    document.querySelector(".openAddBookDialogBtn");
+openAddBookDialogBtnElement.addEventListener(
+    "click", () => {
+    const detailsOfBookToBeAddedDialogElement = 
+        document.querySelector(
+            ".detailsOfBookToBeAddedDialog");
+    detailsOfBookToBeAddedDialogElement.showModal();
+});
+
