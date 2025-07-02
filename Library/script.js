@@ -11,13 +11,22 @@ books.forEach(book => {
     ulMyListElement.appendChild(liElement);
 });
 
+const detailsOfBookToBeAddedDialogElement = 
+        document.querySelector(
+            ".detailsOfBookToBeAddedDialog");
 const openAddBookDialogBtnElement = 
     document.querySelector(".openAddBookDialogBtn");
 openAddBookDialogBtnElement.addEventListener(
     "click", () => {
-    const detailsOfBookToBeAddedDialogElement = 
-        document.querySelector(
-            ".detailsOfBookToBeAddedDialog");
+    
     detailsOfBookToBeAddedDialogElement.showModal();
 });
+
+const addBookBtnElement = 
+    document.querySelector(".addBookBtn");
+addBookBtnElement.addEventListener("click", () => {
+    detailsOfBookToBeAddedDialogElement.close();
+});
+
+
 
