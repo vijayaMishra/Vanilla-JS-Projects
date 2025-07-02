@@ -38,11 +38,13 @@ addBookBtnElement.addEventListener("click", (event) => {
         title: userEnteredBookTitle, 
         author: userEnteredBookAuthor
     });
-        
+     console.log(userAddedBooks);   
     userAddedBooks.forEach(function() {
-        let liElement = document.createElement("li");
-        liElement.textContent = userEnteredBookTitle;
-        ulMyListElement.appendChild(liElement);
+        if(userAddedBooks[0].title !== "") {
+            let liElement = document.createElement("li");
+            liElement.textContent = userEnteredBookTitle;
+            ulMyListElement.appendChild(liElement);
+        }
     });
     detailsOfBookToBeAddedDialogElement.close();
 });
