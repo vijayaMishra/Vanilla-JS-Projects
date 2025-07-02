@@ -24,7 +24,26 @@ openAddBookDialogBtnElement.addEventListener(
 
 const addBookBtnElement = 
     document.querySelector(".addBookBtn");
-addBookBtnElement.addEventListener("click", () => {
+addBookBtnElement.addEventListener("click", (event) => {
+    //console.log(event);
+    // Get name of the Book user has typed in "Book Title field in Dialog box."
+    const userEnteredBookTitle = document.querySelector(".bookTitle").value;
+    const userEnteredBookAuthor = document.querySelector(".bookAuthor").value;
+    books.push({title: userEnteredBookTitle, author: userEnteredBookAuthor });
+    // console.log("userEnteredBookTitle: ",userEnteredBookTitle);
+    // console.log("userEnteredBookAuthor: ", userEnteredBookAuthor);
+    // console.log("Books array: ", books);
+    let userAddedBooks = [];
+    userAddedBooks.push({
+        title: userEnteredBookTitle, 
+        author: userEnteredBookAuthor
+    });
+        
+    userAddedBooks.forEach(function() {
+        let liElement = document.createElement("li");
+        liElement.textContent = userEnteredBookTitle;
+        ulMyListElement.appendChild(liElement);
+    });
     detailsOfBookToBeAddedDialogElement.close();
 });
 
