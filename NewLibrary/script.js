@@ -32,11 +32,26 @@ addBookBtnInsideDialogElement.addEventListener("click", () => {
     //access the text content of the element in which user has given the book name input
     console.log(bookNameEnteredByUserElement.value);
     
+    //Dynamically add the book name received as user input in the li element
+    if(bookNameEnteredByUserElement.value !== "") {
+        const newLiElement = document.createElement("li");
+        //add text content to the newly created li element
+        newLiElement.textContent = bookNameEnteredByUserElement.value;
+
+        //access the ul element with class "ulBooks"
+        const ulBooksElement = document.querySelector(".ulBooks");
+
+        //append newly created li element to the ul element
+        ulBooksElement.appendChild(newLiElement);
+    }
+
     //access dialog box
     const dialogElement = document.querySelector(".dialogToAddBookDetails");  
     //Close dialog Box
     dialogElement.close();
+    
 });    
+
 
 
 
