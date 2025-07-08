@@ -13,9 +13,9 @@ for(let i = 0; i < books.length; i++) {
     ulBooksElement.appendChild(bookToBeAddedLiElement);
 }
 //accessing button element
-const addBooksBtnElement = document.querySelector(".addBookBtn");
+const addBookBtnElement = document.querySelector(".addBookBtn");
 //on the click of above button , opening modal
-addBooksBtnElement.addEventListener("click", () => {
+addBookBtnElement.addEventListener("click", () => {
     //accessing dialog element
     const dialogElement = document.querySelector(".dialogToAddBookDetails");
     //show dialogBox on the click of button
@@ -26,9 +26,19 @@ addBooksBtnElement.addEventListener("click", () => {
 const addBookBtnInsideDialogElement = document.querySelector(".addBookBtnInsideDialog");
 //Add event listener on "add btn" button element inside dialog box
 addBookBtnInsideDialogElement.addEventListener("click", () => {
+    //console log the book name entered by user
+    //access bookNameEnteredByUser element
+    const bookNameEnteredByUserElement = document.querySelector(".bookNameEnteredByUser");
+    //access the text content of the element in which user has given the book name input
+    console.log(bookNameEnteredByUserElement.value);
+    
     //access dialog box
     const dialogElement = document.querySelector(".dialogToAddBookDetails");  
     //Close dialog Box
     dialogElement.close();
 });    
+
+
+
+
         
