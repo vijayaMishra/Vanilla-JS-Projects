@@ -1,10 +1,14 @@
-//Creating a new li element
-const newListItem = document.createElement("li");
-//adding text content to the li element created above
-newListItem.textContent = "5 Languages of Love";
+//Creating a books array
+let books = ["The thousand splendid suns", "Beyond Birth and Death", "Science of Self-Realization"];
 
-//accessing ul element having class "ulBooks"
-const ulBooksElement = document.querySelector(".ulBooks");
-
-//appending the new li element to the ul element
-ulBooksElement.appendChild(newListItem);
+//iterating over each book in books[] to add it in the ul element
+for(let i = 0; i < books.length; i++) {
+    //creating new li element on each iteration of for loop
+    const bookToBeAddedLiElement = document.createElement("li");
+    //adding text content to the li element created above
+    bookToBeAddedLiElement.textContent = books[i];
+    //accessing ul element having class "ulBooks"
+    const ulBooksElement = document.querySelector(".ulBooks");
+    //appending li element in the ul element
+    ulBooksElement.appendChild(bookToBeAddedLiElement);
+}
