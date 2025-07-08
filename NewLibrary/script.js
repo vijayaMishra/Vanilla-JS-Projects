@@ -12,3 +12,12 @@ for(let i = 0; i < books.length; i++) {
     //appending li element in the ul element
     ulBooksElement.appendChild(bookToBeAddedLiElement);
 }
+//accessing button element
+const addBooksBtnElement = document.querySelector(".addBookBtn");
+//on the click of above button , opening modal
+addBooksBtnElement.addEventListener("click", () => {
+    //accessing dialog element
+    const dialogElement = document.querySelector(".dialogToAddBookDetails");
+    //show dialofBox on the click of button
+    dialogElement.showModal();
+});
