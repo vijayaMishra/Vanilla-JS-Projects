@@ -18,6 +18,7 @@ const addBookBtnElement = document.querySelector(".addBookBtn");
 addBookBtnElement.addEventListener("click", () => {
     //accessing dialog element
     const dialogElement = document.querySelector(".dialogToAddBookDetails");
+    
     //show dialogBox on the click of button
     dialogElement.showModal();
 });
@@ -48,8 +49,10 @@ addBookBtnInsideDialogElement.addEventListener("click", () => {
     //access dialog box
     const dialogElement = document.querySelector(".dialogToAddBookDetails");  
     //Close dialog Box
-    dialogElement.close();
-    
+    dialogElement.close();    
+
+    //Clear the user entered book in the input field as the book is added in the list
+    bookNameEnteredByUserElement.value = "";
 });    
 
 
