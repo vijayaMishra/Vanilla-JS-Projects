@@ -18,6 +18,17 @@ const addBooksBtnElement = document.querySelector(".addBookBtn");
 addBooksBtnElement.addEventListener("click", () => {
     //accessing dialog element
     const dialogElement = document.querySelector(".dialogToAddBookDetails");
-    //show dialofBox on the click of button
+    //show dialogBox on the click of button
     dialogElement.showModal();
 });
+
+//accessing Add Books button inside Dialog Box
+const addBookBtnInsideDialogElement = document.querySelector(".addBookBtnInsideDialog");
+//Add event listener on "add btn" button element inside dialog box
+addBookBtnInsideDialogElement.addEventListener("click", () => {
+    //access dialog box
+    const dialogElement = document.querySelector(".dialogToAddBookDetails");  
+    //Close dialog Box
+    dialogElement.close();
+});    
+        
