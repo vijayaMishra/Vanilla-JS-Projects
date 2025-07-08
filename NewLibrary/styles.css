@@ -1,7 +1,12 @@
 .title {
-    font-family: 'Playfair Display';
     font-size: 18px;
     color: #3e3e3e;
     background-color: #fefdf9;
-    letter-spacing: 0.5px;
+    letter-spacing: 5px;
+}
+
+.bookDiv {
+    display: flex;
+    justify-content: space-between;
+    /*border: 2px solid red;*/
 }

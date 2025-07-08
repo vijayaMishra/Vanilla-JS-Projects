@@ -36,8 +36,33 @@ addBookBtnInsideDialogElement.addEventListener("click", () => {
     //Dynamically add the book name received as user input in the li element
     if(bookNameEnteredByUserElement.value !== "") {
         const newLiElement = document.createElement("li");
-        //add text content to the newly created li element
-        newLiElement.textContent = bookNameEnteredByUserElement.value;
+
+        //creating p tag to append the string in li element
+        const pElement = document.createElement("p");
+        //add text content to the newly created p tag element
+        console.log("pElement: ", pElement);
+        console.log("bookNameEnteredByUserElement.value: ",bookNameEnteredByUserElement.value);
+        pElement.textContent = bookNameEnteredByUserElement.value;
+        console.log("pElement.textContent", pElement.textContent);
+
+        //creating a new button element using JS
+        const delBtnElement = document.createElement("button");
+        //text written on the delete button
+        delBtnElement.textContent = "Delete";
+
+        //append p element and del button element to the li element
+        newLiElement.appendChild(pElement);
+        newLiElement.appendChild(delBtnElement);
+        //creating an element with div tag
+        //const divElement = document.createElement("div");
+        //adding class bookElement to the div element
+        newLiElement.classList.add("bookDiv");
+
+        //giving CSS to the bookElement class
+
+
+        //appending li element to the div element
+        // divElement.appendChild(newLiElement);
 
         //access the ul element with class "ulBooks"
         const ulBooksElement = document.querySelector(".ulBooks");
