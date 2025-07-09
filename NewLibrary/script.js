@@ -76,8 +76,24 @@ function saveBookInDialogBox() {
     });
 }
 
+function deleteBtnBookFromLibrary() {
+    //select the "delete" button element using its class with querySelector
+    const delBtnBookElement = document.querySelector(".delBtnBook");
+    delBtnBookElement.addEventListener("click", () => {
+        console.log("inside del click listener");
+        //select book and del div element
+        const bookAndDelDivElement = document.querySelector(".bookAndDelDiv");
+
+        //select books Container element
+        const booksContainerElement = document.querySelector(".booksContainer");
+
+        //remove bookAndDelDivElement from booksContainer parent element
+        booksContainerElement.removeChild(bookAndDelDivElement);
+    });
+}
 saveBookInDialogBox();
 attachAddBookClickListener();
+deleteBtnBookFromLibrary()
 
 
         
