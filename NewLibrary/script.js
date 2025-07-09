@@ -81,12 +81,6 @@ function deleteBtnBookFromLibrary() {
     delBtnBookElements.forEach(function attachClickListenerToDeleteBtn(delBtnBookElement) {
         delBtnBookElement.addEventListener("click", (event) => {
             // e.target gives the element where THE ACTUAL event happens.
-            console.log("event:", event);
-            console.log("event.target:", event.target);
-            console.log("event.target.textContent:", event.target.textContent);
-            console.log("event.target.parent:",event.target.parentElement);
-            console.log("Inside delete event handler");
-
             //select books Container element
             const booksContainerElement = document.querySelector(".booksContainer");
             //remove actual book from booksContainer parent element
