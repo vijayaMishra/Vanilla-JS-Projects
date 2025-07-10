@@ -1,6 +1,7 @@
 .titleParent {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .title {
     font-family: "Playwrite DE VA", cursive;
@@ -9,13 +10,6 @@
     margin-top: 20px;
     background-color: #fefdf9;
     font-size: 35px;
-}
-
-.bookAndDelDiv {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    /*border: 2px solid red;*/
 }
 
 button {
@@ -42,4 +36,12 @@ button:active {
 .image {
     height:100px;
     width:80px;
+}
+
+.twoBooksGrid {
+    /*margin: 20px;*/
+    /*border: 2px solid red;*/
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
 }
