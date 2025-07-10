@@ -77,7 +77,7 @@ function saveBookInDialogBox() {
 }
 
 function deleteBtnBookFromLibrary() {
-    //select the "delete" button elemen1`21````q22wbt using its class with querySelector
+    //select the "delete" button element using its class with querySelector
     const delBtnBookElements = document.querySelectorAll(".delBtnBook");
     delBtnBookElements.forEach(function attachClickListenerToDeleteBtn(delBtnBookElement) {
         delBtnBookElement.addEventListener("click", (event) => {
