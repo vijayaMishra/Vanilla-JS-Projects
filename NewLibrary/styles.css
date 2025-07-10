@@ -2,16 +2,25 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: sticky;
+    top: 0;
+    background: white;
 }
 .title {
     font-family: "Playwrite DE VA", cursive;
     font-optical-sizing: auto;
     font-style: normal;
     margin-top: 20px;
-    background-color: #fefdf9;
     font-size: 35px;
-}
 
+}
+.libraryHeader {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px
+}
 button {
     all: unset;
     font-family: 'Poppins', sans-serif;
@@ -34,8 +43,8 @@ button:active {
 }
 
 .image {
-    height:100px;
-    width:80px;
+    height:140px;
+    width:110px;
 }
 
 .twoBooksGrid {
@@ -44,8 +53,13 @@ button:active {
     padding: 30px;
     display: flex;
     justify-content: space-between;
-}
 
+}
+.bookName {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
 .bookImgNameDelbtnDiv {
     /*border: 2px solid blue;*/
 }
