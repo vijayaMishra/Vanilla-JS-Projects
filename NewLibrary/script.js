@@ -75,6 +75,7 @@ function saveBookInDialogBox() {
         bookNameEnteredByUserElement.value = "";
     });
 }
+
 function deleteBtnBookFromLibrary() {
     //select the "delete" button element using its class with querySelector
     const delBtnBookElements = document.querySelectorAll(".delBtnBook");
@@ -82,9 +83,9 @@ function deleteBtnBookFromLibrary() {
         delBtnBookElement.addEventListener("click", (event) => {
             // e.target gives the element where THE ACTUAL event happens.
             //select books Container element
-            const booksContainerElement = document.querySelector(".booksContainer");
+            const twoBooksGridElement = document.querySelector(".twoBooksGrid");
             //remove actual book from booksContainer parent element
-            booksContainerElement.removeChild(event.target.parentElement);
+            twoBooksGridElement.removeChild(event.target.parentElement);
         });
     });
 }
