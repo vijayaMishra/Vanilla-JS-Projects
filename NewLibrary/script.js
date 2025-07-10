@@ -37,34 +37,39 @@ function saveBookInDialogBox() {
         //access bookNameEnteredByUser element
         const bookNameEnteredByUserElement = document.querySelector(".bookNameEnteredByUser");
         //access the text content of the element in which the user has given a book name input
-        console.log(bookNameEnteredByUserElement.value);
+        console.log("user entered book name", bookNameEnteredByUserElement.value);
 
         //Dynamically add the book name received as user input in the li element
         if (bookNameEnteredByUserElement.value !== "") {
-            const newDivElement = document.createElement("div");
+            const  bookImgNameDelbtnDivElement = document.createElement("div");
+            bookImgNameDelbtnDivElement.classList.add("bookImgNameDelbtnDiv");
 
-            //creating p tag to append the string in div element
-            const pElement = document.createElement("p");
-            //add text content to the newly created p tag element
-            pElement.textContent = bookNameEnteredByUserElement.value;
+            const imageTag = document.createElement("img");
+            imageTag.classList.add("image");
+            imageTag.src = "./Images/newbookcoverpage.jpg";
+
+            const pTag = document.createElement("p");
+            pTag.classList.add("bookName");
+            pTag.textContent = bookNameEnteredByUserElement.value;
 
             //creating a new button element using JS
             const delBtnElement = document.createElement("button");
             //text written on the delete button
+            delBtnElement.classList.add("delBtnBook");
             delBtnElement.textContent = "Delete";
 
-            //append p element and del button element to the div element
-            newDivElement.appendChild(pElement);
-            newDivElement.appendChild(delBtnElement);
+            bookImgNameDelbtnDivElement.appendChild(imageTag);
+            bookImgNameDelbtnDivElement.appendChild(pTag);
+            bookImgNameDelbtnDivElement.appendChild(delBtnElement);
 
-            //adding class bookAndDelDiv to the div element
-            newDivElement.classList.add("bookAndDelDiv");
+            const twoBooksGridElement = document.createElement("div");
+            twoBooksGridElement.classList.add("twoBooksGrid");
+            twoBooksGridElement.appendChild(bookImgNameDelbtnDivElement);
 
-            //access the booksContainer element with class "booksContainer"
             const booksContainerElement = document.querySelector(".booksContainer");
-
-            //append newly created div element to the booksContainer element
-            booksContainerElement.appendChild(newDivElement);
+            //to parent container appending the book div to be added g
+            booksContainerElement.appendChild(twoBooksGridElement);
+            deleteBtnBookFromLibrary();
         }
         //access dialog box
         const dialogElement = document.querySelector(".dialogToAddBookDetails");
@@ -79,6 +84,7 @@ function saveBookInDialogBox() {
 function deleteBtnBookFromLibrary() {
     //select the "delete" button element using its class with querySelector
     const delBtnBookElements = document.querySelectorAll(".delBtnBook");
+    console.log("delBtnBookElements: ", delBtnBookElements);
     delBtnBookElements.forEach(function attachClickListenerToDeleteBtn(delBtnBookElement) {
         delBtnBookElement.addEventListener("click", (event) => {
             // e.target gives the element where THE ACTUAL event happens.
@@ -99,7 +105,6 @@ function deleteBtnBookFromLibrary() {
             if(gridDiv.children.length === 0) {
                 gridDiv.remove();
             }
-
             //You don't want to hardcode any row, (document.querySelector(".twoBooksGrid") ) gets only the first row.
             //select books Container element
             //const twoBooksGridElement = document.querySelector(".twoBooksGrid");
@@ -108,6 +113,7 @@ function deleteBtnBookFromLibrary() {
         });
     });
 }
+
 saveBookInDialogBox();
 attachAddBookClickListener();
 deleteBtnBookFromLibrary()

@@ -12,14 +12,14 @@
     font-style: normal;
     margin-top: 20px;
     font-size: 35px;
-
 }
 .libraryHeader {
     margin-top: -20px;
     display: flex;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 2px
+    letter-spacing: 2px;
+    color: #475E67;
 }
 button {
     all: unset;
@@ -49,11 +49,10 @@ button:active {
 
 .twoBooksGrid {
     /*margin: 20px;*/
-    /*border: 2px solid red;*/
+    border: 2px solid red;
     padding: 30px;
     display: flex;
     justify-content: space-between;
-
 }
 .bookName {
     font-family: 'Poppins', sans-serif;
@@ -61,5 +60,5 @@ button:active {
     font-weight: bold;
 }
 .bookImgNameDelbtnDiv {
-    /*border: 2px solid blue;*/
+    border: 2px solid blue;
 }
