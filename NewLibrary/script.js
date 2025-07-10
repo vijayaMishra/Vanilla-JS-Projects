@@ -77,15 +77,34 @@ function saveBookInDialogBox() {
 }
 
 function deleteBtnBookFromLibrary() {
-    //select the "delete" button element using its class with querySelector
+    //select the "delete" button elemen1`21````q22wbt using its class with querySelector
     const delBtnBookElements = document.querySelectorAll(".delBtnBook");
     delBtnBookElements.forEach(function attachClickListenerToDeleteBtn(delBtnBookElement) {
         delBtnBookElement.addEventListener("click", (event) => {
             // e.target gives the element where THE ACTUAL event happens.
+            console.log("event.target: ", event.target);
+            console.log("event.target.parentElement: ", event.target.parentElement);
+
+            //Step 1. Get the Book div
+            const bookDiv = event.target.parentElement;
+            //Step 2: Get the grid (row) it belongs to
+            const gridDiv = bookDiv.parentElement;
+            console.log("gridDiv.children:", gridDiv.children.length);
+            console.log("bookDiv.children:", bookDiv.children.length);
+            //Step 3: Remove the book from its row
+            gridDiv.removeChild(bookDiv);
+            console.log("gridDiv.children:", gridDiv.children.length);
+            console.log("bookDiv.children:", bookDiv.children.length);
+            //Step 4: If the row becomes empty, remove it too
+            if(gridDiv.children.length === 0) {
+                gridDiv.remove();
+            }
+
+            //You don't want to hardcode any row, (document.querySelector(".twoBooksGrid") ) gets only the first row.
             //select books Container element
-            const twoBooksGridElement = document.querySelector(".twoBooksGrid");
+            //const twoBooksGridElement = document.querySelector(".twoBooksGrid");
             //remove actual book from booksContainer parent element
-            twoBooksGridElement.removeChild(event.target.parentElement);
+            //twoBooksGridElement.removeChild(event.target.parentElement);
         });
     });
 }
