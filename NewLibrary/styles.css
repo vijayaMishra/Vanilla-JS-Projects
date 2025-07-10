@@ -49,7 +49,7 @@ button:active {
 
 .twoBooksGrid {
     /*margin: 20px;*/
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -60,5 +60,5 @@ button:active {
     font-weight: bold;
 }
 .bookImgNameDelbtnDiv {
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
 }
