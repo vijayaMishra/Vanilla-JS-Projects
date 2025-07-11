@@ -13,6 +13,9 @@
     margin-top: 20px;
     font-size: 35px;
 }
+.mainContent {
+    background-color: #EAE1D0;
+}
 .libraryHeader {
     margin-top: -20px;
     display: flex;
