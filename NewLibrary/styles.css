@@ -1,3 +1,6 @@
+body {
+    margin: 0px;
+}
 .titleParent {
     display: flex;
     align-items: center;
