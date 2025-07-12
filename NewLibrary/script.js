@@ -41,34 +41,64 @@ function saveBookInDialogBox() {
 
         //Dynamically add the book name received as user input in the li element
         if (bookNameEnteredByUserElement.value !== "") {
-            const  bookImgNameDelbtnDivElement = document.createElement("div");
-            bookImgNameDelbtnDivElement.classList.add("bookImgNameDelbtnDiv");
+            const twoBooksGridElements = document.querySelectorAll(".twoBooksGrid");
+            console.log("twoBooksGridElements.length: ", twoBooksGridElements.length);
+            let lastTwoBooksGridElement = twoBooksGridElements[twoBooksGridElements.length - 1];
+            console.log(lastTwoBooksGridElement);
+            const noOfBooksInLastGrid = lastTwoBooksGridElement.querySelectorAll(".bookImgNameDelbtnDiv").length;
+            console.log("noOfBooksInLastGrid: ", noOfBooksInLastGrid);
+            if(noOfBooksInLastGrid === 1) {
+                // bookImgNameDelbtnDiv should be replaced with singleBookDiv
+                const bookImgNameDelbtnDivElement = document.createElement("div");
+                bookImgNameDelbtnDivElement.classList.add("bookImgNameDelbtnDiv");
+                lastTwoBooksGridElement.appendChild(bookImgNameDelbtnDivElement);
 
-            const imageTag = document.createElement("img");
-            imageTag.classList.add("image");
-            imageTag.src = "./Images/newbookcoverpage.jpg";
+                imageTag = document.createElement("img");
+                imageTag.classList.add("image");
+                imageTag.src = "./Images/newbookcoverpage.jpg";
 
-            const pTag = document.createElement("p");
-            pTag.classList.add("bookName");
-            pTag.textContent = bookNameEnteredByUserElement.value;
+                pTag = document.createElement("p");
+                pTag.classList.add("bookName");
+                pTag.textContent = bookNameEnteredByUserElement.value;
 
-            //creating a new button element using JS
-            const delBtnElement = document.createElement("button");
-            //text written on the delete button
-            delBtnElement.classList.add("delBtnBook");
-            delBtnElement.textContent = "Delete";
+                //creating a new button element using JS
+                delBtnElement = document.createElement("button");
+                //text written on the delete button
+                delBtnElement.classList.add("delBtnBook");
+                delBtnElement.textContent = "Delete";
+                bookImgNameDelbtnDivElement.appendChild(imageTag);
+                bookImgNameDelbtnDivElement.appendChild(pTag);
+                bookImgNameDelbtnDivElement.appendChild(delBtnElement);
+            } else {
+                const  bookImgNameDelbtnDivElement = document.createElement("div");
+                bookImgNameDelbtnDivElement.classList.add("bookImgNameDelbtnDiv");
 
-            bookImgNameDelbtnDivElement.appendChild(imageTag);
-            bookImgNameDelbtnDivElement.appendChild(pTag);
-            bookImgNameDelbtnDivElement.appendChild(delBtnElement);
+                let imageTag = document.createElement("img");
+                imageTag.classList.add("image");
+                imageTag.src = "./Images/newbookcoverpage.jpg";
 
-            const twoBooksGridElement = document.createElement("div");
-            twoBooksGridElement.classList.add("twoBooksGrid");
-            twoBooksGridElement.appendChild(bookImgNameDelbtnDivElement);
+                let pTag = document.createElement("p");
+                pTag.classList.add("bookName");
+                pTag.textContent = bookNameEnteredByUserElement.value;
 
-            const booksContainerElement = document.querySelector(".booksContainer");
-            //to parent container appending the book div to be added g
-            booksContainerElement.appendChild(twoBooksGridElement);
+                //creating a new button element using JS
+                let delBtnElement = document.createElement("button");
+                //text written on the delete button
+                delBtnElement.classList.add("delBtnBook");
+                delBtnElement.textContent = "Delete";
+
+                bookImgNameDelbtnDivElement.appendChild(imageTag);
+                bookImgNameDelbtnDivElement.appendChild(pTag);
+                bookImgNameDelbtnDivElement.appendChild(delBtnElement);
+
+                const twoBooksGridElement = document.createElement("div");
+                twoBooksGridElement.classList.add("twoBooksGrid");
+                twoBooksGridElement.appendChild(bookImgNameDelbtnDivElement);
+
+                const booksContainerElement = document.querySelector(".booksContainer");
+                //to parent container appending the book div to be added g
+                booksContainerElement.appendChild(twoBooksGridElement);
+            }
             deleteBtnBookFromLibrary();
         }
         //access dialog box
@@ -114,9 +144,8 @@ function deleteBtnBookFromLibrary() {
     });
 }
 
+//If only one book is present in the last grid, next book should get added in the same grid.
+//If two books are present in the last grid, new book should get added in newly created grid -- which is working rn
 saveBookInDialogBox();
 attachAddBookClickListener();
 deleteBtnBookFromLibrary()
-
-
-        
