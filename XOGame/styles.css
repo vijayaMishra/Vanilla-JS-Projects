@@ -24,9 +24,16 @@ html, body {
     background-color: white;
     /*padding-left: 10px;*/
     display: flex;
+
 }
 .xoBoxInGrid {
     border: 1px solid black;
     width: 119px;
     height: 119px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.xoWord {
+    font-size: 40px;
 }
