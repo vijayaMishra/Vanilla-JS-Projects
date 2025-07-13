@@ -1,7 +1,6 @@
-.main {
-    background-color: #CBC4D6;
-    height: 100vh;
-    margin: -8px;
+html, body {
+    background-color: #EFE1E1;
+    height: 100%;
 }
 .titleContainer {
     display: flex;
