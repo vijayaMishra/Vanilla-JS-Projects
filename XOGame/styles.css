@@ -1,0 +1,26 @@
+.titleContainer {
+    display: flex;
+    justify-content: center;
+}
+.gameTitle {
+    font-size: 40px;
+    margin-top: 20px;
+}
+.XOGameContainer {
+    height: 390px;
+    width: 390px;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.rowGrid {
+    height: 129px;
+    border: 1px solid black;
+    background-color: white;
+    /*padding-left: 10px;*/
+}
+.main {
+    background-color: #CBC4D6;
+    height: 100vh;
+}
