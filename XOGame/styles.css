@@ -12,15 +12,15 @@
     margin-top: 20px;
 }
 .XOGameContainer {
-    height: 390px;
-    width: 390px;
+    height: 360px;
+    width: 360px;
     border: 1px solid black;
     background-color: white;
     margin-top: 20px;
     margin-left: 10px;
 }
 .rowGrid {
-    height: 129px;
+    height: 119px;
     border: 1px solid black;
     background-color: white;
     /*padding-left: 10px;*/
@@ -28,6 +28,6 @@
 }
 .xoBoxInGrid {
     border: 1px solid black;
-    width: 129px;
-    height: 129px;
+    width: 119px;
+    height: 119px;
 }
