@@ -1,3 +1,8 @@
+.main {
+    background-color: #CBC4D6;
+    height: 100vh;
+    margin: -8px;
+}
 .titleContainer {
     display: flex;
     justify-content: center;
@@ -19,8 +24,10 @@
     border: 1px solid black;
     background-color: white;
     /*padding-left: 10px;*/
+    display: flex;
 }
-.main {
-    background-color: #CBC4D6;
-    height: 100vh;
+.xoBoxInGrid {
+    border: 1px solid black;
+    width: 129px;
+    height: 129px;
 }
