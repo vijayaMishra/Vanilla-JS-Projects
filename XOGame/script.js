@@ -1,7 +1,9 @@
 const xoBoxInGridElements = document.querySelectorAll(".xoBoxInGrid");
 let count = 0;
-xoBoxInGridElements.forEach(function writeXorO(xoBoxInGridElement) {
-    xoBoxInGridElement.addEventListener("click", () => { 
+const movesArray = Array(9).fill(null);
+xoBoxInGridElements.forEach((xoBoxInGridElement, index) => {
+    xoBoxInGridElement.addEventListener("click", () => {
+        console.log("index:", index);
         if(xoBoxInGridElement.querySelector("p")) {
             return; // do nothing
         }
