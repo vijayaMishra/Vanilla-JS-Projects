@@ -26,6 +26,7 @@ xoBoxInGridElements.forEach((xoBoxInGridElement, index) => {
         console.log(board);
         if(checkWinner(board, currentPlayer, row, col) ) {
             console.log(`${currentPlayer} wins!`);
+
         }
     });
 });
@@ -37,7 +38,26 @@ function checkWinner(board, currentPlayer, row, col) {
         board[row][2] === currentPlayer
     ) {
         // all values in row where user entered are same
-        return true;
+
+        // console.log(document.getElementById(board[row][0]));
+        // const xoBoxInGridElements = document.getElementById(board[row][col]);
+        // //adding classList to the above caught element
+        // xoBoxInGridElements.forEach((xoBoxInGridElement) => {
+        //     xoBoxInGridElement.classList.add("greenedBox");
+        // });
+
+        // let idToFind = row+col;
+        // console.log(row,col);
+        // console.log(idToFind);
+        // console.log(board);
+        // return true;
+
+        // Find elements with IDs: row + "0", row + "1", row + "2"
+        let idToFind = row.concat(col);
+        let idElement = document.getElementById(idToFind);
+
+        // Add class greenedBox to them
+
     }
     //checking for columns
     if(board[0][col] === currentPlayer &&
@@ -45,6 +65,10 @@ function checkWinner(board, currentPlayer, row, col) {
         board[2][col] === currentPlayer
     ) {
         // all values in row where user entered are same
+        const xoBoxInGridElements = document.querySelector(".xoBoxInGrid");
+        //adding classList to the above caught element
+        xoBoxInGridElements.classList.add("greenedBox")
+        console.log(board);
         return true;
     }
     //diagonal
@@ -57,7 +81,8 @@ function checkWinner(board, currentPlayer, row, col) {
     if(leftDiagonal || rightDiagonal) {
         return true;
     }
-    console.log(board);
+    //catching the div which has to be turned green FOR ROW as of now!!
+
     // if(board[0][0])
 }
 

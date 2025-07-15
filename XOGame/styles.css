@@ -37,3 +37,7 @@ html, body {
 .xoWord {
     font-size: 44px;
 }
+.greenedBox {
+    font-size: 44px;
+    background-color: green;
+}
