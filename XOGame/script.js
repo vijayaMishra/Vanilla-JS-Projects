@@ -14,17 +14,50 @@ xoBoxInGridElements.forEach((xoBoxInGridElement, index) => {
         let row = position[0];
         let col = position[1];
 
-        // console.log(board);
         const xoWordElement = document.createElement("p");
         xoWordElement.classList.add("xoWord");
         xoBoxInGridElement.appendChild(xoWordElement);
+
         //Alternate X and O based on count
-
-        xoWordElement.textContent = count % 2 ? 'X' : 'O';
-        board[row][col] = xoWordElement.textContent;
-
+        let currentPlayer = xoWordElement.textContent = count % 2 ? 'X' : 'O';
+        board[row][col] = currentPlayer;
         count++;
+
         console.log(board);
+        if(checkWinner(board, currentPlayer, row, col) ) {
+            console.log(`${currentPlayer} wins!`);
+        }
     });
-    
 });
+
+function checkWinner(board, currentPlayer, row, col) {
+    // check row where user entered
+    if(board[row][0] === currentPlayer &&
+        board[row][1] === currentPlayer &&
+        board[row][2] === currentPlayer
+    ) {
+        // all values in row where user entered are same
+        return true;
+    }
+    //checking for columns
+    if(board[0][col] === currentPlayer &&
+        board[1][col] === currentPlayer &&
+        board[2][col] === currentPlayer
+    ) {
+        // all values in row where user entered are same
+        return true;
+    }
+    //diagonal
+    const leftDiagonal = board[0][0] === currentPlayer && board[1][1] === currentPlayer && board[2][2] === currentPlayer;
+
+    const rightDiagonal = board[0][2] === currentPlayer &&
+        board[1][1] === currentPlayer &&
+        board[2][0] === currentPlayer;
+
+    if(leftDiagonal || rightDiagonal) {
+        return true;
+    }
+    console.log(board);
+    // if(board[0][0])
+}
+
