@@ -6,16 +6,22 @@ let board = [
   [null, null, null]
 ];
 xoBoxInGridElements.forEach((xoBoxInGridElement, index) => {
-    xoBoxInGridElement.addEventListener("click", () => {
-        // if(movesArray[index] !== null) {
+    xoBoxInGridElement.addEventListener("click", (event) => {
+        // if(board[i][j] !== null) {
         //     return; // do nothing
         // }
+        let position = event.target.id;
+        let row = position[0];
+        let col = position[1];
+
+        // console.log(board);
         const xoWordElement = document.createElement("p");
         xoWordElement.classList.add("xoWord");
         xoBoxInGridElement.appendChild(xoWordElement);
         //Alternate X and O based on count
-        let move = count % 2 ? 'X' : 'O';
-        xoWordElement.textContent = move;
+
+        xoWordElement.textContent = count % 2 ? 'X' : 'O';
+        board[row][col] = xoWordElement.textContent;
 
         count++;
         console.log(board);
