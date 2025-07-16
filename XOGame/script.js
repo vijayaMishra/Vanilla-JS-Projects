@@ -5,6 +5,7 @@ let board = [
   [null, null, null],
   [null, null, null]
 ];
+let winner = false;
 xoBoxInGridElements.forEach((xoBoxInGridElement, index) => {
     xoBoxInGridElement.addEventListener("click", (event) => {
 
@@ -15,7 +16,9 @@ xoBoxInGridElements.forEach((xoBoxInGridElement, index) => {
         if(board[row][col] !== null) {
             return;
         }
-
+        if(winner) {
+            return;
+        }
         const xoWordElement = document.createElement("p");
         xoWordElement.classList.add("xoWord");
         xoBoxInGridElement.appendChild(xoWordElement);
@@ -28,7 +31,7 @@ xoBoxInGridElements.forEach((xoBoxInGridElement, index) => {
         console.log(board);
         if(checkWinner(board, currentPlayer, row, col) ) {
             console.log(`${currentPlayer} wins!`);
-
+            winner = true;
         }
     });
 });
@@ -98,6 +101,7 @@ function checkWinner(board, currentPlayer, row, col) {
         xoBox1InGridElement.classList.add("greenedBox");
         xoBox2InGridElement.classList.add("greenedBox");
         xoBox3InGridElement.classList.add("greenedBox");
+        return true;
     }
 }
 
