@@ -37,6 +37,7 @@ function checkWinner(board, currentPlayer, row, col) {
         board[row][1] === currentPlayer &&
         board[row][2] === currentPlayer
     ) {
+        console.log(row);
         let idToFind = row.concat(col);
         // let idElement = document.getElementById(idToFind);
         const xoBoxInGridElement = document.getElementById(idToFind);
@@ -59,13 +60,18 @@ function checkWinner(board, currentPlayer, row, col) {
     }
 
     //diagonal
-    const leftDiagonal = board[0][0] === currentPlayer && board[1][1] === currentPlayer && board[2][2] === currentPlayer;
+    const leftDiagonal = board[0][0] === currentPlayer && 
+                        board[1][1] === currentPlayer && 
+                        board[2][2] === currentPlayer;
 
     const rightDiagonal = board[0][2] === currentPlayer &&
-        board[1][1] === currentPlayer &&
-        board[2][0] === currentPlayer;
+                        board[1][1] === currentPlayer &&
+                        board[2][0] === currentPlayer;
 
     if(leftDiagonal || rightDiagonal) {
+        let idToFind = row.concat(col);
+        const xoBoxInGridElement = document.getElementById(idToFind);
+        xoBoxInGridElement.classList.add("greenedBox");
         return true;
     }
 }
