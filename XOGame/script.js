@@ -40,21 +40,21 @@ function checkWinner(board, currentPlayer, row, col) {
         let idToFind = row.concat(col);
         // let idElement = document.getElementById(idToFind);
         const xoBoxInGridElement = document.getElementById(idToFind);
-        console.log(xoBoxInGridElement);
         //add a new class to the element to make it coloured green
         xoBoxInGridElement.classList.add("greenedBox"); 
-        // Add class greenedBox to them
+        return true;
     }
     //checking for columns
     if(board[0][col] === currentPlayer &&
         board[1][col] === currentPlayer &&
         board[2][col] === currentPlayer
     ) {
+        let idToFind = row.concat(col);
         // all values in row where user entered are same
-        const xoBoxInGridElements = document.querySelector(".xoBoxInGrid");
+        const xoBoxInGridElement = document.getElementById(idToFind);
         //adding classList to the above caught element
-        xoBoxInGridElements.classList.add("greenedBox")
-        console.log(board);
+        xoBoxInGridElement.classList.add("greenedBox")
+
         return true;
     }
 
