@@ -79,11 +79,23 @@ function checkWinner(board, currentPlayer, row, col) {
                         board[1][1] === currentPlayer &&
                         board[2][0] === currentPlayer;
 
-    if(leftDiagonal || rightDiagonal) {
-        let idToFind = row.concat(col);
-        const xoBoxInGridElement = document.getElementById(idToFind);
-        xoBoxInGridElement.classList.add("greenedBox");
+    if(leftDiagonal) {
+        const xoBox1InGridElement = document.getElementById("00");
+        const xoBox2InGridElement = document.getElementById("11");
+        const xoBox3InGridElement = document.getElementById("22");
+        xoBox1InGridElement.classList.add("greenedBox");
+        xoBox2InGridElement.classList.add("greenedBox");
+        xoBox3InGridElement.classList.add("greenedBox");
         return true;
+    }
+    if(rightDiagonal) {
+        const xoBox1InGridElement = document.getElementById("02");
+        const xoBox2InGridElement = document.getElementById("11");
+        const xoBox3InGridElement = document.getElementById("20");
+
+        xoBox1InGridElement.classList.add("greenedBox");
+        xoBox2InGridElement.classList.add("greenedBox");
+        xoBox3InGridElement.classList.add("greenedBox");
     }
 }
 
