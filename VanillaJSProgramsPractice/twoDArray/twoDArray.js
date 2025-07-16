@@ -29,3 +29,17 @@ function calculateRowSum(numbers, row) {
 console.log("Sum of first row: ", calculateRowSum(numbers, 0));
 console.log("Sum of second row: ", calculateRowSum(numbers, 1));
 console.log("Sum of third row: ", calculateRowSum(numbers, 2));
+
+//return sum of column elements
+function calculateColumnSum(numbers, col) {
+    let sumOfCol = 0;
+    for(let row = 0; row < 3; row++) {
+        sumOfCol = sumOfCol + numbers[row][col];
+    }
+    return sumOfCol;
+}
+console.log("Sum of first column: ", calculateColumnSum(numbers, 0));
+console.log("Sum of second column: ", calculateColumnSum(numbers, 1));
+console.log("Sum of third column: ", calculateColumnSum(numbers, 2));
+
+
