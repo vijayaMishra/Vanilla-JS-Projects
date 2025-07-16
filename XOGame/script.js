@@ -10,6 +10,8 @@ xoBoxInGridElements.forEach((xoBoxInGridElement, index) => {
     xoBoxInGridElement.addEventListener("click", (event) => {
 
         let position = event.target.id;
+        if(position === "") position = event.target.parentElement.id;
+
         let row = position[0];
         let col = position[1];
         //two words cannot be written in a box
