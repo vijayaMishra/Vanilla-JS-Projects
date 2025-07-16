@@ -59,12 +59,14 @@ function checkWinner(board, currentPlayer, row, col) {
         board[1][col] === currentPlayer &&
         board[2][col] === currentPlayer
     ) {
-        let idToFind = row.concat(col);
-        // all values in row where user entered are same
-        const xoBoxInGridElement = document.getElementById(idToFind);
+        const xoBox1InGridElement = document.getElementById("0".concat(col));
+        const xoBox2InGridElement = document.getElementById("1".concat(col));
+        const xoBox3InGridElement = document.getElementById("2".concat(col));
+        
         //adding classList to the above caught element
-        xoBoxInGridElement.classList.add("greenedBox")
-
+        xoBox1InGridElement.classList.add("greenedBox");
+        xoBox2InGridElement.classList.add("greenedBox");
+        xoBox3InGridElement.classList.add("greenedBox");
         return true;
     }
 
