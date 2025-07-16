@@ -7,12 +7,14 @@ let board = [
 ];
 xoBoxInGridElements.forEach((xoBoxInGridElement, index) => {
     xoBoxInGridElement.addEventListener("click", (event) => {
-        // if(board[i][j] !== null) {
-        //     return; // do nothing
-        // }
+
         let position = event.target.id;
         let row = position[0];
         let col = position[1];
+        //two words cannot be written in a box
+        if(board[row][col] !== null) {
+            return;
+        }
 
         const xoWordElement = document.createElement("p");
         xoWordElement.classList.add("xoWord");
