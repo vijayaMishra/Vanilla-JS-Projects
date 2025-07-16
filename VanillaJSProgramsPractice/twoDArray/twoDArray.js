@@ -52,3 +52,9 @@ function sumOfDiagonalNumbers(numbers) {
 console.log("Sum of diagonal elements: ", sumOfDiagonalNumbers(numbers));
 
 //sum of all boundary elements
+function calculateBoundarySum(numbers) {
+    let boundarySum = 0;
+    boundarySum = calculateRowSum(numbers, 0) + calculateRowSum(numbers, 2) + calculateColumnSum(numbers, 0) + calculateColumnSum(numbers, 2) - numbers[0][0] - numbers[2][2] - numbers[0][2] - numbers[2][0];
+    console.log("Sum of all boundary elements: ", boundarySum);
+}
+calculateBoundarySum(numbers);
