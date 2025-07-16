@@ -1,8 +1,8 @@
 // add all elements of a 2 D array
 
-const numbers = [[1,2,3],
-                 [2,3,4],
-                 [3,4,5]];
+const numbers = [[1,2,25],
+                 [2,30,4],
+                 [12,14,8]];
 let sum = 0;
 for(let i = 0; i < 3; i++) {
     for(let j = 0; j < 3; j++) {
@@ -42,4 +42,13 @@ console.log("Sum of first column: ", calculateColumnSum(numbers, 0));
 console.log("Sum of second column: ", calculateColumnSum(numbers, 1));
 console.log("Sum of third column: ", calculateColumnSum(numbers, 2));
 
+//sum of diagonal elements
+function sumOfDiagonalNumbers(numbers) {
+    let leftDiagonalSum, rightDiagonalSum = 0;
+    leftDiagonalSum = numbers[0][0] + numbers[1][1] + numbers[2][2];
+    rightDiagonalSum = numbers[0][2] + numbers[1][1] + numbers[2][0];
+    return [leftDiagonalSum,rightDiagonalSum];
+}
+console.log("Sum of diagonal elements: ", sumOfDiagonalNumbers(numbers));
 
+//sum of all boundary elements
