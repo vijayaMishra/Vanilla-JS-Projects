@@ -37,12 +37,21 @@ function checkWinner(board, currentPlayer, row, col) {
         board[row][1] === currentPlayer &&
         board[row][2] === currentPlayer
     ) {
-        console.log(row);
-        let idToFind = row.concat(col);
+        let id1 = row.concat('0');
+        let id2 = row.concat('1');
+        let id3 = row.concat('2');
+
+        // let idToFind = row.concat(col);
         // let idElement = document.getElementById(idToFind);
-        const xoBoxInGridElement = document.getElementById(idToFind);
+        // const xoBoxInGridElement = document.getElementById(idToFind);
+
+        const xoBox1InGridElement = document.getElementById(id1);
+        const xoBox2InGridElement = document.getElementById(id2);
+        const xoBox3InGridElement = document.getElementById(id3);
         //add a new class to the element to make it coloured green
-        xoBoxInGridElement.classList.add("greenedBox"); 
+        xoBox1InGridElement.classList.add("greenedBox"); 
+        xoBox2InGridElement.classList.add("greenedBox"); 
+        xoBox3InGridElement.classList.add("greenedBox"); 
         return true;
     }
     //checking for columns
