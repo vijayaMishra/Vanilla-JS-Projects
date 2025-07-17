@@ -41,3 +41,11 @@ html, body {
     font-size: 44px;
     background-color: green;
 }
+.winnerMsgParent { 
+    display: flex;
+    justify-content: center;
+}
+.winnerText {
+    font-size: 44px;
+
+}

@@ -34,6 +34,11 @@ xoBoxInGridElements.forEach((xoBoxInGridElement, index) => {
         if(checkWinner(board, currentPlayer, row, col) ) {
             console.log(`${currentPlayer} wins!`);
             winner = true;
+            const winnerMsgParentElement = document.querySelector(".winnerMsgParent");
+            const winnerTextElement = document.createElement("p");
+            winnerTextElement.classList.add("winnerText");
+            winnerTextElement.textContent = `${currentPlayer} wins!`;
+            winnerMsgParentElement.appendChild(winnerTextElement);
         }
     });
 });
