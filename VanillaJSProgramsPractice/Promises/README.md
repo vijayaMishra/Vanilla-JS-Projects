@@ -9,7 +9,7 @@ Imagine ordering food online. You place the order → now you wait → the order
 In JavaScript, tasks like fetching data from a server, reading files, or waiting for a timer are asynchronous. Instead of stopping everything and waiting, JavaScript uses Promises to handle these events.
 
 #Promise Syntax
-let promise = new Promise(function(resolve, reject) {
+let promise = new Promise(function (resolve, reject) {
     if(success) {
         resolve("Success!");
     } else {
@@ -21,9 +21,9 @@ let promise = new Promise(function(resolve, reject) {
 => and second learning is when checking if condition, for the condition I had written promise in "if condition" instead it had to be "success"
 
 If promise is resolved
-promise.then(function(result)) {
+promise.then(function (result)) {
     //handle success
 }
-.catch(function(error)) {
+.catch(function (error)) {
     //handle failure
 }
