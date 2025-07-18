@@ -1,5 +1,4 @@
 //1. Create a Promise that resolves after 2 seconds with "Hello, World!"
-let condition = true;
 let promise = new Promise(function(resolve, reject){
     setTimeout(function resolveAfter2secs() {
         resolve("Hello, World!");
