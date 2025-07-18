@@ -45,6 +45,7 @@ isRainy
         console.log("Failure: ", error);
     })
 
-
+```Chaining Promises```
+To update here once you've read about Chaining Promises
 
 
