@@ -4,6 +4,7 @@ let promise = new Promise(function(resolve, reject){
         resolve("Hello, World!");
     }, 2000);
 });
+console.log(promise);
 promise
     .then(function(message) {
         console.log("After 2 seconds: ", message);
