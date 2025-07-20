@@ -53,6 +53,15 @@ promise4
         console.log(error);
     });
 
+//Create a Promise that resolves immediately with the number 42.
+const promise5 = new Promise(function (resolve, reject) {
+   resolve("42");
+});
+promise5
+    .then(function(message){
+       console.log(message);
+    });
+
 
 // 2. Create a function isEvenNumber(num) that returns a Promise
 // 3. Simulate an API call using a Promise
