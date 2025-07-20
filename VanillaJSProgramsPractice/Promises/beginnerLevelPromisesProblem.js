@@ -30,15 +30,27 @@
 // // console.log("hi");
 
 // Create a Promise that resolves after 1 second with the message "Task Completed".
-const promise3 = new Promise(function (resolve) {
-    console.log("After 1 Sec");
-    setTimeout(function setTimeoutCallback() {
-        resolve("Task Completed");
-    }, 1000);
-})
-promise3
-    .then(function (message) {
-        console.log("1 sec is over: ", message);
+// const promise3 = new Promise(function (resolve) {
+//     console.log("After 1 Sec");
+//     setTimeout(function setTimeoutCallback() {
+//         resolve("Task Completed");
+//     }, 1000);
+// })
+// promise3
+//     .then(function (message) {
+//         console.log("1 sec is over: ", message);
+//     });
+
+//Create a Promise that rejects after 3 seconds with the message "Something went wrong".
+console.log("Hi");
+let promise4 = new Promise(function (resolve, reject) {
+    setTimeout(function rejectMessage() {
+        reject("Something went wrong!");
+    }, 3000);
+});
+promise4
+    .catch(function(error) {
+        console.log(error);
     });
 
 
