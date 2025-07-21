@@ -42,25 +42,43 @@
 //     });
 
 //Create a Promise that rejects after 3 seconds with the message "Something went wrong".
-console.log("Hi");
-let promise4 = new Promise(function (resolve, reject) {
-    setTimeout(function rejectMessage() {
-        reject("Something went wrong!");
-    }, 3000);
-});
-promise4
-    .catch(function(error) {
-        console.log(error);
-    });
+// console.log("Hi");
+// let promise4 = new Promise(function (resolve, reject) {
+//     setTimeout(function rejectMessage() {
+//         reject("Something went wrong!");
+//     }, 3000);
+// });
+// promise4
+//     .catch(function(error) {
+//         console.log(error);
+//     });
 
 //Create a Promise that resolves immediately with the number 42.
-const promise5 = new Promise(function (resolve, reject) {
-   resolve("42");
+// const promise5 = new Promise(function (resolve, reject) {
+//    resolve("42");
+// });
+// promise5
+//     .then(function(message){
+//        console.log(message);
+//     });
+
+//Create a Promise that resolves with a string "Loading finished" only if a variable isLoaded is true. 
+// Otherwise, reject with "Loading failed".
+let isLoaded = true;
+let promise6 = new Promise(function(resolve, reject) {
+    if(isLoaded) {
+        resolve("Loading finished");
+    } else {
+        reject("Loading failed");
+    }
 });
-promise5
-    .then(function(message){
-       console.log(message);
-    });
+promise6
+    .then(function(message) {
+        console.log(message);
+    })
+    .catch(function(error){
+        console.log(error);
+    })
 
 
 // 2. Create a function isEvenNumber(num) that returns a Promise
