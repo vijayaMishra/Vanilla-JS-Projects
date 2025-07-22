@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: -8px;
     padding: 4px;
     height: 100vh;
@@ -35,6 +35,16 @@ body {
     flex-direction: column;
     /* border: 1px solid rebeccapurple; */
     align-items: center;
+    margin-top: -50px;
+}
+.eachDayDiv {
+    border: 2px solid #d14584;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    padding: 25px 20px 15px 20px; /* top and horizontal padding*/
+    border-radius: 10px;
 }
 .date {
     display: inline-flex;
@@ -44,7 +54,7 @@ body {
     /* color: #70587C; */
     padding: 4px 8px;
     border-radius: 5px;
-    /* border: 1px solid greenyellow; */
+    /* border: 1px solid #d14584; */
     margin-bottom: 1px;
 }
 .day {
