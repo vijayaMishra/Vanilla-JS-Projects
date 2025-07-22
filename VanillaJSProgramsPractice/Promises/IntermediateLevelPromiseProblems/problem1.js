@@ -15,12 +15,6 @@ console.log(getFirstName());
 console.log(getFirstName().getLastName);
 console.log(getFirstName().getLastName());
 
-
-
-
-//Write a Promise that resolves after 2 seconds with a user's age. In .then(), check if the age is over 18 and log "Adult" or "Minor".
-
-
 //Create a Promise that resolves to an array ["apple", "banana", "cherry"] and then print each fruit using .then()
 
 
