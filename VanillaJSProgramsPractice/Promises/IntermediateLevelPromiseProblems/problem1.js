@@ -1,3 +1,14 @@
+//function chain
+function getFirstName() {
+    let firstName = "Vijaya";
+    console.log(firstName);
+}
+function getLastName() {
+    let lastName = "Ankit";
+    console.log(lastName);
+}
+console.log(getFirstName().getLastName());
+
 //Chain .then() methods to take a resolved number and double it, then log the result.
 
 
