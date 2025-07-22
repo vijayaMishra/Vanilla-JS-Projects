@@ -15,7 +15,7 @@ console.log(getFirstName());
 console.log(getFirstName().getLastName);
 console.log(getFirstName().getLastName());
 
-//Chain .then() methods to take a resolved number and double it, then log the result.
+
 
 
 //Write a Promise that resolves after 2 seconds with a user's age. In .then(), check if the age is over 18 and log "Adult" or "Minor".
