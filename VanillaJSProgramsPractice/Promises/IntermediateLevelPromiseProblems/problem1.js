@@ -2,11 +2,17 @@
 function getFirstName() {
     let firstName = "Vijaya";
     console.log(firstName);
+    return {
+        getLastName: getLastName
+    }
 }
 function getLastName() {
     let lastName = "Ankit";
     console.log(lastName);
+    return lastName;
 }
+console.log(getFirstName());
+console.log(getFirstName().getLastName);
 console.log(getFirstName().getLastName());
 
 //Chain .then() methods to take a resolved number and double it, then log the result.
