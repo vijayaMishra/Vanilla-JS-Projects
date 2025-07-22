@@ -5,5 +5,11 @@ let promise = new Promise(function(resolve, reject) {
 });
 promise
     .then(function(number) {
-        console.log(number*number);
+        console.log(number);
+        return {
+            number1: number*number
+        }
+    })
+    .then(function(number) {
+        console.log("Squared number is: ", number.number1);
     })
