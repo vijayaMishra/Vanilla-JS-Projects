@@ -61,3 +61,8 @@ body {
     box-shadow: 0 4px 6px rgb(86, 18, 18);
     transform: scale(0.95); 
 }
+.scrollBottomBtn {
+}
+
+.scrollBottomBtn:hover {
+}
