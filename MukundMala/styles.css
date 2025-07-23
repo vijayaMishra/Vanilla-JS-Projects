@@ -1,6 +1,10 @@
 body {
     margin-bottom: 50%;
 }
+.subheader {
+    margin-top: 0px;
+    font-family: "Great Vibes", cursive;
+}
 .headerContainer {
     display: flex;
     flex-direction: column;
@@ -10,15 +14,17 @@ body {
     font-size: 35px;
     font-family: "M PLUS Rounded 1c", sans-serif;
 }
-.subheader {
-    margin-top: 0px;
-}
+
 .verseHeader {
     font-weight: bold;
     font-size: 18px;
-    font-family: "Great Vibes", cursive;
+    font-family: "M PLUS Rounded 1c", sans-serif;
 }
 .sanskritVerse {
     font-family: 'Poppins', sans-serif;
+    
+}
+
+.meaningBtn {
     
 }
