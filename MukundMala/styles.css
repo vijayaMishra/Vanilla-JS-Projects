@@ -4,21 +4,25 @@ body {
 .subheader {
     margin-top: 0px;
     font-family: "Great Vibes", cursive;
+    color: rgb(86, 18, 18);
 }
 .headerContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .header {
     font-size: 35px;
     font-family: "M PLUS Rounded 1c", sans-serif;
+    color: rgb(65, 9, 65);
 }
 
 .verseHeader {
     font-weight: bold;
     font-size: 18px;
     font-family: "M PLUS Rounded 1c", sans-serif;
+    color: rgb(65, 9, 65);
 }
 .sanskritVerse {
     font-family: 'Poppins', sans-serif;
