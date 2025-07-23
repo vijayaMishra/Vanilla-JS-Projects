@@ -24,7 +24,36 @@ body {
     font-family: 'Poppins', sans-serif;
     
 }
+.sanskritVerse:hover {
+    color: rgb(10, 10, 75);
+}
 
 .meaningBtn {
-    
+    all:unset;
+    border: 2px solid rgb(65, 9, 65);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: rgb(65, 9, 65);
+    color: whitesmoke;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgb(65, 9, 65);
+}
+/* .meaningBtn:hover {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+} */
+.meaningBtn:active {
+    border: 2px solid rgb(86, 18, 18);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: rgb(86, 18, 18);
+    color: white;
+    box-shadow: 0 4px 6px rgb(86, 18, 18);
+    transform: scale(0.95); 
 }
