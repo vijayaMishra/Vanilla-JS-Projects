@@ -8,7 +8,17 @@ body {
 }
 .header {
     font-size: 35px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
 }
 .subheader {
     margin-top: 0px;
+}
+.verseHeader {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Great Vibes", cursive;
+}
+.sanskritVerse {
+    font-family: 'Poppins', sans-serif;
+    
 }
