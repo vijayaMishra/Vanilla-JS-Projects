@@ -73,3 +73,17 @@ li {
     /* font-family: "Raleway", sans-serif; */
     font-family: 'Poppins', sans-serif;
 }
+.scrollToBottomBtn {
+    all: unset;
+    margin: 10px;
+    position: fixed;
+    /* border: 2px solid red; */
+    font-size: 24px;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 60%;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    background-color: #e5eff5;
+    box-shadow: 0 4px 6px #e5eff5;
+}
