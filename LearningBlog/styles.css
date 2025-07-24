@@ -29,6 +29,7 @@ body {
     border-radius: 5px;
     margin-left: 12px;
     padding: 4px 8px;
+    box-shadow: 0 4px 6px #487fa5;
 }
 .dateNDayDiv {
     display: inline-flex;
@@ -38,24 +39,28 @@ body {
     margin-top: -50px;
 }
 .eachDayDiv {
-    border: 2px solid #d14584;
-    margin-top: 25px;
+    border: 10px solid transparent;
+    box-shadow: inset 0 -5px 5px -5px gray;
+    /* margin-top: 25px; */
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 25px;
     padding: 25px 20px 15px 20px; /* top and horizontal padding*/
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    padding-bottom: 40px;
+    padding-top:0px;
 }
 .date {
     display: inline-flex;
     font-size: 18px;
-    background-color: #d14584;
+    background-color: rgb(70, 67, 67);
     color: white;
     /* color: #70587C; */
     padding: 4px 8px;
     border-radius: 5px;
     /* border: 1px solid #d14584; */
-    margin-bottom: 1px;
+    margin-bottom: 6px;
+    
 }
 .day {
     margin-top: 1px;
