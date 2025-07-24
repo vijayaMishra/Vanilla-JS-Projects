@@ -10,3 +10,9 @@ meaningBtnElement.addEventListener("click", function redirectToMeaningPage() {
     window.location.href = "meaningPage.html";
 });
 
+const sanskritVerseElements = document.querySelectorAll(".sanskritVerse");
+sanskritVerseElements.forEach(function displayMeanings(sanskritVerseElement) {
+    sanskritVerseElement.addEventListener("click", function displayMeaning() {
+        console.log("Hi!");
+    });
+});
