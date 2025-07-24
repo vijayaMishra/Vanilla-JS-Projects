@@ -1,5 +1,6 @@
 body {
     margin-bottom: 50%;
+    /* border: 2px solid red; */
 }
 .subheader {
     margin-top: 0px;
@@ -61,8 +62,20 @@ body {
     box-shadow: 0 4px 6px rgb(86, 18, 18);
     transform: scale(0.95); 
 }
+
 .scrollBottomBtn {
+    all: unset;
+    /* border: 1px solid red; */
+    padding: 8px 15px;
+    border-radius: 60%;
+    background-color: ghostwhite;
+    position: fixed;
+    font-size: 24px;
+    bottom: 30px; /* distance from bottom */
+    right: 30px;  
 }
 
 .scrollBottomBtn:hover {
+    transform: scale(0.95);
+    color: rgb(86, 18, 18);
 }
