@@ -19,7 +19,7 @@ body {
     color: rgb(65, 9, 65);
 }
 
-.verseHeader {
+.verseHeader, .verseMeaning {
     font-weight: bold;
     font-size: 18px;
     font-family: "M PLUS Rounded 1c", sans-serif;
