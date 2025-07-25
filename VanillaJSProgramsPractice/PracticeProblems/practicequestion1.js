@@ -16,7 +16,7 @@ console.log("First book author: ", books[0].author);
 function getBookFromAuthor(author) {
     for(let i=0; i<books.length; i++) {
         if(books[i].author === author) {
-            return books[i].title;
+            return books[i];
         }
     }
 }
