@@ -81,3 +81,8 @@ body {
     transform: scale(0.95);
     color: rgb(86, 18, 18);
 }
+.meaningBox {
+    margin-top: 10px;
+    font-style: italic;
+    color: darkgreen;
+}

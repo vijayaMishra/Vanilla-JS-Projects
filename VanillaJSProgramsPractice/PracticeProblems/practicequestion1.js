@@ -14,11 +14,13 @@ console.log("First book title: ", books[0].title);
 console.log("First book author: ", books[0].author);
 
 function getBookFromAuthor(author) {
+    // not this function should return array of books if same author is found
     for(let i=0; i<books.length; i++) {
         if(books[i].author === author) {
             return books[i];
         }
     }
 }
+
 
 console.log("Author name is: ", getBookFromAuthor("Hal Elrod"));
