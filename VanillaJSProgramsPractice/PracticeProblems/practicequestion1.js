@@ -15,6 +15,8 @@ console.log("First book author: ", books[0].author);
 
 function getBookFromAuthor(author) {
     // not this function should return array of books if same author is found
+
+    // and next create a sep function which will return authos based of book title
     for(let i=0; i<books.length; i++) {
         if(books[i].author === author) {
             return books[i];
