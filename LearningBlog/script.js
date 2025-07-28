@@ -1,9 +1,20 @@
-function scrollToBottom() {
-    window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: "smooth"
-    });
-}
+
+const scrollToBottomBtnElement = document.querySelector(".scrollToBottomBtn");
+scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(event) {
+    if(event.target.innerText === "↓") { // go to bottom
+        event.target.innerText = "↑";
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth"
+        });
+    } else {
+        event.target.innerText = "↓";  // go to top
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+});
 
 let weeklyStudyData = [
     [
