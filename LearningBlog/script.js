@@ -20,37 +20,44 @@ let weeklyStudyData = [
         }
     ],
     [
-        {"date": "26-July-2025", "day": "saturday", "learnings": [
-        "No Learnings (Watched Mahaavtar Nrshimha movie)"
-        ]
-        },
-        {"date": "25-July-2025", "day": "friday", "learnings": [
-            "Learnt a new property: position:fixed which made the scroll to bottom arrow stick to the right bottom size."
+        {
+            "date": "26-July-2025", "day": "saturday", "learnings": [
+                "No Learnings (Watched Mahavatar Narsimha movie)"
             ]
         },
-        {"date": "24-July-2025", "day": "thursday", "learnings": [
-            "Learnt a new property: position:fixed which made the scroll to bottom arrow stick to the right bottom size."
+        {
+            "date": "25-July-2025", "day": "friday", "learnings": [
+                "Learnt a new property: position:fixed which made the scroll to bottom arrow stick to the right bottom size."
             ]
         },
-        {"date": "23-July-2025", "day": "wednesday", "learnings": [
-            "Started Mukund Mala Project"
+        {
+            "date": "24-July-2025", "day": "thursday", "learnings": [
+                "Learnt a new property: position:fixed which made the scroll to bottom arrow stick to the right bottom size."
             ]
         },
-        {"date": "22-July-2025", "day": "tuesday", "learnings": [
-            "Learnt about display: inline element",
-            "It flows with the text i.e., it appears within a line",
-            "Only takes up as much width as its content i.e., It does not stretch to the full width of its container like a block element does."
+        {
+            "date": "23-July-2025", "day": "wednesday", "learnings": [
+                "Started Mukund Mala Project"
             ]
         },
-        {"date": "21-July-2025", "day": "monday", "learnings": [
-            "Create a promise that resolves with a string 'Loading finished' only if isLoaded is true, else reject with 'Loading failed', " +
-            "Learnt about display: inline-flex, only takes up as much as width as its content and flex enables the element becomes a flex container, enabling flexbox layout for its children"
+        {
+            "date": "22-July-2025", "day": "tuesday", "learnings": [
+                "Learnt about display: inline element",
+                "It flows with the text i.e., it appears within a line",
+                "Only takes up as much width as its content i.e., It does not stretch to the full width of its container like a block element does."
             ]
         },
-        {"date": "20-July-2025", "day": "sunday", "learnings": [
-            "Creating promise to resolve with 'Task Completed' message",
-            "Creating a promise that rejects after 3 seconds with the message 'Something went wrong'",
-            "Create a Promise that resolves immediately with the number 42."
+        {
+            "date": "21-July-2025", "day": "monday", "learnings": [
+                "Create a promise that resolves with a string 'Loading finished' only if isLoaded is true, else reject with 'Loading failed', " +
+                "Learnt about display: inline-flex, only takes up as much as width as its content and flex enables the element becomes a flex container, enabling flexbox layout for its children"
+            ]
+        },
+        {
+            "date": "20-July-2025", "day": "sunday", "learnings": [
+                "Creating promise to resolve with 'Task Completed' message",
+                "Creating a promise that rejects after 3 seconds with the message 'Something went wrong'",
+                "Create a Promise that resolves immediately with the number 42."
             ]
         }
     ]
@@ -116,11 +123,6 @@ function createDailyLearningDiv(date, day, learningContent, weeklyViewElement) {
         liElement.textContent = learningContent[i];
         ulElement.appendChild(liElement);
     }
-
-
-
-
-
 }
 
 for(let i = 0; i < weeklyStudyData.length; i++) {
