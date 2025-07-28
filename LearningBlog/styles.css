@@ -20,16 +20,22 @@ body {
     margin-top: -30px;
 }
 .sunToSatContainer {
-    width: 100px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     padding: 5px;
+    /*border: 2px solid red;*/
 }
-.sunToSatContainer img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.image {
+    /*border: 2px solid black;*/
+    width: 220px;
+    height: 80px
 }
+/*.sunToSatContainer img {*/
+/*    width: auto;*/
+/*    height: auto;*/
+/*    max-width: none;*/
+/*}*/
 .sunToSat {
     display: inline-flex;
     justify-content: center;
@@ -38,7 +44,9 @@ body {
     /* color: white; */
     border-radius: 5px;
     margin-left: 12px;
-    padding: 4px 8px;
+    padding: 7px 18px;
+    margin-top: 0;
+    margin-bottom: 0;
     /* box-shadow: 0 4px 6px #487fa5; */
     font-family: "Parisienne", cursive;
 }
@@ -76,7 +84,7 @@ body {
 .day {
     /* margin-top: 1px; */
     color: #280a36;
-    letter-spacing: 2px;
+    /*letter-spacing: 2px;*/
     font-size: 28px;
     padding-left: 12px;
     /* font-family: "Great Vibes", cursive; */
