@@ -23,7 +23,8 @@ let weeklyStudyData = [
                 "Added Beautiful red floral to the Learning Blog UI",
                 "Created UI from 2D Array which has Weekly and Daily learning data",
                 "Returning weekly element from a function and then reusing it in create daily div element",
-                "Redoing entire Learning Blog UI through more of JS instead of HTML"
+                "Redoing entire Learning Blog UI through more of JS instead of HTML",
+                "Added scroll-to-top button functionality when the user reaches the bottom of the page, complementing the existing scroll-to-bottom feature available at the top."
             ]
         },
         {
