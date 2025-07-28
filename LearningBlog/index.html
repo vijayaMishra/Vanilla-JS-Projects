@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Learning Blog</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Parisienne&family=Great+Vibes&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Parisienne&family=Sacramento&family=Dancing+Script&family=Great+Vibes&family=Raleway&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -13,56 +13,10 @@
         <h2 class="title">Learning Blog</h2>
     </div>
 
-    <div class="sunToSatContainer">
-        <h4 class="sunToSat">Weekly Overview</h4>
-        <img class="image" src="border-redflower.png" alt="border image">
-    </div>
+    <button onclick="scrollToBottom()" class="scrollToBottomBtn">↓</button>
+    <br>
 
-    <div class="weeklyView">
-        <ul class="dailyDiv">
-            <div class="dateNDayDiv">
-                <p class="date">25-Jul-2025</p>
-                <p class="day">friday</p>
-            </div>
-            <li>Learnt a new property: position:fixed which made the scroll to bottom arrow stick to the right bottom size.</li>
-        </ul>
-
-        <ul class="dailyDiv">
-            <div class="dateNDayDiv"><p class="date">24-Jul-2025</p><p class="day">thursday</p></div>
-            <li>Learnt a new property: position:fixed which made the scroll to bottom arrow stick to the right bottom size.</li>
-        </ul>
-
-        <ul class="dailyDiv">
-            <div class="dateNDayDiv"><p class="date">23-Jul-2025</p><p class="day">wednesday</p></div>
-            <li>Started Mukund Mala Project</li>
-        </ul>
-
-        <ul class="dailyDiv">
-            <div class="dateNDayDiv"><p class="date">22-Jul-2025</p><p class="day">tuesday</p></div>
-            <li>Learnt about display: inline element
-                <li>It flows with the text i.e., it appears within a line</li>
-                <li>Only takes up as much width as its content i.e., It does not stretch to the full width of its container like a block element does.</li>
-            </li>
-            <li>Learning function chaining</li>
-        </ul>
-
-        <ul class="dailyDiv">
-            <div class="dateNDayDiv"><p class="date">21-Jul-2025</p><p class="day">monday</p></div>
-            <li>Create a promise that resolves with a string "Loading finished" only if isLoaded is true, else reject with "Loading failed"</li>
-            <li>Learnt about display: inline-flex, only takes up as much as width as its content and flex enables the element becomes a flex container, enabling flexbox layout for its children</li>
-        </ul>
-
-        <ul class="dailyDiv">
-            <div class="dateNDayDiv"><p class="date">20-Jul-2025</p><p class="day">sunday</p></div>
-            <li>Creating promise to resolve with "Task Completed" message</li>
-            <li>Creating a promise that rejects after 3 seconds with the message "Something went wrong"</li>
-            <li>Create a Promise that resolves immediately with the number 42.</li>
-        </ul>
-
-        <button onclick="scrollToBottom()" class="scrollToBottomBtn">↓</button>
-        <br>
-        <script src="script.js"></script>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
 

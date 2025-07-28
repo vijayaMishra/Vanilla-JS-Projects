@@ -5,6 +5,9 @@ body {
     padding: 4px;
     height: 100vh;
 }
+p {
+    margin: 0;
+}
 .titleContainer {
     display: flex;
     justify-content: center;
@@ -24,6 +27,7 @@ body {
     flex-direction: row;
     justify-content: center;
     padding: 5px;
+    margin-top: 10px;
     /*border: 2px solid red;*/
 }
 .image {
@@ -49,6 +53,7 @@ body {
     margin-bottom: 0;
     /* box-shadow: 0 4px 6px #487fa5; */
     font-family: "Parisienne", cursive;
+    /*font-family: "Dancing Script", cursive;*/
 }
 .dateNDayDiv {
     display: inline-flex;
@@ -63,11 +68,9 @@ body {
     /* margin-top: 25px; */
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 25px;
-    padding: 25px 20px 15px 20px; /* top and horizontal padding*/
+    margin-bottom: 15px;
+    padding: 20px 20px 15px 20px; /* top and horizontal padding*/
     /* border-radius: 10px; */
-    padding-bottom: 40px;
-    padding-top:0px;
 }
 .date {
     display: inline-flex;
@@ -77,8 +80,7 @@ body {
     /* color: #70587C; */
     padding: 4px 8px;
     border-radius: 5px;
-    /* border: 1px solid #d14584; */
-    /* margin-bottom: 6px; */
+
     
 }
 .day {
@@ -88,7 +90,7 @@ body {
     font-size: 28px;
     padding-left: 12px;
     /* font-family: "Great Vibes", cursive; */
-    font-family: "Parisienne", cursive;
+    font-family: "Dancing Script", cursive;
     font-weight: bold;
     /* border: 1px solid greenyellow; */
 }

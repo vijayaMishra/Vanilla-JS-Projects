@@ -8,46 +8,46 @@ function scrollToBottom() {
 let weeklyStudyData = [
     [
         {
-            "date": "28-July-2025", "day": "Monday", "learnings": [
+            "date": "28-July-2025", "day": "monday", "learnings": [
                 "Added Beautiful red floral to the Learning Blog UI",
                 "Redoing entire Learning Blog UI through more of JS instead of HTML"
             ]
         },
         {
-            "date": "27-July-2025", "day": "Sunday", "learnings": [
+            "date": "27-July-2025", "day": "sunday", "learnings": [
                 "No Learnings"
             ]
         }
     ],
     [
-        {"date": "26-July-2025", "day": "Saturday", "learnings": [
+        {"date": "26-July-2025", "day": "saturday", "learnings": [
         "No Learnings (Watched Mahaavtar Nrshimha movie)"
         ]
         },
-        {"date": "25-July-2025", "day": "Friday", "learnings": [
+        {"date": "25-July-2025", "day": "friday", "learnings": [
             "Learnt a new property: position:fixed which made the scroll to bottom arrow stick to the right bottom size."
             ]
         },
-        {"date": "24-July-2025", "day": "Thursday", "learnings": [
+        {"date": "24-July-2025", "day": "thursday", "learnings": [
             "Learnt a new property: position:fixed which made the scroll to bottom arrow stick to the right bottom size."
             ]
         },
-        {"date": "23-July-2025", "day": "Wednesday", "learnings": [
+        {"date": "23-July-2025", "day": "wednesday", "learnings": [
             "Started Mukund Mala Project"
             ]
         },
-        {"date": "22-July-2025", "day": "Tuesday", "learnings": [
+        {"date": "22-July-2025", "day": "tuesday", "learnings": [
             "Learnt about display: inline element",
             "It flows with the text i.e., it appears within a line",
             "Only takes up as much width as its content i.e., It does not stretch to the full width of its container like a block element does."
             ]
         },
-        {"date": "21-July-2025", "day": "Monday", "learnings": [
+        {"date": "21-July-2025", "day": "monday", "learnings": [
             "Create a promise that resolves with a string 'Loading finished' only if isLoaded is true, else reject with 'Loading failed', " +
             "Learnt about display: inline-flex, only takes up as much as width as its content and flex enables the element becomes a flex container, enabling flexbox layout for its children"
             ]
         },
-        {"date": "20-July-2025", "day": "Sunday", "learnings": [
+        {"date": "20-July-2025", "day": "sunday", "learnings": [
             "Creating promise to resolve with 'Task Completed' message",
             "Creating a promise that rejects after 3 seconds with the message 'Something went wrong'",
             "Create a Promise that resolves immediately with the number 42."
@@ -57,51 +57,77 @@ let weeklyStudyData = [
 ];
 
 console.log(weeklyStudyData);
-const sunToSatContainerDivElement = document.createElement("div");
-sunToSatContainerDivElement.classList.add("sunToSatContainer");
 
-const h4Element = document.createElement("h4");
-h4Element.classList.add("sunToSat");
+function createWeeklyView() {
+    const sunToSatContainerDivElement = document.createElement("div");
+    sunToSatContainerDivElement.classList.add("sunToSatContainer");
 
-const imgElement = document.createElement("img");
-imgElement.classList.add("image");
+    const h4Element = document.createElement("h4");
+    h4Element.classList.add("sunToSat");
+    h4Element.textContent = "Weekly Overview";
 
-sunToSatContainerDivElement.appendChild(h4Element);
-sunToSatContainerDivElement.appendChild(imgElement);
+    const imgElement = document.createElement("img");
+    imgElement.classList.add("image");
+    imgElement.src = "border-redflower.png";
 
-const weeklyViewElement = document.createElement("div");
-weeklyViewElement.classList.add("weeklyView");
+    const weeklyViewElement = document.createElement("div");
+    weeklyViewElement.classList.add("weeklyView");
 
-function createDailyLearningDiv(date, day, learningContent) {
-    const dailyDivElement = document.createElement("ul");
+    sunToSatContainerDivElement.appendChild(h4Element);
+    sunToSatContainerDivElement.appendChild(imgElement);
+
+    weeklyViewElement.appendChild(sunToSatContainerDivElement);
+
+    document.body.appendChild(weeklyViewElement);
+
+    return weeklyViewElement;
+}
+
+
+function createDailyLearningDiv(date, day, learningContent, weeklyViewElement) {
+    const dailyDivElement = document.createElement("div");
     dailyDivElement.classList.add("dailyDiv");
+    weeklyViewElement.appendChild(dailyDivElement);
+
 
     const dateNDayDivElement = document.createElement("div");
     dateNDayDivElement.classList.add("dateNDayDiv");
+    dailyDivElement.appendChild(dateNDayDivElement);
+
 
     const dateDiv = document.createElement("p");
     dateDiv.classList.add("date")
     dateDiv.textContent = date;
+    dateNDayDivElement.appendChild(dateDiv);
+
+
     const dayDiv = document.createElement("p");
     dayDiv.classList.add("day");
     dayDiv.textContent = day;
-
-    const liElement = document.createElement("li");
-
-    liElement.textContent = learningContent;
-
-    weeklyViewElement.appendChild(dailyDivElement);
-    dailyDivElement.appendChild(dateNDayDivElement);
-    dailyDivElement.appendChild(liElement);
-    dateNDayDivElement.appendChild(dateDiv);
     dateNDayDivElement.appendChild(dayDiv);
-    document.body.appendChild(weeklyViewElement);
+
+
+    const ulElement = document.createElement("ul");
+    dailyDivElement.appendChild(ulElement);
+
+
+    for(let i = 0; i < learningContent.length; i++) {
+        const liElement = document.createElement("li");
+        liElement.textContent = learningContent[i];
+        ulElement.appendChild(liElement);
+    }
+
+
+
+
+
 }
 
 for(let i = 0; i < weeklyStudyData.length; i++) {
-    for (let j = 0; j < weeklyStudyData.length; j++) {
+    const weeklyViewElement = createWeeklyView();
+    for (let j = 0; j < weeklyStudyData[i].length; j++) {
         console.log(weeklyStudyData[i][j]);
-        createDailyLearningDiv(weeklyStudyData[i][j].date, weeklyStudyData[i][j].day, weeklyStudyData[i][j].learnings);
+        createDailyLearningDiv(weeklyStudyData[i][j].date, weeklyStudyData[i][j].day, weeklyStudyData[i][j].learnings, weeklyViewElement);
     }
 }
 
