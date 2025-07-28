@@ -57,7 +57,7 @@ body {
     align-items: center;
     margin-top: -50px;
 }
-.eachDayDiv {
+.dailyDiv {
     border: 10px solid transparent;
     box-shadow: inset 0 -5px 5px -5px gray;
     /* margin-top: 25px; */
