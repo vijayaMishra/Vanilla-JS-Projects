@@ -10,6 +10,8 @@ let weeklyStudyData = [
         {
             "date": "28-July-2025", "day": "monday", "learnings": [
                 "Added Beautiful red floral to the Learning Blog UI",
+                "Created UI from 2D Array which has Weekly and Daily learning data",
+                "Returning weekly element from a function and then reusing it in create daily div element",
                 "Redoing entire Learning Blog UI through more of JS instead of HTML"
             ]
         },
