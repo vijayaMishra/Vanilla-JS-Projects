@@ -1,0 +1,36 @@
+body {
+    padding: 20px;
+    background: #f9f9f9;
+    font-size: 24px;
+    line-height: 2;
+}
+.lobster {
+    font-family: 'Lobster', cursive;
+}
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+.raleway {
+    font-family: "Raleway", sans-serif;
+}
+.greatvibes {
+    font-family: "Great Vibes", cursive;
+}
+.sacramento {
+    font-family: "Sacramento", cursive;
+}
+.dancing-script {
+        font-family: "Dancing Script", cursive;
+}
+.parisienne {
+    font-family: "Parisienne", cursive;
+}
