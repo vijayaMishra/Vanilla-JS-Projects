@@ -19,6 +19,15 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "29-July-2025",
+            "day": "tuesday",
+            "learnings": [
+                "Enhancing font styles to improve visual appeal on the Sarjapur Road site.",
+                "To do: Understand search feature in Fonts page",
+                "To do: Create a custom font-family and add the necessary <link> tag in the Fonts project's homepage to apply it."
+            ]
+        },
+        {
             "date": "28-July-2025", "day": "monday", "learnings": [
                 "Added Beautiful red floral to the Learning Blog UI",
                 "Created UI from 2D Array which has Weekly and Daily learning data",
