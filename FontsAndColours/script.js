@@ -72,4 +72,20 @@ fontsContainerElement.appendChild(pElement);
 // pElement.classList.add("");
 // pElement.textContent = "This is the  font – .";
 
+pElement = document.createElement("p");
+pElement.textContent = "#E0EDEE, #475E67, #A4B4BE, #EAE1D0, #DCC8BC";
+document.body.appendChild(pElement);
 
+let imgElement = document.createElement("img");
+imgElement.src = "Images/pastelcreamishcolor.png";
+imgElement.alt = "pastelCoolColours";
+document.body.appendChild(imgElement);
+
+pElement = document.createElement("p");
+pElement.textContent = "#EFE1E1, #F0D2DA, #E0C1C6, #D1B4C6, #CBC4D6";
+document.body.appendChild(pElement);
+
+imgElement = document.createElement("img");
+imgElement.src = "Images/pastelCoolColours.png";
+imgElement.alt = "pastelCoolColours";
+document.body.appendChild(imgElement);
