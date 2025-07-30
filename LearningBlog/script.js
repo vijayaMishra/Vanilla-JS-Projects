@@ -24,6 +24,8 @@ let weeklyStudyData = [
             "learnings": [
                 "Enhancing font styles to improve visual appeal on the Sarjapur Road site.",
                 "If you created a new div element using JS and want to give it 'id' then it can be done using fontsContainerElement.id = 'fontsContainerClass'",
+                "New command: git reset --hard HEAD",
+                "Updating FontsAndColours project, re-doing it through JS instead of adding data in HTML ",
                 "To do: Understand search feature in Fonts page",
                 "To do: Create a custom font-family and add the necessary <link> tag in the Fonts project's homepage to apply it."
             ]
