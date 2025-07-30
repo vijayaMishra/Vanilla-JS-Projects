@@ -20,16 +20,17 @@ function createFontsStyleUI() {
     document.body.appendChild(fontsContainerElement);
 
     const fontDetails = [
-        {"fontName": "sacramento", "fontTextContent": "This is the Sacramento font - elegant but not too curly, handwritten style."},
+        {"fontName": "montserrat", "fontTextContent": "This is the Montserrat font – modern and geometric."},
+        {"fontName": "raleway", "fontTextContent": "This is the Raleway font – thin, uppercase modern sans-serif, clean look."},
+        {"fontName": "poppins", "fontTextContent": "This is the Poppins font – clean and rounded."},
+        
         {"fontName": "dancing-script", "fontTextContent": "This is the Dancing Script – flowing and friendly."},
+        {"fontName": "sacramento", "fontTextContent": "This is the Sacramento font - elegant but not too curly, handwritten style."},
         {"fontName": "parisienne", "fontTextContent": "This is the Parisienne – ophisticated, aesthetic vibe"},
         {"fontName": "greatvibes", "fontTextContent": "This is the Great Vibes font - cursive, graceful calligraphy. (Soft, Feminine & Artistic)"},
         {"fontName": "satisfy", "fontTextContent": "This is the Satisfy - Smooth, clean cursive."},
-        {"fontName": "poppins", "fontTextContent": "This is the Poppins font – clean and rounded."},
-        {"fontName": "raleway", "fontTextContent": "This is the Raleway font – thin, uppercase modern sans-serif, clean look."},
         {"fontName": "playfair", "fontTextContent": "This is the Playfair Display font – elegant and serifed."},
         {"fontName": "lobster", "fontTextContent": "This is the Lobster font – decorative and fun."},
-        {"fontName": "montserrat", "fontTextContent": "This is the Montserrat font – modern and geometric."},
         {"fontName": "orbitron", "fontTextContent": "This is the Orbitron font – futuristic and techy."}
     ]
 
