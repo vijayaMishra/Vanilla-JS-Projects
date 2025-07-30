@@ -8,48 +8,71 @@ document.querySelector('#inputTextField').addEventListener('input', function han
 
 // const alreadyPresentFontsContainerElement = document.querySelector("#fontsContainer");
 // console.log(alreadyPresentFontsContainerElement);
+function createFontsStyleUI() {
 
-const fontsContainerElement = document.createElement("div");
-fontsContainerElement.id = "fontsContainer";
-document.body.appendChild(fontsContainerElement);
+    const fontsHeading = document.createElement("div");
+    fontsHeading.textContent = "Cool Font Styles";
+    fontsHeading.classList.add("fontHeading");
+    document.body.appendChild(fontsHeading);
 
-const fontDetails = [
-    {"fontName": "lobster", "fontTextContent": "This is the Lobster font – decorative and fun."},
-    {"fontName": "montserrat", "fontTextContent": "This is the Montserrat font – modern and geometric."},
-    {"fontName": "orbitron", "fontTextContent": "This is the Orbitron font – futuristic and techy."},
-    {"fontName": "playfair", "fontTextContent": "This is the Playfair Display font – elegant and serifed."},
-    {"fontName": "poppins", "fontTextContent": "This is the Poppins font – clean and rounded."},
-    {"fontName": "raleway", "fontTextContent": "This is the Raleway font – thin, uppercase modern sans-serif, clean look."},
-    {"fontName": "greatvibes", "fontTextContent": "This is the Great Vibes font - cursive, graceful calligraphy. (Soft, Feminine & Artistic)"},
-    {"fontName": "sacramento", "fontTextContent": "This is the Sacramento font - elegant but not too curly, handwritten style."},
-    {"fontName": "dancing-script", "fontTextContent": "This is the Dancing Script – flowing and friendly."},
-    {"fontName": "parisienne", "fontTextContent": "This is the Parisienne – ophisticated, aesthetic vibe"},
-    {"fontName": "satisfy", "fontTextContent": "This is the Satisfy - Smooth, clean cursive."},
-]
+    const fontsContainerElement = document.createElement("div");
+    fontsContainerElement.id = "fontsContainer";
+    document.body.appendChild(fontsContainerElement);
 
-for(let i= 0; i < fontDetails.length; i++) {
-    let pElement = document.createElement("p");
-    pElement.classList.add(fontDetails[i].fontName);
-    console.log("Hi");
-    pElement.textContent = fontDetails[i].fontTextContent;
-    fontsContainerElement.appendChild(pElement);
-    console.log(fontsContainerElement);
+    const fontDetails = [
+        {"fontName": "satisfy", "fontTextContent": "This is the Satisfy - Smooth, clean cursive."},
+        {"fontName": "playfair", "fontTextContent": "This is the Playfair Display font – elegant and serifed."},
+        {"fontName": "poppins", "fontTextContent": "This is the Poppins font – clean and rounded."},
+        {"fontName": "raleway", "fontTextContent": "This is the Raleway font – thin, uppercase modern sans-serif, clean look."},
+        {"fontName": "greatvibes", "fontTextContent": "This is the Great Vibes font - cursive, graceful calligraphy. (Soft, Feminine & Artistic)"},
+        {"fontName": "sacramento", "fontTextContent": "This is the Sacramento font - elegant but not too curly, handwritten style."},
+        {"fontName": "dancing-script", "fontTextContent": "This is the Dancing Script – flowing and friendly."},
+        {"fontName": "parisienne", "fontTextContent": "This is the Parisienne – ophisticated, aesthetic vibe"},
+        {"fontName": "lobster", "fontTextContent": "This is the Lobster font – decorative and fun."},
+        {"fontName": "montserrat", "fontTextContent": "This is the Montserrat font – modern and geometric."},
+        {"fontName": "orbitron", "fontTextContent": "This is the Orbitron font – futuristic and techy."}
+    ]
+
+    for(let i= 0; i < fontDetails.length; i++) {
+        let pElement = document.createElement("p");
+        pElement.classList.add(fontDetails[i].fontName);
+        console.log("Hi");
+        pElement.textContent = fontDetails[i].fontTextContent;
+        fontsContainerElement.appendChild(pElement);
+        console.log(fontsContainerElement);
+    }
 }
 
-let pElement = document.createElement("p");
-pElement.textContent = "#E0EDEE, #475E67, #A4B4BE, #EAE1D0, #DCC8BC";
-document.body.appendChild(pElement);
+function createCoolColoursVariationUI() {
+    const colourHeading = document.createElement("div");
+    colourHeading.textContent = "Cool Colours to pick from";
+    colourHeading.classList.add("colourHeading");
+    document.body.appendChild(colourHeading);
 
-let imgElement = document.createElement("img");
-imgElement.src = "Images/pastelcreamishcolor.png";
-imgElement.alt = "pastelCoolColours";
-document.body.appendChild(imgElement);
+    const colourDetails = [
+        {
+            "textContent": "#E0EDEE, #475E67, #A4B4BE, #EAE1D0, #DCC8BC", 
+            "src": "Images/pastelcreamishcolor.png", 
+            "alt": "pastelCoolColours"
+        },
+        {
+            "textContent": "#EFE1E1, #F0D2DA, #E0C1C6, #D1B4C6, #CBC4D6", 
+            "src": "Images/pastelCoolColours.png", 
+            "alt": "pastelCoolColours"
+        }
+    ];
 
-pElement = document.createElement("p");
-pElement.textContent = "#EFE1E1, #F0D2DA, #E0C1C6, #D1B4C6, #CBC4D6";
-document.body.appendChild(pElement);
+    for(let i = 0; i < colourDetails.length; i++) {
+        let pElement = document.createElement("p");
+        pElement.textContent = colourDetails[i].textContent;
+        document.body.appendChild(pElement);
 
-imgElement = document.createElement("img");
-imgElement.src = "Images/pastelCoolColours.png";
-imgElement.alt = "pastelCoolColours";
-document.body.appendChild(imgElement);
+        let imgElement = document.createElement("img");
+        imgElement.src = colourDetails[i].src;
+        imgElement.alt = colourDetails[i].alt;
+        document.body.appendChild(imgElement);
+    }
+}
+
+createFontsStyleUI();
+createCoolColoursVariationUI();

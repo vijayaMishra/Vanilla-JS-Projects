@@ -4,6 +4,13 @@ body {
     font-size: 24px;
     line-height: 2;
 }
+.colourHeading, .fontHeading {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
 .lobster {
     font-family: 'Lobster', cursive;
 }
