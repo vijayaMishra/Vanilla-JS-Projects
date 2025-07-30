@@ -13,66 +13,30 @@ const fontsContainerElement = document.createElement("div");
 fontsContainerElement.id = "fontsContainer";
 document.body.appendChild(fontsContainerElement);
 
+const fontDetails = [
+    {"fontName": "lobster", "fontTextContent": "This is the Lobster font – decorative and fun."},
+    {"fontName": "montserrat", "fontTextContent": "This is the Montserrat font – modern and geometric."},
+    {"fontName": "orbitron", "fontTextContent": "This is the Orbitron font – futuristic and techy."},
+    {"fontName": "playfair", "fontTextContent": "This is the Playfair Display font – elegant and serifed."},
+    {"fontName": "poppins", "fontTextContent": "This is the Poppins font – clean and rounded."},
+    {"fontName": "raleway", "fontTextContent": "This is the Raleway font – thin, uppercase modern sans-serif, clean look."},
+    {"fontName": "greatvibes", "fontTextContent": "This is the Great Vibes font - cursive, graceful calligraphy. (Soft, Feminine & Artistic)"},
+    {"fontName": "sacramento", "fontTextContent": "This is the Sacramento font - elegant but not too curly, handwritten style."},
+    {"fontName": "dancing-script", "fontTextContent": "This is the Dancing Script – flowing and friendly."},
+    {"fontName": "parisienne", "fontTextContent": "This is the Parisienne – ophisticated, aesthetic vibe"},
+    {"fontName": "satisfy", "fontTextContent": "This is the Satisfy - Smooth, clean cursive."},
+]
+
+for(let i= 0; i < fontDetails.length; i++) {
+    let pElement = document.createElement("p");
+    pElement.classList.add(fontDetails[i].fontName);
+    console.log("Hi");
+    pElement.textContent = fontDetails[i].fontTextContent;
+    fontsContainerElement.appendChild(pElement);
+    console.log(fontsContainerElement);
+}
+
 let pElement = document.createElement("p");
-pElement.classList.add("lobster");
-pElement.textContent = "This is the Lobster font – decorative and fun.";
-fontsContainerElement.appendChild(pElement);
-
-pElement = document.createElement("p");
-pElement.classList.add("montserrat");
-pElement.textContent = "This is the Montserrat font – modern and geometric.";
-fontsContainerElement.appendChild(pElement);
-
-pElement = document.createElement("p");
-pElement.classList.add("orbitron");
-pElement.textContent = "This is the Orbitron font – futuristic and techy.";
-fontsContainerElement.appendChild(pElement);
-
-pElement = document.createElement("p");
-pElement.classList.add("playfair");
-pElement.textContent = "This is the Playfair Display font – elegant and serifed.";
-fontsContainerElement.appendChild(pElement);
-
-pElement = document.createElement("p");
-pElement.classList.add("poppins");
-pElement.textContent = "This is the Poppins font – clean and rounded.";
-fontsContainerElement.appendChild(pElement);
-
-pElement = document.createElement("p");
-pElement.classList.add("raleway");
-pElement.textContent = "This is the Raleway font – thin, uppercase modern sans-serif, clean look.";
-fontsContainerElement.appendChild(pElement);
-
-pElement = document.createElement("p");
-pElement.classList.add("greatvibes");
-pElement.textContent = "This is the Great Vibes font - cursive, graceful calligraphy. (Soft, Feminine & Artistic)";
-fontsContainerElement.appendChild(pElement);
-
-pElement = document.createElement("p");
-pElement.classList.add("sacramento");
-pElement.textContent = "This is the Sacramento font - elegant but not too curly, handwritten style.";
-fontsContainerElement.appendChild(pElement);
-console.log("HIIII");
-
-pElement = document.createElement("p");
-pElement.classList.add("dancing-script");
-pElement.textContent = "This is the Dancing Script – flowing and friendly.";
-fontsContainerElement.appendChild(pElement);
-
-pElement = document.createElement("p");
-pElement.classList.add("parisienne");
-pElement.textContent = "This is the Parisienne – ophisticated, aesthetic vibe";
-fontsContainerElement.appendChild(pElement);
-
-pElement = document.createElement("p");
-pElement.classList.add("satisfy");
-pElement.textContent = "This is the Satisfy - Smooth, clean cursive.";
-fontsContainerElement.appendChild(pElement);
-// pElement = document.createElement("p");
-// pElement.classList.add("");
-// pElement.textContent = "This is the  font – .";
-
-pElement = document.createElement("p");
 pElement.textContent = "#E0EDEE, #475E67, #A4B4BE, #EAE1D0, #DCC8BC";
 document.body.appendChild(pElement);
 
