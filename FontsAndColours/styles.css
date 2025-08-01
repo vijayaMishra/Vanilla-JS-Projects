@@ -1,18 +1,25 @@
 body {
-    padding: 20px;
+    /* border: 2px solid red; */
+    padding: 10px;
+    /* margin: 0; */
     background: #f9f9f9;
-    font-size: 24px;
+    font-size: 45px;
     line-height: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.header {
+    color: rgb(5, 46, 32);
+    font-size: 50px;
+}
 .colourHeading, .fontHeading {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     text-align: center;
     border: 1px solid black;
     border-radius: 10px;
+    background-color: antiquewhite;
     padding: 0px 15px;
 }
 #inputTextField {
@@ -41,6 +48,9 @@ body {
 }
 .raleway {
     font-family: "Raleway", sans-serif;
+}
+.playwrite-de-va {
+    font-family: "Playwrite DE VA", cursive;
 }
 .greatvibes {
     font-family: "Great Vibes", cursive;
