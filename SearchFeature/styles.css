@@ -1,0 +1,19 @@
+.joyfulMelodies {
+    text-align: center;
+    font-size: 50px;
+}
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+}
+#searchBox {
+    text-align: center;
+    font-size: 30px;
+}
+.searchBoxParent {
+    display: flex;
+    justify-content: center;
+}
+p {
+    font-size: 30px;
+}
