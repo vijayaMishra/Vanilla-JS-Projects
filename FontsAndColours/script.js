@@ -92,7 +92,7 @@ function createCoolColoursVariationUI() {
 function insertImageAtTheEnd() {
     const imgElement = document.createElement("img");
     console.log(imgElement);
-    imgElement.src = "./Images/lastfloralimage.jpg";
+    imgElement.src = "./Images/lastfloralimage.png";
     imgElement.alt = "florals";
     document.body.appendChild(imgElement);
 }
