@@ -23,7 +23,8 @@ let weeklyStudyData = [
             "day": "friday",
             "learnings": [
                 "Q. What is onChange() and how to use it? A. When the value of an HTML element changes 'onchange' event handler runs a function. Used on form elements like <input>, <select> (dropdowns) etc.",
-                "Started Search Song project"
+                "Started Search Song project",
+                "IMPORTANT: when I was trying to create search song project, I was trying to do includes on array instead of doing it on array element."
             ]
         },
         {
