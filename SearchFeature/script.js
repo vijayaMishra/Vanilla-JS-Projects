@@ -1,7 +1,15 @@
 //1. create ui which will render list of bhajan names,
 //bhajanNames data will be array of songs(strings)
 
-let bhajanNames = [
+// 3. add onchange eventlistener 
+// and then from your bhajanList array, filter out songs having text 
+// you will get from e.target.value 4.Rerender whole UI with new array
+
+// while rendering create a function renderBhajans(willacceptarrayofsongs)
+// initially it will be renderBhajans(bhajanNames)
+// then in your onchange delete whole bhajans container/div
+// and again call same function renderBhajans with(filteredBhajans)
+let bhajanList = [
     "Hey Gopinath",
     "Bhajahu re mana",
     "Gauranga Karuna Koro",
@@ -16,12 +24,34 @@ let bhajanNames = [
     "Jay Radha Madhava"
 ];
 
-const containerElement = document.createElement("div");
-containerElement.classList.add("container");
-document.body.appendChild(containerElement);
+function displaySongsUI(bhajanList) {
+    const containerElement = document.createElement("div");
+    containerElement.classList.add("container");
+    document.body.appendChild(containerElement);
 
-for(let i = 0; i < bhajanNames.length; i++) {
-    let pElement = document.createElement("p");
-    pElement.textContent = bhajanNames[i];
-    containerElement.appendChild(pElement);
+    for(let i = 0; i < bhajanList.length; i++) {
+        let pElement = document.createElement("p");
+        pElement.textContent = bhajanList[i];
+        containerElement.appendChild(pElement);
+    }
 }
+displaySongsUI(bhajanList);
+
+function searchSong() {
+    let searchResults = [];
+    const searchInputElement = document.querySelector(".searchInput");
+    searchInputElement.addEventListener("change", function(event) {
+        //console.log(event.target.value);
+        const inputSongFromUser = event.target.value;
+        for(let i=0; i < bhajanList.length; i++) {
+            //console.log(bhajanList[i]);
+            if( bhajanList[i].includes(inputSongFromUser)) {
+                searchResults.push(inputSongFromUser);
+            }
+        }    
+        console.log(searchResults);
+    });
+    //console.log(searchResults);
+}
+
+searchSong();
