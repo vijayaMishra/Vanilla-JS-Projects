@@ -19,6 +19,31 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "1 August 2025",
+            "day": "friday",
+            "learnings": [
+                "What is onChange() and how to use it?",
+                "Started Search Song project"
+            ]
+        },
+        {
+            "date": "31-July-2025",
+            "day": "thursday",
+            "learnings": [
+                "Refined the look and feel of section heading like Upcoming, Past, Donate, etc. and other small elements to enhance the overall visual appeal of the Sarjapur website that prji is working on.",
+                "Added an image at the end of FantasticFonts&Colours website, increased font size for better readability."
+            ]
+        },
+        {
+            "date": "30-July-2025",
+            "day": "wednesday",
+            "learnings": [
+                "Worked on Fonts&Colours Project",
+                "Rendering Colours via an object of arrays which has colour details, similar to how Font styles are being rendered",
+                "Added title, center-aligned images, updated order of fonts that appear on main screen "
+            ]
+        },
+        {
             "date": "29-July-2025",
             "day": "tuesday",
             "learnings": [
