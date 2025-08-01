@@ -22,7 +22,7 @@ let weeklyStudyData = [
             "date": "1 August 2025",
             "day": "friday",
             "learnings": [
-                "What is onChange() and how to use it?",
+                "Q. What is onChange() and how to use it? A. When the value of an HTML element changes 'onchange' event handler runs a function. Used on form elements like <input>, <select> (dropdowns) etc.",
                 "Started Search Song project"
             ]
         },
