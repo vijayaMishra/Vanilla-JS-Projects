@@ -47,7 +47,8 @@ function createFontsStyleUI() {
         {"fontName": "dancing-script", "fontTextContent": "This is the Dancing Script – flowing and friendly."},
         {"fontName": "playfair", "fontTextContent": "This is the Playfair Display font – elegant and serifed."},
         {"fontName": "lobster", "fontTextContent": "This is the Lobster font – decorative and fun."},
-        {"fontName": "orbitron", "fontTextContent": "This is the Orbitron font – futuristic and techy."}
+        {"fontName": "orbitron", "fontTextContent": "This is the Orbitron font – futuristic and techy."},
+        {"fontName": "roboto", "fontTextContent": "Roboto – Very popular, balanced modern look"}
     ]
 
     for(let i= 0; i < fontDetails.length; i++) {

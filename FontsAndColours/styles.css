@@ -67,3 +67,15 @@ body {
 .satisfy {
   font-family: "Satisfy", cursive;
 }
+.roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+.e687ad {
+    background-color: #e687ad;
+    color: white;
+    padding:10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #e687ad;
+}
