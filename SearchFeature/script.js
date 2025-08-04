@@ -25,11 +25,13 @@ let bhajanList = [
 ];
 
 function displaySongsUI(bhajanList) {
+    console.log(bhajanList);
     const containerElement = document.createElement("div");
     containerElement.classList.add("container");
     document.body.appendChild(containerElement);
 
     for(let i = 0; i < bhajanList.length; i++) {
+        console.log(bhajanList[i]);
         let pElement = document.createElement("p");
         pElement.textContent = bhajanList[i];
         containerElement.appendChild(pElement);
@@ -45,8 +47,13 @@ function searchSong() {
         const inputSongFromUser = event.target.value;
         for(let i=0; i < bhajanList.length; i++) {
             //console.log(bhajanList[i]);
-            if( bhajanList[i].includes(inputSongFromUser)) {
+            if( bhajanList[i].toLowerCase().includes(inputSongFromUser)) {
                 searchResults.push(inputSongFromUser);
+                console.log(bhajanList[i]);
+                console.log("seasrchresults:", searchResults);
+                displaySongsUI(bhajanList[i]);
+                console.log("displaying only searched song in UI");
+                // console.log(event);
             }
         }    
         console.log(searchResults);
