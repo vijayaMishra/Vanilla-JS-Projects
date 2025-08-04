@@ -47,10 +47,12 @@ function searchSong() {
         const inputSongFromUser = event.target.value;
         for(let i=0; i < bhajanList.length; i++) {
             //console.log(bhajanList[i]);
+            const containerElement = document.querySelector(".container");
             if( bhajanList[i].toLowerCase().includes(inputSongFromUser)) {
                 searchResults.push(inputSongFromUser);
+                document.body.removeChild(containerElement);
                 console.log(bhajanList[i]);
-                console.log("seasrchresults:", searchResults);
+                console.log("searchresults:", searchResults);
                 displaySongsUI(bhajanList[i]);
                 console.log("displaying only searched song in UI");
                 // console.log(event);
