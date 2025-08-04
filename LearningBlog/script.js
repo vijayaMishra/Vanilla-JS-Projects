@@ -27,6 +27,13 @@ let weeklyStudyData = [
             ]
         },
         {
+            "date": "3 August 2025",
+            "day": "tuesday",
+            "learnings": [
+                "Full KC Day"
+            ]
+        },
+        {
             "date": "1 August 2025",
             "day": "friday",
             "learnings": [
