@@ -25,13 +25,17 @@ let bhajanList = [
 ];
 
 function displaySongsUI(bhajanList) {
+    if(bhajanList === "Hey Gopinath") {
+        bhajanList.length = 1;
+        console.log(bhajanList.length);
+    }
     console.log(bhajanList);
     const containerElement = document.createElement("div");
     containerElement.classList.add("container");
     document.body.appendChild(containerElement);
 
     for(let i = 0; i < bhajanList.length; i++) {
-        console.log(bhajanList[i]);
+        //console.log(bhajanList[i]);
         let pElement = document.createElement("p");
         pElement.textContent = bhajanList[i];
         containerElement.appendChild(pElement);
