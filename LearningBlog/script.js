@@ -19,6 +19,14 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "4 August 2025",
+            "day": "monday",
+            "learnings": [
+                "Search feature functional in Songs project",
+                "passed to a function like displaySongsUI() which expects an array, JavaScript treats the string as iterable and loops over each character — so to avoid this, I need to wrap the string in square brackets like displaySongsUI([bhajanList[i]]) to pass it as a one-item array."
+            ]
+        },
+        {
             "date": "1 August 2025",
             "day": "friday",
             "learnings": [
