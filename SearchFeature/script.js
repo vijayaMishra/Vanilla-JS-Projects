@@ -13,6 +13,7 @@ let bhajanList = [
     "Hey Gopinath",
     "Bhajahu re mana",
     "Gauranga Karuna Koro",
+    "Bado Kripa Koile Krishna",
     "Mama mana mandire",
     "Hari Hari Bifale",
     "Vaishnava Thakura",
