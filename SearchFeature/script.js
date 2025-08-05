@@ -31,23 +31,24 @@ let bhajanList = [
 console.log(bhajanList[0].name);
 console.log(bhajanList.length);
 
-
-function displaySongsUI(bhajanList) {
+function displaySongsUI(songsArray) {
     const containerElement = document.createElement("div");
     containerElement.classList.add("container");
     document.body.appendChild(containerElement);
 
-    for(let i = 0; i < bhajanList.length; i++) {
+    for(let i = 0; i < songsArray.length; i++) {
         // console.log(bhajanList[i]);
         let pElement = document.createElement("p");
-        pElement.textContent = bhajanList[i].name;
+        pElement.textContent = songsArray[i];
         containerElement.appendChild(pElement);
     }
 }
-
+let songsArray = [];
 for(let i=0; i< bhajanList.length; i++) {
-    displaySongsUI(bhajanList[i].name);
+    songsArray.push(bhajanList[i].name);
 }
+console.log("songsArray: ", songsArray);
+displaySongsUI(songsArray);
 
 function searchSong() {
     let searchResults = [];
@@ -56,7 +57,7 @@ function searchSong() {
         //console.log(event.target.value);
         const inputSongFromUser = event.target.value; //inputSongFromUser = "Hari"
         //Why am I using for loop? To go through the song lists (which is array) one by one and find out the 
-        // if the letters typed by user matches with aleady present song in the array.
+        // if the letters typed by user matches with already present song in the array.
         
         const containerElement = document.querySelector(".container");  
         document.body.removeChild(containerElement); //all the songs are present in container class, removing the class from document.body
@@ -79,7 +80,7 @@ searchSong();
 
 //fix the inputSongFromUser only works when user input is in all lowercase
 
-//seachResult = []
+//searchResult = []
 
 //i=0 bhajanList[0] has "Hey Gopinath"
 //i=1 bhajanList[1] has "Bhajahu re mana"
