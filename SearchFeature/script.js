@@ -10,27 +10,29 @@
 // then in your onchange delete whole bhajans container/div
 // and again call same function renderBhajans with(filteredBhajans)
 let bhajanList = [
-    "Hey Gopinath",
-    "Bhajahu re mana",
-    "Hari Hari Bifale",
-    "Hari Sundar Nanda",
-    "Gauranga Karuna Koro",
-    "Bado Kripa Koile Krishna",
-    "Mama mana mandire",
+    {name: "Hey Gopinath"},
+    {name: "Bhajahu re mana"},
+    {name: "Hari Hari Bifale"},
+    {name: "Hari Sundar Nanda"},
+    {name: "Gauranga Karuna Koro"},
+    {name: "Bado Kripa Koile Krishna"},
+    {name: "Mama mana mandire"},
     
-    "O Palanhare",
-    "Hey Gopinath",
-    "Humare Sath Sri Raghunath",
-    "Ram ko dekh kar Sri Janak Nandini",
-    "Yamuna Kinare Mero Gav",
-    "Krishna Jinka Naam hai",
-    "Jay Radha Madhava",
-    "Ekona Bhujina Prabhu",
-    "Je anilo prem dhana"
+    {name: "O Palanhare"},
+    {name: "Hey Gopinath"},
+    {name: "Humare Sath Sri Raghunath"},
+    {name: "Ram ko dekh kar Sri Janak Nandini"},
+    {name: "Yamuna Kinare Mero Gav"},
+    {name: "Krishna Jinka Naam hai"},
+    {name: "Jay Radha Madhava"},
+    {name:"Ekona Bhujina Prabhu"},
+    {name: "Je anilo prem dhana"}
 ];
+console.log(bhajanList[0].name);
+console.log(bhajanList.length);
+
 
 function displaySongsUI(bhajanList) {
-    console.log(bhajanList);
     const containerElement = document.createElement("div");
     containerElement.classList.add("container");
     document.body.appendChild(containerElement);
@@ -38,11 +40,14 @@ function displaySongsUI(bhajanList) {
     for(let i = 0; i < bhajanList.length; i++) {
         // console.log(bhajanList[i]);
         let pElement = document.createElement("p");
-        pElement.textContent = bhajanList[i];
+        pElement.textContent = bhajanList[i].name;
         containerElement.appendChild(pElement);
     }
 }
-displaySongsUI(bhajanList);
+
+for(let i=0; i< bhajanList.length; i++) {
+    displaySongsUI(bhajanList[i].name);
+}
 
 function searchSong() {
     let searchResults = [];
@@ -53,43 +58,43 @@ function searchSong() {
         //Why am I using for loop? To go through the song lists (which is array) one by one and find out the 
         // if the letters typed by user matches with aleady present song in the array.
         
-         const containerElement = document.querySelector(".container");  
-        //What will happen when two search results are present? Input = "hari"
-        
+        const containerElement = document.querySelector(".container");  
+        document.body.removeChild(containerElement); //all the songs are present in container class, removing the class from document.body
+        searchResults = [];
         for(let i=0; i < bhajanList.length; i++) {
-
-            if( bhajanList[i].toLowerCase().includes(inputSongFromUser)) {
-                searchResults.push(bhajanList[i]); // "hari hari biphale",
-                document.body.removeChild(containerElement); //all the songs are present in container class, removing the class from document.body
-                displaySongsUI(searchResults); //["Hari Sundar Nanda Mukunda", "Hari Hari Biphale"] 
-                console.log(searchResults); //["hari Hari Bifhale", "Hari Sundar Nanda Mukunda"]
-                console.log(bhajanList[i]); //"Hari Sundar Nanda Mukunda"
-                console.log("displaying only searched song in UI");
-            }
-        }   
-        
+            if( bhajanList[i].name.toLowerCase().includes(inputSongFromUser)) {
+                searchResults.push(bhajanList[i].name); // "hari hari biphale"
+                console.log("inputSongFromUser: ", inputSongFromUser);
+                console.log("searchResults: ", searchResults); //["hari Hari Bifhale", "Hari Sundar Nanda Mukunda"]
+                console.log("bhajanList[i].name: ", bhajanList[i].name); //"Hari Sundar Nanda Mukunda"
+                console.log("displaying only searched song in UI"); 
+            }           
+        }
+        displaySongsUI(searchResults); //["Hari Sundar Nanda Mukunda", "Hari Hari Biphale"] 
         console.log(searchResults);
     });
     //console.log(searchResults);
 }
-
 searchSong();
 
 //fix the inputSongFromUser only works when user input is in all lowercase
 
-
 //seachResult = []
 
-//i = 0 bhajanList[0] is "Hey Gopinath" and it does ont match with inputSongFromUser
-//i = 1 bhajanList[1] is "Bhajahu re mana", and it does not match with inputSongFromUser
-//i = 2 bhajanList[2] is "Hari Hari Biphale", it matches with inputSongFromUser i.e., "hari"
-//current state of UI => [All songs are listed in the UI]
+//i=0 bhajanList[0] has "Hey Gopinath"
+//i=1 bhajanList[1] has "Bhajahu re mana"
+//i=2 bhajanList[2] has "Hari Hari Biphale"
 
-//enters inside if block
-// searchResult = ["Hari Hari Biphale"]
-// UI => No song in UI
-// bhajanList[i] = "Hari Hari Biphale"
-// displaySongsUI(["Hari Hari Biphale"])
+//i=3 has "Hari Hari Bifale" which contains word "inputSongFromUser"
+// searchResults = ["Hari Hari Bifale"]
+//UI => all elements are removed from UI
 
-// i = 3 bhajanList[3] is "Hari Sundar Nanda", it matches with inputSongFromUser i.e., "hari"
-//current state of UI => 
+
+
+
+//i=0; i<16; line no. 48
+//i = 0 displaySongsUI("Hey Gopinath") line#49
+
+//line#35 displaySongsUI("Hey Gopinath")
+//containerElement (new div created, class added to it and appended to documentbody)
+//line#40 
