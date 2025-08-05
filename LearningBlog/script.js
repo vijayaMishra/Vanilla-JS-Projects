@@ -19,6 +19,14 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "5 August 2025",
+            "day": "tuesday",
+            "learnings": [
+                "If two songs have the searched word present (hari) previous logic won't work, studying and building logic",
+                "Feeling like newbie :P"
+            ]
+        },
+        {
             "date": "4 August 2025",
             "day": "monday",
             "learnings": [
@@ -28,9 +36,16 @@ let weeklyStudyData = [
         },
         {
             "date": "3 August 2025",
-            "day": "tuesday",
+            "day": "sunday",
             "learnings": [
                 "Full KC Day"
+            ]
+        },
+        {
+            "date": "2 August 2025",
+            "day": "saturday",
+            "learnings": [
+                "Worked on Sarjapur project website"
             ]
         },
         {
