@@ -19,6 +19,14 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "6 August 2025",
+            "day": "wednesday",
+            "learnings": [
+                "`There are ${eventCount} even numbers and ${oddCount} odd numbers` is correct. Earlier I wrote 'There are ${`eventCount`} even numbers and `${oddCount}` odd numbers'",
+                "This will work: let evenCount = 0; let oddCount = 0; whereas let evenCount, oddCount = 0; won't work it takes oddCount as 0 but evenCount as NaN"
+            ]
+        },
+        {
             "date": "5 August 2025",
             "day": "tuesday",
             "learnings": [
