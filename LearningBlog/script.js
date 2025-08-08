@@ -19,10 +19,19 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "8 August 2025",
+            "day": "friday",
+            "learnings": [
+                "Reversed an array brute force solution",
+                "didn't study much today :(",
+                "I should optimise time as FAILING TO PLAN IS PLANNING TO FAIL."
+            ]
+        },
+        {
             "date": "7 August 2025",
             "day": "thrusday",
             "learnings": [
-                "didn't study today"
+                "couldn't study today :("
             ]
         },
         {
