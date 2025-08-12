@@ -4,15 +4,12 @@
 
 // Output: [4, 3, 2, 1]
 
-let numbers = [1, 2, 3, 4];
-console.log(numbers);
+let numbers = [1, 2, 3, 4, 5];
 let reversedArray = [];
-let lastIndex = numbers.length - 1;
-for(let i=0; i < numbers.length; i++) {
-    reversedArray.push(numbers[lastIndex]);
-    lastIndex--;
-    // let temp = numbers[lastIndex];
-    // numbers[i] = temp;
+let j = numbers.length - 1;
+for(let i=0; i<numbers.length; i++) {
+    reversedArray.push(numbers[j]);
+    j--;
 }
 console.log(reversedArray);
 
