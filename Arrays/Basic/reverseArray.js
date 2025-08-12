@@ -61,3 +61,9 @@ console.log("Reversed Array is: ", reverseArray(array, i, j));
 // line #48 if(0 < 4) { temp = array[0] = 1; arr[0] = array[4] = 5; array[4] = 1} array = [5, 2, 3, 4, 1] i=1 j=4 return ([5,2,3,4,1], 1, 3)
 // from line #56, reverseArray again got called, this time  1 < 4, temp=2 , array[1]=array[3]=4 , array[3] = 2 return ([5,4,3,2,1], 2, 2)
 // line #48 reversearray(array,2,2) 2<2 False, it breaks out of the if condition and we get reverseArray as [5,4,3,2,1]
+
+// reduce() is great when you want to take an array and “reduce” it into one single value (sum, product, string, object, another array).
+
+// The first argument is always the accumulator, which is carried over to the next iteration.
+
+// The second argument is the current element being processed.
