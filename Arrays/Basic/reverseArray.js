@@ -29,3 +29,7 @@ for(let i = 0; i < array.length; i++) {
     }
 }
 console.log("After reverse logic: ", array);
+
+let array1 = [10, 20, 30, 40, 50];
+array1.reverse();
+console.log(array1);
