@@ -29,20 +29,11 @@ p {
     padding: 5px;
     margin-top: 10px;
     /*border: 2px solid red;*/
-    @media screen and (min-width: 1024px) {
-        background-image: url(border-redflower.png);
-        background-size: contain;
-    }
 }
-
 .image {
     /*border: 2px solid black;*/
     width: 220px;
-    height: 80px;
-
-    @media screen and (min-width: 1024px) {
-        display: none;
-    }
+    height: 80px
 }
 
 .sunToSat {
@@ -56,8 +47,6 @@ p {
     margin-bottom: 0;
     /* box-shadow: 0 4px 6px #487fa5; */
     font-family: "Parisienne", cursive;
-    border: 1px solid black;
-    background-color: white;
 }
 .dateNDayDiv {
     display: inline-flex;
@@ -83,6 +72,8 @@ p {
     /* color: #70587C; */
     padding: 4px 8px;
     border-radius: 5px;
+
+    
 }
 .day {
     color: #280a36;

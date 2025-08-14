@@ -62,7 +62,6 @@ function searchSong() {
         const containerElement = document.querySelector(".container");  
         document.body.removeChild(containerElement); //all the songs are present in container class, removing the class from document.body
         searchResults = [];
-
         for(let i=0; i < bhajanList.length; i++) {
             if( bhajanList[i].name.toLowerCase().includes(inputSongFromUser)) {
                 searchResults.push(bhajanList[i].name); // "hari hari biphale"
