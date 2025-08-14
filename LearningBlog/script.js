@@ -19,6 +19,24 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "14 August 2025",
+            "day": "thursday",
+            "learnings": [
+                "background-size: contain works only for CSS background images (e.g., on a <div>), not <img> tags, and we use background-repeat: no-repeat to stop the default repeat.",
+                ""
+            ]
+        },
+        {
+            "date": "13 August 2025",
+            "day": "wednesday",
+            "learnings": [
+                "Learned that background-size: contain prevents an image from stretching.",
+                "This property only applies to images set as a CSS background. (eg., on a <div>), not to images in an <img> tag.",
+                "By default, background images repeat, so we usually use background-repeat: no repeat.",
+                "Also, fell off from scooty yesterday on the muddy, slippery road near home while returning "
+            ]
+        },
+        {
             "date": "8 August 2025",
             "day": "friday",
             "learnings": [
