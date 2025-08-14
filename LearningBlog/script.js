@@ -75,7 +75,7 @@ let weeklyStudyData = [
     [
         {
             "date": "3 August 2025", "day": "sunday", "learnings": [
-                "Full KC Day"
+                "Full KC Day [1st Day of new center + Ramcharitmanas Path eve]"
             ]
         },
         {
