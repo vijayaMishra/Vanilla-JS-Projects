@@ -30,6 +30,7 @@ let weeklyStudyData = [
                 "Learned that background-size: contain prevents an image from stretching.",
                 "This property only applies to images set as a CSS background. (eg., on a <div>), not to images in an <img> tag.",
                 "By default, background images repeat, so we usually use background-repeat: no repeat.",
+                "Learnt about media query , using which changed Weekly Overview header for tablet and laptop view",
                 "Also, fell off from scooty yesterday on the muddy, slippery road near home while returning "
             ]
         },
