@@ -21,6 +21,16 @@ let weeklyStudyData = [
         {
             "date": "14 August 2025", "day": "thursday", "learnings": [
                 "Caraousels",
+                "Object-fit: cover -> keeps the image ratio but fills the container\nObject-fit: contain -> keeps full image visible, might leave empty space.",
+                "In a carousel, if you don’t set a fixed width & height (or at least a fixed width for the container), the image will just display at its natural size, which can be huge. So, i) Restrict the carousel container size ii) Make the image adapt to the container",
+                "box-sizing: border-box -> eg., width: 200px; padding: 10px; border: 5px solid black; box-sizing: border-box; 200px is total width, content inside automatically shrinks to fit padding and border unlike content-box, which is by default",
+                "overflow: hidden -> If content sticks out beyond the box, don’t show it. Cut it off.",
+                "width: 500px -> The element’s width is fixed at exactly 500px, no matter what. Even if the screen is smaller, it will not shrink (it might overflow).",
+                "max-width: 500px -> The element’s width can be smaller than 500px, but never larger. It’s more flexible and responsive — it can shrink if the screen is small.",
+                "margin: auto -> Figure out the margin yourself so that the element is centered in the available space. (works only if block level eg., <div> or fixed width or max-width",
+                "margin: auto -> gives equal left and right margins",
+                "transition: transform 0.5s ease-in-out || tansition is a CSS shortcut that says -> When this property changes, animate the change smoothly instead of jumping instantly",
+                "transform -> the property you want to animate, 0.5s -> duration of the animation, ease-in-out -> Starts slow → speeds up → slows down at the end. (the timing function, which controls the speed curve)",
                 "Revision: background-size: contain works only for CSS background images (e.g., on a <div>), not <img> tags, and we use background-repeat: no-repeat to stop the default repeat.",
                 "Updated Learnings project, divided into weekly data"
             ]
