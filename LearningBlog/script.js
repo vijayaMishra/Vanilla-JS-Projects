@@ -186,8 +186,11 @@ let weeklyStudyData = [
         }
     ]
 ];
+//console.log(weeklyStudyData);
 
-console.log(weeklyStudyData);
+function createMonthlyView() {
+
+}
 
 function createWeeklyView() {
     const sunToSatContainerDivElement = document.createElement("div");
@@ -252,7 +255,7 @@ function createDailyLearningDiv(date, day, learningContent, weeklyViewElement) {
 for(let i = 0; i < weeklyStudyData.length; i++) {
     const weeklyViewElement = createWeeklyView();
     for (let j = 0; j < weeklyStudyData[i].length; j++) {
-        console.log(weeklyStudyData[i][j]);
+        //console.log(weeklyStudyData[i][j]);
         createDailyLearningDiv(weeklyStudyData[i][j].date, weeklyStudyData[i][j].day, weeklyStudyData[i][j].learnings, weeklyViewElement);
     }
 }
