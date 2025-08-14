@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #f4f4f4;
+}
+.carousel {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+.slides  {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 600%;
+}
+
+.slides img { 
+    width: 100%;
+    object-fit: cover;
+}
+
