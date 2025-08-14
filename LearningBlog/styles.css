@@ -29,7 +29,7 @@ p {
 .weeklyView {
     margin-top: -30px;
 }
-.sunToSatContainer {
+.weeklyOverviewContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;

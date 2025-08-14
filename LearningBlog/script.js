@@ -19,17 +19,14 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
-            "date": "14 August 2025",
-            "day": "thursday",
-            "learnings": [
-                "background-size: contain works only for CSS background images (e.g., on a <div>), not <img> tags, and we use background-repeat: no-repeat to stop the default repeat.",
-                ""
+            "date": "14 August 2025", "day": "thursday", "learnings": [
+                "Caraousels",
+                "Revision: background-size: contain works only for CSS background images (e.g., on a <div>), not <img> tags, and we use background-repeat: no-repeat to stop the default repeat.",
+                "Updated Learnings project, divided into weekly data"
             ]
         },
         {
-            "date": "13 August 2025",
-            "day": "wednesday",
-            "learnings": [
+            "date": "13 August 2025", "day": "wednesday", "learnings": [
                 "Learned that background-size: contain prevents an image from stretching.",
                 "This property only applies to images set as a CSS background. (eg., on a <div>), not to images in an <img> tag.",
                 "By default, background images repeat, so we usually use background-repeat: no repeat.",
@@ -37,89 +34,76 @@ let weeklyStudyData = [
             ]
         },
         {
-            "date": "8 August 2025",
-            "day": "friday",
-            "learnings": [
-                "Reversed an array brute force solution",
-                "didn't study much today :(",
-                "I should optimise time as FAILING TO PLAN IS PLANNING TO FAIL."
+            "date": "12 August 2025", "day": "tuesday", "learnings": [
+                "Solved Reversing an array problem with 5 different ways."
             ]
         },
         {
-            "date": "7 August 2025",
-            "day": "thrusday",
-            "learnings": [
-                "couldn't study today :("
+            "date": "11 August 2025", "day": "monday", "learnings": [
+                "Comp-off leave turned into catching up on weekend work—ended the day tired and upset as no study. :("
+            ]
+        }
+    ],
+    [
+        {
+            "date": "7, 8, 9, 10 August 2025", "day": "thu, fri, sat, sun", "learnings": [
+                "7th Aug, THU - Office work and made a halfyear video",
+                "8th Aug, FRI - Loads of ofc work and after returning couldn't study as gave time to fam gues",
+                "9th Aug, SAT - It was Rakhi day, and somehow we ended up on a grand adventure, traveling through heavy pouring rain."
             ]
         },
         {
-            "date": "6 August 2025",
-            "day": "wednesday",
-            "learnings": [
+            "date": "6 August 2025", "day": "wednesday", "learnings": [
                 "`There are ${eventCount} even numbers and ${oddCount} odd numbers` is correct. Earlier I wrote 'There are ${`eventCount`} even numbers and `${oddCount}` odd numbers'",
                 "This will work: let evenCount = 0; let oddCount = 0; whereas let evenCount, oddCount = 0; won't work it takes oddCount as 0 but evenCount as NaN"
             ]
         },
         {
-            "date": "5 August 2025",
-            "day": "tuesday",
-            "learnings": [
+            "date": "5 August 2025", "day": "tuesday", "learnings": [
                 "If two songs have the searched word present (hari) previous logic won't work, studying and building logic",
                 "Feeling like newbie :P"
             ]
         },
         {
-            "date": "4 August 2025",
-            "day": "monday",
-            "learnings": [
+            "date": "4 August 2025", "day": "monday", "learnings": [
                 "Search feature functional in Songs project",
                 "passed to a function like displaySongsUI() which expects an array, JavaScript treats the string as iterable and loops over each character — so to avoid this, I need to wrap the string in square brackets like displaySongsUI([bhajanList[i]]) to pass it as a one-item array."
             ]
         },
+    ],
+    [
         {
-            "date": "3 August 2025",
-            "day": "sunday",
-            "learnings": [
+            "date": "3 August 2025", "day": "sunday", "learnings": [
                 "Full KC Day"
             ]
         },
         {
-            "date": "2 August 2025",
-            "day": "saturday",
-            "learnings": [
+            "date": "2 August 2025", "day": "saturday","learnings": [
                 "Worked on Sarjapur project website"
             ]
         },
         {
-            "date": "1 August 2025",
-            "day": "friday",
-            "learnings": [
+            "date": "1 August 2025", "day": "friday", "learnings": [
                 "Q. What is onChange() and how to use it? A. When the value of an HTML element changes 'onchange' event handler runs a function. Used on form elements like <input>, <select> (dropdowns) etc.",
                 "Started Search Song project",
                 "IMPORTANT: when I was trying to create search song project, I was trying to do includes on array instead of doing it on array element."
             ]
         },
         {
-            "date": "31-July-2025",
-            "day": "thursday",
-            "learnings": [
+            "date": "31-July-2025", "day": "thursday","learnings": [
                 "Refined the look and feel of section heading like Upcoming, Past, Donate, etc. and other small elements to enhance the overall visual appeal of the Sarjapur website that prji is working on.",
                 "Added an image at the end of FantasticFonts&Colours website, increased font size for better readability."
             ]
         },
         {
-            "date": "30-July-2025",
-            "day": "wednesday",
-            "learnings": [
+            "date": "30-July-2025","day": "wednesday","learnings": [
                 "Worked on Fonts&Colours Project",
                 "Rendering Colours via an object of arrays which has colour details, similar to how Font styles are being rendered",
                 "Added title, center-aligned images, updated order of fonts that appear on main screen "
             ]
         },
         {
-            "date": "29-July-2025",
-            "day": "tuesday",
-            "learnings": [
+            "date": "29-July-2025", "day": "tuesday", "learnings": [
                 "Enhancing font styles to improve visual appeal on the Sarjapur Road site.",
                 "If you created a new div element using JS and want to give it 'id' then it can be done using fontsContainerElement.id = 'fontsContainerClass'",
                 "New command: git reset --hard HEAD",
@@ -137,13 +121,13 @@ let weeklyStudyData = [
                 "Added scroll-to-top button functionality when the user reaches the bottom of the page, complementing the existing scroll-to-bottom feature available at the top."
             ]
         },
+    ],
+    [
         {
             "date": "27-July-2025", "day": "sunday", "learnings": [
                 "No Learnings"
             ]
-        }
-    ],
-    [
+        },
         {
             "date": "26-July-2025", "day": "saturday", "learnings": [
                 "No Learnings (Watched Mahavatar Narsimha movie)"
@@ -177,6 +161,8 @@ let weeklyStudyData = [
                 "Learnt about display: inline-flex, only takes up as much as width as its content and flex enables the element becomes a flex container, enabling flexbox layout for its children"
             ]
         },
+    ],
+    [
         {
             "date": "20-July-2025", "day": "sunday", "learnings": [
                 "Creating promise to resolve with 'Task Completed' message",
@@ -193,8 +179,8 @@ function createMonthlyView() {
 }
 
 function createWeeklyView() {
-    const sunToSatContainerDivElement = document.createElement("div");
-    sunToSatContainerDivElement.classList.add("sunToSatContainer");
+    const weeklyOverviewContainerDivElement = document.createElement("div");
+    weeklyOverviewContainerDivElement.classList.add("weeklyOverviewContainer");
 
     const h4Element = document.createElement("h4");
     h4Element.classList.add("sunToSat");
@@ -207,22 +193,20 @@ function createWeeklyView() {
     const weeklyViewElement = document.createElement("div");
     weeklyViewElement.classList.add("weeklyView");
 
-    sunToSatContainerDivElement.appendChild(h4Element);
-    sunToSatContainerDivElement.appendChild(imgElement);
+    weeklyOverviewContainerDivElement.appendChild(h4Element);
+    weeklyOverviewContainerDivElement.appendChild(imgElement);
 
-    weeklyViewElement.appendChild(sunToSatContainerDivElement);
+    weeklyViewElement.appendChild(weeklyOverviewContainerDivElement);
 
     document.body.appendChild(weeklyViewElement);
 
     return weeklyViewElement;
 }
 
-
 function createDailyLearningDiv(date, day, learningContent, weeklyViewElement) {
     const dailyDivElement = document.createElement("div");
     dailyDivElement.classList.add("dailyDiv");
     weeklyViewElement.appendChild(dailyDivElement);
-
 
     const dateNDayDivElement = document.createElement("div");
     dateNDayDivElement.classList.add("dateNDayDiv");
