@@ -7,11 +7,12 @@ body {
     background: #f4f4f4;
 }
 .carousel {
+    
     position: relative;
     max-width: 500px;
     margin: auto;
     border-radius: 10px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     overflow: hidden;
 }
 
@@ -19,10 +20,15 @@ body {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 600%;
+    height: 300px;
 }
 
-.slides img { 
+img { 
     width: 100%;
     object-fit: cover;
 }
 
+.radioBtnsParent {
+    letter-spacing: 12px;
+    text-align: center;
+}
