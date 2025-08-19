@@ -1,0 +1,10 @@
+.slideshowContainer {
+    max-width: 1000px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+}
