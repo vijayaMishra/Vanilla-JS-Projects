@@ -22,7 +22,18 @@ let weeklyStudyData = [
             "date": "19 Aug 2025", "day": "tues", "learnings": [
                 "Sliders ongoing",
                 "Each <span class='dot'> is a small clickable element (usually styled as a dot in a carousel/slider).",
-                "onclick='currentSlide(1)' means: When you click that span, it will call the JavaScript function currentSlide() and pass the number inside the parentheses as an argument."
+                "onclick='currentSlide(1)' means: When you click that span, it will call the JavaScript function currentSlide() and pass the number inside the parentheses as an argument.",
+                "&#10094; → ❮ (a left-pointing angle bracket / arrow), &#10095; → ❯ (a right-pointing angle bracket / arrow)",
+                "Normally (default: content-box) If you set width: 200px on a div then content 200px and padding and border get added on top of it. -> actual elemment can be more than 200px. With box-sizing: border-box, now width includes content+padding+border",
+                "margin: auto is usually used to center align elements horizontally inside their parent container",
+                "auto tells the browser: distribute the leftover space equally on both sides.",
+                "This only works if the element has a fixed width (or max-width). Otherwise, the element will just stretch to fill the parent, and there will be no 'leftover' space.",
+                "Why use position: relative ?",
+                "span {   display: inline;   height: 100px;  /* ❌ no effect */   width: 200px;   /* ❌ no effect */  } It should be block.",
+                "Summary: inline ignores height/width. Use inline-block, block, or flex/grid if you need size control.",
+                "transition: background-color 0.6s ease i) background-color is the property that will animate ii) It will take 0.6s for the color change to complete; ease: timing function, how the speed of the animation progresses over time",
+                "linear : same speed throughout; ease-in : starts slow, ends fast ; ease-out : starts fast, ends slow, ease-in-out : slow -> fast -> slow",
+                "ease: starts slow, speeds up in the middle then slows down at the end."
             ]
         },
         {
