@@ -19,6 +19,26 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "19 Aug 2025", "day": "tues", "learnings": [
+                "Sliders ongoing",
+                "Each <span class='dot'> is a small clickable element (usually styled as a dot in a carousel/slider).",
+                "onclick='currentSlide(1)' means: When you click that span, it will call the JavaScript function currentSlide() and pass the number inside the parentheses as an argument."
+            ]
+        },
+        {
+            "date": "18 August 2025", "day": "mon", "learnings": [
+                "Started learning sliders from W3"
+            ]
+        }
+    ],
+    [
+        {
+            "date": "15, 16, 17 Aug 2025", "day": "fri, sat, sun", "learnings" : [
+                "Janmashtami 2025 preps!!",
+                "Sun rest from prev day work, broken toe, cough, finger cuts, knee scratch, rest!"
+            ]
+        },
+        {
             "date": "14 August 2025", "day": "thursday", "learnings": [
                 "Caraousels",
                 "Object-fit: cover -> keeps the image ratio but fills the container\nObject-fit: contain -> keeps full image visible, might leave empty space.",
