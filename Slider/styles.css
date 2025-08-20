@@ -22,3 +22,7 @@
     border-radius: 50%;
     display: inline-block;
 }
+
+.dot:hover, .active {
+    background-color: #717171;
+}
