@@ -19,6 +19,15 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "20 Aug 2025", "day": "wed", "learnings": [
+                "In JS, the 'style' property lets you change CSS styles of an element directly from the code.",
+                "One of the most important properties is display. style.display controls how an element appears on the page. It's the JavaScript way of setting the CSS 'display' property. eg., document.getElementById('myPara').style.display = 'none', same as writing #myPara { display: none; };",
+                "Common ways of display: none, block, inline, flex, grid",
+                "In JS, every HTML element has a className property. It represents all CSS classes applied to that elements as a single string.",
+                "I was doing  dots[i].classList = dots[i].classList.replace('active', ''); which is incorrect, instead do dots[i].classList.remove('active'); "
+            ]
+        },
+        {
             "date": "19 Aug 2025", "day": "tues", "learnings": [
                 "Sliders ongoing",
                 "Each <span class='dot'> is a small clickable element (usually styled as a dot in a carousel/slider).",
