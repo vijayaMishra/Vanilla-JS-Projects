@@ -20,27 +20,22 @@ inputElement1.placeholder = "Enter the number";
 containerElement.appendChild(inputElement1);
 
 const inputElement2 = document.createElement("input");
-
 inputElement2.type = "submit";
 inputElement2.value = "Submit";
-containerElement.appendChild(inputElement2);
 inputElement2.classList.add("submit");
+containerElement.appendChild(inputElement2);
+
+const messageElement = document.createElement("p");
+containerElement.appendChild(messageElement);
 
 document.querySelector(".submit").addEventListener("click", function onClickHandler() {
-    var userInput = Number(document.querySelector(".inputBox").value);
-    //console.log("User Input: ", Number(userInput));
-    const pElement2 = document.createElement("p");
-    pElement2.textContent = "The no.  entered by user appeared this no. of times = ";
-    containerElement.appendChild(pElement2);
-
-    const noOfTimesAppearedElement = document.createElement("p");
-    noOfTimesAppearedElement.textContent = getOccurences(userInput);
-    containerElement.appendChild(noOfTimesAppearedElement);
+    var userInputNumber = Number(document.querySelector(".inputBox").value);
+    const count = getOccurences(userInput);
+    messageElement.textContent = `The ${userInputNumber} no. count is ${count}`;
 });
 
 function getOccurences(number) {
     let count = 0;
-
     for(let i=0; i < array1.length; i++) {
         if(array1[i] === number) {
             count++;
@@ -50,4 +45,3 @@ function getOccurences(number) {
     console.log("count ", count);
     return count;
 }
-//console.log(`The number ${noToBeChecked} appeared ${count} no. of times`);
