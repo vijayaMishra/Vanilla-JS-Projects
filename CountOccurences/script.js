@@ -30,8 +30,8 @@ containerElement.appendChild(messageElement);
 
 document.querySelector(".submit").addEventListener("click", function onClickHandler() {
     var userInputNumber = Number(document.querySelector(".inputBox").value);
-    const count = getOccurences(userInput);
-    messageElement.textContent = `The ${userInputNumber} no. count is ${count}`;
+    const countOfNo = getOccurences(userInputNumber);
+    messageElement.textContent = `The ${userInputNumber} no. count is ${countOfNo}`;
 });
 
 function getOccurences(number) {
@@ -39,7 +39,6 @@ function getOccurences(number) {
     for(let i=0; i < array1.length; i++) {
         if(array1[i] === number) {
             count++;
-            console.log(count);
         }
     }
     console.log("count ", count);
