@@ -31,7 +31,12 @@ containerElement.appendChild(messageElement);
 document.querySelector(".submit").addEventListener("click", function onClickHandler() {
     var userInputNumber = Number(document.querySelector(".inputBox").value);
     const countOfNo = getOccurences(userInputNumber);
-    messageElement.textContent = `The ${userInputNumber} no. count is ${countOfNo}`;
+    if(countOfNo !== 0) {
+        messageElement.textContent = `The ${userInputNumber} no. count is ${countOfNo}`;
+    } else {
+        messageElement.textContent = `${userInputNumber} does not exist.`;
+    }
+    
 });
 
 function getOccurences(number) {
