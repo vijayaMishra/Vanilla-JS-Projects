@@ -7,11 +7,12 @@ body {
     font-size: 40px;
 }
 .counter {
-    font-size: 55px;
+    font-size: 65px;
 }
 
 button {
-    padding: 10px;
+    margin: 5px;
+    padding: 10px 20px;
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
