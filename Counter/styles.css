@@ -1,39 +1,38 @@
-.heading-container {
-    display: flex;
-    justify-content: center;
+body {
+    background-color: black;
+    color: white;
+    text-align: center
 }
 .heading {
-    margin-top: 100px;
-    font-family: 'Montserrat';
-    font-size: 50px;
-    color: purple;
+    font-size: 40px;
 }
-.parentplusminusreset {
-    display: flex;
-    /* border: 2px solid red; */
-    justify-content: space-between;
-    margin-left: 150px;
-    margin-right: 150px;
+.counter {
+    font-size: 65px;
 }
 
-.btn-plus-sign {  
-    all: unset;
-    /* border: 2px solid black; */
-    font-size: 95px;
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    
 }
 
+button:active {
+    transform: scale(0.95);
+}
+
+.increment {
+    background-color: #4CAF50;
+    color: white;
+}
+.decrement {
+    background-color: #f44336;
+    color: white;
+}
 .reset {
-    all: unset;
-    /* border: 2px solid red; */
-    font-size: 95px;
-}
-
-.number {
-    /* border: 2px solid yellowgreen; */
-    font-size: 95px;
-}
-
-.rounds {
-    /* border: 2px solid goldenrod; */
-    font-size: 95px;
+    color: white;
+    background-color: #555;
 }

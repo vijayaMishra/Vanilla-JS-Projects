@@ -1,0 +1,39 @@
+.heading-container {
+    display: flex;
+    justify-content: center;
+}
+.heading {
+    margin-top: 100px;
+    font-family: 'Montserrat';
+    font-size: 50px;
+    color: purple;
+}
+.parentplusminusreset {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.btn-plus-sign {  
+    all: unset;
+    /* border: 2px solid black; */
+    font-size: 95px;
+}
+
+.reset {
+    all: unset;
+    /* border: 2px solid red; */
+    font-size: 95px;
+}
+
+.number {
+    /* border: 2px solid yellowgreen; */
+    font-size: 95px;
+}
+
+.rounds {
+    /* border: 2px solid goldenrod; */
+    font-size: 95px;
+}
