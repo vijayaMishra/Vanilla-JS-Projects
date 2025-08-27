@@ -16,6 +16,8 @@ button {
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
+    border: none;
+    
 }
 
 button:active {
@@ -24,10 +26,13 @@ button:active {
 
 .increment {
     background-color: #4CAF50;
+    color: white;
 }
 .decrement {
     background-color: #f44336;
+    color: white;
 }
 .reset {
+    color: white;
     background-color: #555;
 }
