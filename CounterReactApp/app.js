@@ -21,6 +21,7 @@ function App() {
 
     return (
         <div className="container">
+            <img className="img-box"></img>
             <h1 className="heading">Counter React App</h1>
             <h1 className="counter">{count}</h1>
             <div>

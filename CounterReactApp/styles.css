@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 .container {
     text-align: center;
     display: flex;
@@ -11,6 +14,8 @@
 }
 .counter {
     font-size: 120px;
+    margin-top: 0;
+    
 }
 .increment {
     background-color: #3b673b;
@@ -55,5 +60,20 @@ button {
     button {
         font-size: 25px;
         padding: 8px 15px;
+    }
+}
+.img-box {
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url("birdimagetopborder.jpg");
+    border: none;
+}
+@media (min-width: 1024px) {
+    .img-box {
+        background-size: auto;
+        background-repeat: repeat;
+       
     }
 }
