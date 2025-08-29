@@ -1,12 +1,42 @@
 .container {
     text-align: center;
 }
+.heading {
+    font-size: 70px;
+}
+.counter {
+    font-size: 120px;
+}
 .increment {
-    font-size: 16px;
+    background-color: #3b673b;
 }
 .decrement {
-    font-size: 16px;
+    background-color: rgb(189, 51, 41);
 }
 .reset {
-    font-size: 16px;
+    background-color: rgb(72, 71, 71);
+}
+.increment:active{
+    background-color: #77c577;
+    transform: scale(0.95);   
+    color: black; 
+}
+.decrement:active {
+    background-color: #ea928f;
+    transform: scale(0.95);
+    color: black;    
+}
+.reset:active {
+    background-color: gray; 
+    transform: scale(0.95);
+    color: black;      
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+    font-size: 50px;
+    border-radius: 10px;
 }
