@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /*take full height*/
+    min-height: 100vh; /*take full height*/ /*min-height allows growing if content is more */
 }
 .heading {
     font-size: 70px;
@@ -76,4 +76,11 @@ button {
         background-repeat: repeat;
        
     }
+}
+.cute-girl {
+    background-image: url("cutegirl.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;   /* give it height so it takes space */
 }

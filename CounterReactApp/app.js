@@ -29,6 +29,7 @@ function App() {
                 <button className="decrement" onClick={ handleDecrement }>Decrement</button>
                 <button className="reset" onClick={ handleReset }>Reset</button>
             </div>
+            <img className="cute-girl"></img>
         </div>
     )
 }
