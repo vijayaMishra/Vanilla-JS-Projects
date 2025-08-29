@@ -19,10 +19,20 @@ const bhajanList = [
 function App() {
 
     const [userInput,setUserInput] = React.useState("");
-    console.log(userInput);
+    console.log("userInput in <App />: ", userInput);
+   
+    const bhajanListToShow = bhajanList.filter(function ifUserInputExistsInBhajanList(bhajan) {
+        if(bhajan.name.includes(userInput)) return true 
+        else {
+            return false;
+        }
+    })
+    console.log("bhajanListToShow", bhajanListToShow);
+
     function renderBhajanList() {
+        
         return (
-            bhajanList.map(function getValues(bhajan) {
+            bhajanListToShow.map(function getValues(bhajan) {
                 return <p key={bhajan.name}>{bhajan.name}</p>
             })
         )
@@ -30,6 +40,8 @@ function App() {
     
     function handleChange(event) {
         setUserInput(event.target.value);
+        console.log("userInput in handleChange (): ", userInput);
+        
     }
 
     return (
@@ -40,7 +52,7 @@ function App() {
                 <input onChange={handleChange} type="text" name="" className="searchInput" placeholder="Search here"/>
             </div>
             <ul id="resultsContainer"></ul>
-            {renderBhajanList()};
+            {renderBhajanList().length === 0 ? <div className="noResultsFound">No results found</div> : renderBhajanList()};
         </div>
     )
 }

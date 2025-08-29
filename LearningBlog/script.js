@@ -19,6 +19,13 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "29 Aug 2025", "day": "fri", "learnings": [
+                ".filter() and .map() return a new array. They don't make changes in the same array."
+            ]
+        }
+    ],
+    [
+        {
             "date": "20 Aug 2025", "day": "wed", "learnings": [
                 "In JS, the 'style' property lets you change CSS styles of an element directly from the code.",
                 "One of the most important properties is display. style.display controls how an element appears on the page. It's the JavaScript way of setting the CSS 'display' property. eg., document.getElementById('myPara').style.display = 'none', same as writing #myPara { display: none; };",
