@@ -23,9 +23,11 @@ function App() {
         <div className="container">
             <h1 className="heading">Counter React App</h1>
             <h1 className="counter">{count}</h1>
-            <button className="increment" onClick={ handleIncrement }>Increment</button>
-            <button className="decrement" onClick={ handleDecrement }>Decrement</button>
-            <button className="reset" onClick={ handleReset }>Reset</button>
+            <div>
+                <button className="increment" onClick={ handleIncrement }>Increment</button>
+                <button className="decrement" onClick={ handleDecrement }>Decrement</button>
+                <button className="reset" onClick={ handleReset }>Reset</button>
+            </div>
         </div>
     )
 }

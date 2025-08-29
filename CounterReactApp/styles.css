@@ -1,5 +1,10 @@
 .container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*take full height*/
 }
 .heading {
     font-size: 70px;
@@ -39,4 +44,16 @@ button {
     color: white;
     font-size: 50px;
     border-radius: 10px;
+}
+@media (max-width: 600px) {
+    .heading {
+        font-size: 40px;
+    }
+    .counter {
+        font-size: 60px;
+    }
+    button {
+        font-size: 25px;
+        padding: 8px 15px;
+    }
 }
