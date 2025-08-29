@@ -41,6 +41,7 @@ function createFontsStyleUI() {
         {"fontName": "poppins", "fontTextContent": "This is the Poppins font – clean and rounded."},
         {"fontName": "playwrite-de-va", "fontTextContent": "This is PlayWrite De Va."},
         {"fontName": "meow-script", "fontTextContent": "This is Meow Script."},
+        {"fontName": "alex-brush", "fontTextContent": "This is Alex Brush. smooth, elegant strokes"},
         {"fontName": "sacramento", "fontTextContent": "This is the Sacramento font - elegant but not too curly, handwritten style."},
         {"fontName": "parisienne", "fontTextContent": "This is the Parisienne – ophisticated, aesthetic vibe"},
         {"fontName": "greatvibes", "fontTextContent": "This is the Great Vibes font - cursive, graceful calligraphy. (Soft, Feminine & Artistic)"},
