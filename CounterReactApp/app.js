@@ -1,7 +1,8 @@
 
 function App() {
 
-    const [count, setCount] = React.useState();
+    const [count, setCount] = React.useState(0);
+    //counts starts as 0
 
     function handleIncrement() {
         setCount(count+1);
@@ -21,7 +22,7 @@ function App() {
     return (
         <div className="container">
             <h1 className="heading">Counter React App</h1>
-            <h1 className="counter">0</h1>
+            <h1 className="counter">{count}</h1>
             <button className="increment" onClick={ handleIncrement }>Increment</button>
             <button className="decrement" onClick={ handleDecrement }>Decrement</button>
             <button className="reset" onClick={ handleReset }>Reset</button>
