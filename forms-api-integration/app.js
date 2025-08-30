@@ -4,7 +4,7 @@
 // how to handle loading, error, success states of API
 
 function dummyApi(name, password) {
-
+    
 }
 
 function App() {
@@ -12,7 +12,9 @@ function App() {
         <div className="body1">
             <h1>Forms and API Integration</h1>
             <div className="container">
+                <p style={{color: "black"}}>Username: </p>
                 <input type="text" placeholder="Enter your username"></input>
+                 <p style={{color: "black"}}>Password: </p>
                 <input type="password" placeholder="Enter your password"></input>
                 
                 <button >Submit</button>
