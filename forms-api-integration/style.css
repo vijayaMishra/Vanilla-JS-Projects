@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+}
+
+input {
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin: 20px;
+}
