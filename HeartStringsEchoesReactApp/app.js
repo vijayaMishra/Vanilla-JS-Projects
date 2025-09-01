@@ -1,3 +1,4 @@
+import windoworangeflowers from "./Images/windoworangeflowers.jpg";
 const bhajanList = [
     {name: "Hey Gopinath"},
     {name: "Bhajahu re mana"},
@@ -13,11 +14,15 @@ const bhajanList = [
     {name: "Krishna Jinka Naam hai"},
     {name: "Jay Radha Madhava"},
     {name:"Ekona Bhujina Prabhu"},
-    {name: "Je anilo prem dhana"}
+    {name: "Je anilo prem dhana"},
+    {name: "Amar Jeevan Sada Paperat"},
+    {name: "Sita Ram Sita Ram Sita Ram Kahiye"},
+    {name: "Unki Karuna Me Koi Kami Hai Nahi"},
+    {name: "Jaha le chaloge waha mai Chalunga"},
+    {name: "Humare Sath Sri Raghunath"}
 ];
 
 function App() {
-
     const [userInput,setUserInput] = React.useState("");
     console.log("userInput in <App />: ", userInput);
    
@@ -30,7 +35,6 @@ function App() {
     console.log("bhajanListToShow", bhajanListToShow);
 
     function renderBhajanList() {
-        
         return (
             bhajanListToShow.map(function getValues(bhajan) {
                 return <p key={bhajan.name}>{bhajan.name}</p>
@@ -41,18 +45,17 @@ function App() {
     function handleChange(event) {
         setUserInput(event.target.value);
         console.log("userInput in handleChange (): ", userInput);
-        
     }
 
     return (
         <div>
-            <h2 className="title">Heartstrings Echoes</h2>
-            <p className="subtitle1">Melodies from the Heart | Bhakti</p>
+            <h2 className="heading">Heartstrings Echoes</h2>
+            <p className="subtitle1">Melodies from the Heart | Bhakti</p>   
             <div className="searchParent">
                 <input onChange={handleChange} type="text" name="" className="searchInput" placeholder="Search here"/>
             </div>
             <ul id="resultsContainer"></ul>
-            {renderBhajanList().length === 0 ? <div className="noResultsFound">No results found</div> : renderBhajanList()};
+            {renderBhajanList().length === 0 ? <div className="noResultsFound">No results found</div> : renderBhajanList()}
         </div>
     )
 }

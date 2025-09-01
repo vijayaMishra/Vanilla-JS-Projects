@@ -1,8 +1,16 @@
-.title {
+.heading {
     text-align: center;
     font-size: 50px;
+    background-color: #F0D2DA;
+    padding: 40px;
+    margin: 0;
+    position: sticky;
+    top:0;
+    margin: -8px;
+    width: 100%;
 }
 .subtitle1 {
+    /* margin-top: 140px; */
     text-align: center;
     font-size: 18px;
 }
@@ -16,6 +24,7 @@
 }
 p {
     font-size: 30px;
+    text-align: center;
 }
 .noResultsFound {
     text-align: center;
