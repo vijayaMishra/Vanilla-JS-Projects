@@ -19,6 +19,11 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "31 Aug 2025", "day": "sun", "learnings": [
+                "ND0B, SEP"
+            ]
+        },
+        {
             "date": "30 Aug 2025", "day": "sat", "learnings": [
                 "👉 Imagine React is a notebook: 1). Without useState, you type something but nobody writes it down. 2). With useState, React writes everything you type into its notebook, so later (on submit, or API call) it knows exactly what you typed."
             ]
