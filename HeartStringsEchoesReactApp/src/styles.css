@@ -1,0 +1,44 @@
+.heading {
+    text-align: center;
+    font-size: 60px;
+    background-color: #ffc5d3;
+    padding: 50px;
+    margin: 0;
+    position: sticky;
+    top:0;
+    margin: -8px;
+    width: 100%;
+    font-family: "Great Vibes", cursive;
+}
+.subtitle1 {
+    /* margin-top: 140px; */
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+.searchParent {
+    display: flex;
+    justify-content: center;
+}
+.searchInput {
+    text-align: center;
+    font-size: 30px;
+    margin: 4px 1px;
+}
+p {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.noResultsFound {
+    text-align: center;
+    font-size: 30px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 80%;
+    margin: auto;
+}

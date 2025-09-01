@@ -1,4 +1,4 @@
-import windoworangeflowers from "./Images/windoworangeflowers.jpg";
+
 const bhajanList = [
     {name: "Hey Gopinath"},
     {name: "Bhajahu re mana"},
@@ -48,14 +48,18 @@ function App() {
     }
 
     return (
-        <div>
-            <h2 className="heading">Heartstrings Echoes</h2>
+        <div className="container">
+            <p className="heading">Heartstrings Echoes</p>
             <p className="subtitle1">Melodies from the Heart | Bhakti</p>   
+            <img src="Images/pinkflowerswindow.jpg" alt="window view" width="300" />
             <div className="searchParent">
                 <input onChange={handleChange} type="text" name="" className="searchInput" placeholder="Search here"/>
             </div>
             <ul id="resultsContainer"></ul>
-            {renderBhajanList().length === 0 ? <div className="noResultsFound">No results found</div> : renderBhajanList()}
+            {renderBhajanList().length === 0 
+                ? <div className="noResultsFound">No results found</div> 
+                : renderBhajanList()}
+            <img src="Images/boatgreenimage.jpg" alt="green image girl" />
         </div>
     )
 }
