@@ -22,7 +22,7 @@
 .searchInput {
     text-align: center;
     font-size: 20px;
-    margin: 4px 1px;
+    margin-top: 4px;
     background-color: #ccc1c4;
     border-radius: 10px;
     cursor: pointer;
