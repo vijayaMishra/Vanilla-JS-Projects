@@ -28,6 +28,7 @@
     cursor: pointer;
     border: none;
     padding: 10px 20px;
+    color: white;
 }
 .searchInput::placeholder{
     color:white;
