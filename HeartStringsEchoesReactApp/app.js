@@ -9,7 +9,7 @@ const bhajanList = [
     {name: "Mama mana mandire"},
     {name: "O Palanhare"},
     {name: "Humare Sath Sri Raghunath"},
-    {name: "Ram ko dekh kar Sri Janak Nandini"},
+    {name: "Ram ko dekh kar Sri Janaknandini"},
     {name: "Yamuna Kinare Mero Gav"},
     {name: "Krishna Jinka Naam hai"},
     {name: "Jay Radha Madhava"},

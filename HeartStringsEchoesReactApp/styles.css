@@ -1,6 +1,6 @@
 .heading {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     background-color: #ffc5d3;
     padding: 50px;
     margin: 0;
@@ -12,7 +12,7 @@
 }
 .subtitle1 {
     /* margin-top: 140px; */
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
 }
 .searchParent {
@@ -21,11 +21,19 @@
 }
 .searchInput {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     margin: 4px 1px;
+    background-color: #ccc1c4;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+}
+.searchInput::placeholder{
+    color:white;
 }
 p {
-    font-size: 30px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
 }
 .noResultsFound {
