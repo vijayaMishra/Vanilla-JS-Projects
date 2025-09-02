@@ -18,8 +18,8 @@ function App() {
     return (
         <div className="container">
             <h1 className="heading">Sacredly Free</h1>
-            <p className="subtitle1">Prayers of the Heart | UNTO THE LOTUS FEET</p>
-            <input placeholder="Search here" type="text"></input>
+            <p className="subtitle1">Prayers of the Heart | Unto the Lotus Feet</p>
+            <input placeholder="Search here" type="text" className="searchInput"></input>
             {renderBhajanList()}
         </div>
     )
