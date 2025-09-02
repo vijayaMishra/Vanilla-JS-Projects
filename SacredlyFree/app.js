@@ -7,7 +7,7 @@
     // console.log("Len: ",bhajanList.length);
 
     function App() {
-        const [userInput, setUserInput] = React.useState("");
+        const [userInput, setUserInput] = React.useState("Hey");
         console.log("userInput in App component: ", userInput);
 
         //Step 1 : showing the first screen which includes all bhajan
