@@ -35,12 +35,11 @@ function App() {
     console.log("bhajanListToShow", bhajanListToShow);
 
     function renderBhajanList() {
-        let bhajan = ["Jaya Radha madhava", "Jaya Jagannatha"];
-        return [ <p>{bhajan[0]}</p>,
-               <p>{bhajan[1]}</p>
-        ]; 
-
-        
+        const pTagArray = [];
+        for(let i=0; i<bhajanListToShow.length; i++) {
+            pTagArray.push(<p key={bhajanListToShow[i].name}>{bhajanListToShow[i].name}</p>);
+        }   
+        return pTagArray;
         // (
         //     bhajanListToShow.map(function getValues(bhajan) {
         //         return <p key={bhajan.name}>{bhajan.name}</p>
