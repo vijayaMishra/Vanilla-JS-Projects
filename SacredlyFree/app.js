@@ -31,6 +31,10 @@
         function filterLogic() {
             let filteredBhajanList = [];
             for(let i=0; i<bhajanList.length; i++) {
+                //When userInput = "" → filterLogic() returns all songs.
+                // When userInput = "Hey" → filterLogic() returns only songs with "Hey".
+                // When userInput = "Ram" → returns only songs with "Ram".
+
                 if(bhajanList[i].toLowerCase().includes(userInput.toLowerCase())) {
                     filteredBhajanList.push(bhajanList[i]);
                 } 
