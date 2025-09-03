@@ -1,7 +1,7 @@
 .heading {
     text-align: center;
     font-size: 50px;
-    background-color: #ffc5d3;
+    background-color: #5cb8bb;
     padding: 25px;
     position: sticky;
     top:0;
@@ -20,21 +20,21 @@
 }
 .searchInput {
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 4px;
-    background-color: #f4d85b;
+    background-color: rgb(23, 151, 176);
     border-radius: 10px;
     cursor: pointer;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 15px;
     color: white;
 }
 .addBhajanBtn {
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 8px 15px;
     border-radius: 10px;
-    font-size: 20px;
-    background-color: rgb(72, 72, 118);
+    font-size: 16px;
+    background-color: #ef95aa;
     border: none;
     color: white;
     margin: 5px;
