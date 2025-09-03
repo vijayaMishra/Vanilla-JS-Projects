@@ -22,22 +22,27 @@
     text-align: center;
     font-size: 16px;
     margin-top: 4px;
-    background-color: rgb(23, 151, 176);
-    border-radius: 10px;
+    border: solid 1px rgb(23, 151, 176);
+    border-radius: 20px;
     cursor: pointer;
-    border: none;
     padding: 8px 15px;
-    color: white;
+    color: gray;
 }
 .addBhajanBtn {
     cursor: pointer;
     padding: 8px 15px;
     border-radius: 10px;
     font-size: 16px;
-    background-color: #ef95aa;
-    border: none;
+    background-color: rgb(23, 151, 176);
+    border: rgb(23, 151, 176);
     color: white;
-    margin: 5px;
+    margin: 10px;
+}
+.addNewBhajanInputBox {
+    color: rgb(86, 82, 82);
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px 15px;
 }
 .searchInput::placeholder{
     color:white;

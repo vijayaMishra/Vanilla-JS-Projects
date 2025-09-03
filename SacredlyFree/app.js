@@ -61,10 +61,10 @@
             <div className="container">
                 <h1 className="heading">Sacredly Free</h1>
                 <p className="subtitle1">Prayers of the Heart | Unto the Lotus Feet</p>
-                <input placeholder="Search here" type="text" className="searchInput" onChange={onChangeHandler}></input>
+                <input id="searchInput" placeholder="Search here" type="text" className="searchInput" onChange={onChangeHandler}></input>
                 {renderBhajanList()}
                 <div>
-                    <input type="text" placeholder="Add Bhajan name" className="searchInput" onChange={onNewBhajanChange}></input> 
+                    <input type="text" placeholder="Add Bhajan name" className="addNewBhajanInputBox" onChange={onNewBhajanChange}></input> 
                     <button onClick={addSong} className="addBhajanBtn">Add Bhajan</button>
                 </div>
             </div>
