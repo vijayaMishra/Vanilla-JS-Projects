@@ -19,6 +19,12 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "01 Sept 2025", "day": "wed", "learnings": [
+                "... is a spread operator. It's like 'opening a box and pouring out all its items.",
+                "for eg., arr1 = [1, 2, 3] arr2 = [...arr1, 4, 5] Here ...arr1 means: take all elements of arr1 and spread them inside arr2."
+            ]
+        },
+        {
             "date": "31 Aug 2025", "day": "sun", "learnings": [
                 "ND0B, SEP"
             ]
