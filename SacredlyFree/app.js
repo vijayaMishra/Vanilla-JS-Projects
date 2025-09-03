@@ -1,17 +1,22 @@
-    const bhajanList = [
+    // const bhajanList = [
+    //     "Hey Gopinath",
+    //     "Amar Jeevan",
+    //     "Raghupati Raghav Raja Ram",
+    //     "Unki Karuna mein"
+    // ];
+    // console.log("Len: ",bhajanList.length);
+
+    function App() {
+        const [bhajanList, setBhajanList] = React.useState([
         "Hey Gopinath",
         "Amar Jeevan",
         "Raghupati Raghav Raja Ram",
         "Unki Karuna mein"
-    ];
-    // console.log("Len: ",bhajanList.length);
-
-    function App() {
-        const [userInput, setUserInput] = React.useState("Hey");
+    ]);
+        const [userInput, setUserInput] = React.useState("");
         console.log("userInput in App component: ", userInput);
 
-        //Step 1 : showing the first screen which includes all bhajan
-        // & Step 4: Showing Filtered bhajan
+        //Step 1 & Step 4: Showing bhajans (Filtered)
         function renderBhajanList() {
             let filtered = filterLogic();
             let bhajanListToShow = [];
@@ -21,8 +26,7 @@
             return bhajanListToShow;
         }
 
-        //Step 2 : Seaching inside input and handleOnChange() triggers, updating the userInput via setUserInput to 
-        //          the input typed by the user
+        //Step 2 : update search input
         function onChangeHandler(event) {
             setUserInput(event.target.value);
         }
@@ -41,9 +45,16 @@
             }
             return filteredBhajanList;
         }
-        
-        function addSong() {
 
+        //Step 4: update new song input
+        const [newSong, setNewSong] = React.useState("");
+
+        function onNewBhajanChange(event) {
+            setNewSong(event.target.value);
+        }
+        function addSong() {
+            setBhajanList([...bhajanList, newSong]);
+            setNewSong(""); //clear the input
         }
         
         return (
@@ -53,7 +64,7 @@
                 <input placeholder="Search here" type="text" className="searchInput" onChange={onChangeHandler}></input>
                 {renderBhajanList()}
                 <div>
-                    <input type="text" placeholder="Add Bhajan name" className="searchInput"></input> 
+                    <input type="text" placeholder="Add Bhajan name" className="searchInput" onChange={onNewBhajanChange}></input> 
                     <button onClick={addSong} className="addBhajanBtn">Add Bhajan</button>
                 </div>
             </div>
