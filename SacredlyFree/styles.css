@@ -26,7 +26,10 @@
     border-radius: 20px;
     cursor: pointer;
     padding: 8px 15px;
-    color: black;
+    color: rgb(23, 151, 176);
+}
+.searchInput::placeholder {
+    color: rgb(23, 151, 176);
 }
 .addBhajanBtn {
     cursor: pointer;
@@ -42,9 +45,6 @@
     color: rgb(86, 82, 82);
     border-radius: 10px;
     padding: 8px 15px;
-}
-.searchInput::placeholder{
-    color:white;
 }
 p {
     font-size: 18px;
