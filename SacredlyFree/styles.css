@@ -45,6 +45,8 @@
     color: rgb(86, 82, 82);
     border-radius: 10px;
     padding: 8px 15px;
+    margin: 10px;
+    font-size: 16px;
 }
 p {
     font-size: 18px;
