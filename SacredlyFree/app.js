@@ -7,12 +7,15 @@
     // console.log("Len: ",bhajanList.length);
 
     function App() {
+
         const [bhajanList, setBhajanList] = React.useState([
-        "Hey Gopinath",
-        "Amar Jeevan",
-        "Raghupati Raghav Raja Ram",
-        "Unki Karuna mein"
-    ]);
+            "Hey Gopinath",
+            "Amar Jeevan",
+            "Raghupati Raghav Raja Ram",
+            "Unki Karuna mein"
+        ]);
+        console.log("Bhajan List length: ", bhajanList.length);
+        
         const [userInput, setUserInput] = React.useState("");
         console.log("userInput in App component: ", userInput);
 
@@ -29,6 +32,7 @@
         //Step 2 : update search input
         function onChangeHandler(event) {
             setUserInput(event.target.value);
+            console.log("userInput: ", userInput);
         }
 
         //Step 3 : Filtering Logic, filter songs in the list which user typed
@@ -38,7 +42,8 @@
                 //When userInput = "" → filterLogic() returns all songs.
                 // When userInput = "Hey" → filterLogic() returns only songs with "Hey".
                 // When userInput = "Ram" → returns only songs with "Ram".
-
+                console.log("userInput: ", userInput);
+                console.log("When index is ", i, "name of bhajan is: ", bhajanList[i]);
                 if(bhajanList[i].toLowerCase().includes(userInput.toLowerCase())) {
                     filteredBhajanList.push(bhajanList[i]);
                 } 
@@ -64,7 +69,7 @@
                 <input id="searchInput" placeholder="Search here" type="text" className="searchInput" onChange={onChangeHandler}></input>
                 {renderBhajanList()}
                 <div>
-                    <input type="text" placeholder="Add Bhajan name" className="addNewBhajanInputBox" onChange={onNewBhajanChange}></input> 
+                    <input type="text" placeholder="Add Bhajan name" className="addNewBhajanInputBox" onChange={onNewBhajanChange} value={newSong}></input> 
                     <button onClick={addSong} className="addBhajanBtn">Add Bhajan</button>
                 </div>
             </div>
