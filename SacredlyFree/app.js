@@ -58,8 +58,10 @@
             setNewSong(event.target.value);
         }
         function addSong() {
-            setBhajanList([...bhajanList, newSong]);
-            setNewSong(""); //clear the input
+            if(newSong !== "") {
+                setBhajanList([...bhajanList, newSong]);
+                setNewSong(""); //clear the input
+            }
         }
         
         return (
