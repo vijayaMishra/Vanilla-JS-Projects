@@ -6,14 +6,21 @@
     // ];
     // console.log("Len: ",bhajanList.length);
 
-    function App() {
-
-        const [bhajanList, setBhajanList] = React.useState([
+    function getInitialBhajanList() {
+        const bhajanStoredInLocalStorage = JSON.parse(localStorage.getItem("bhajanListLocalStorage"));
+        console.log("bhajanStoredInLocalStorage", bhajanStoredInLocalStorage);
+        console.log("type ofbhajanStoredInLocalStorage", typeof(bhajanStoredInLocalStorage));
+        return [
             "Hey Gopinath",
             "Amar Jeevan",
             "Raghupati Raghav Raja Ram",
             "Unki Karuna mein"
-        ]);
+        ];
+    }
+
+    function App() {
+
+        const [bhajanList, setBhajanList] = React.useState(getInitialBhajanList());
         console.log("Bhajan List length: ", bhajanList.length);
         
         const [userInput, setUserInput] = React.useState("");
@@ -60,6 +67,7 @@
         function addSong() {
             if(newSong !== "") {
                 setBhajanList([...bhajanList, newSong]);
+                localStorage.setItem("bhajanListLocalStorage", JSON.stringify(bhajanList));
                 setNewSong(""); //clear the input
             }
         }
