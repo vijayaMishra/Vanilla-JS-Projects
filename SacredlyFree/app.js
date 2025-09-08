@@ -7,9 +7,16 @@
     // console.log("Len: ",bhajanList.length);
 
     function getInitialBhajanList() {
-        const bhajanStoredInLocalStorage = JSON.parse(localStorage.getItem("bhajanListLocalStorage"));
+        const bhajanStoredInLocalStorage = localStorage.getItem("bhajanListLocalStorage");
+        let parsedBhajansStoredInLocalStorage = [];
         console.log("bhajanStoredInLocalStorage", bhajanStoredInLocalStorage);
         console.log("type ofbhajanStoredInLocalStorage", typeof(bhajanStoredInLocalStorage));
+        
+        if(bhajanStoredInLocalStorage) {
+            parsedBhajansStoredInLocalStorage = JSON.parse(bhajanStoredInLocalStorage);
+        }
+
+        return parsedBhajansStoredInLocalStorage ;
         return [
             "Hey Gopinath",
             "Amar Jeevan",
