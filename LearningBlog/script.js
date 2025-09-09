@@ -27,7 +27,7 @@ let weeklyStudyData = [
         },
         {
             "date": "08 Sep 2025", "day": "mon", "learnings": [
-                "Studied about local storage and with Anki's help added that part in Sacredly Free app"
+                "Studied about local storage and with Pam's help added that part in Sacredly Free app"
             ]
         },
         {
