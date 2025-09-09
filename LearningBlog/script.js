@@ -19,6 +19,28 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "09 Sep 2025", "day": "tues", "learnings": [
+                "Revision of React concepts studied so far (useState etc.)",
+                "Develop thorough understanding of localstorage",
+                "updated schedule of second week of sept in sarjapur site"
+            ]
+        },
+        {
+            "date": "08 Sep 2025", "day": "mon", "learnings": [
+                "Studied about local storage and with Anki's help added that part in Sacredly Free app"
+            ]
+        },
+        {
+            "date": "07 Sep 2025", "day": "sun", "learnings": [
+                "No study, got busy"
+            ]
+        },
+        {
+            "date": "06 Sep 2025", "day": "sat", "learnings": [
+                "No study, got overly occupied"
+            ]
+        },
+        {
             "date": "01 Sept 2025", "day": "wed", "learnings": [
                 "... is a spread operator. It's like 'opening a box and pouring out all its items.",
                 "for eg., arr1 = [1, 2, 3] arr2 = [...arr1, 4, 5] Here ...arr1 means: take all elements of arr1 and spread them inside arr2."
