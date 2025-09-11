@@ -20,7 +20,7 @@ let weeklyStudyData = [
     [
         {
             "date": "11 Sep 2025", "day": "thu", "learnings": [
-                ""
+                "studied how without using useEffect what loophole can come"
             ]
         },
         {
