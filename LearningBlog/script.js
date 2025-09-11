@@ -20,6 +20,7 @@ let weeklyStudyData = [
     [
         {
             "date": "11 Sep 2025", "day": "thu", "learnings": [
+                "localStorage basics revision about getItem, setItem",
                 "studied how without using useEffect what loophole can come"
             ]
         },
