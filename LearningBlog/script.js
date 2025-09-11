@@ -19,6 +19,16 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "11 Sep 2025", "day": "thu", "learnings": [
+                ""
+            ]
+        },
+        {
+            "date": "10 Sep 2025", "day": "wed", "learnings": [
+                "ND0B: SEP"
+            ]
+        },
+        {
             "date": "09 Sep 2025", "day": "tues", "learnings": [
                 "Revision of React concepts studied so far (useState etc.)",
                 "Develop thorough understanding of localstorage",
