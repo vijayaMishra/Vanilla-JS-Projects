@@ -68,6 +68,8 @@ let weeklyStudyData = [
                 "for eg., arr1 = [1, 2, 3] arr2 = [...arr1, 4, 5] Here ...arr1 means: take all elements of arr1 and spread them inside arr2."
             ]
         },
+    ],
+    [
         {
             "date": "31 Aug 2025", "day": "sun", "learnings": [
                 "ND0B, SEP"
