@@ -22,7 +22,9 @@ let weeklyStudyData = [
             "date": "12 Sep 2025", "day": "fri", "learnings": [
                 "RULE #1: useEffect ONLY Goes At Component Level",
                 "Never use useEffect() in Event Handlers(), Never Use Inside Other Functions, No! Never Inside 'If/Else' statements, NO! Never Inside Loops",
-                "What is Event Handler? For Eg., function handleClick() {}"
+                "What is Event Handler? For Eg., function handleClick() {}",
+                "CORRECT PLACEMENT OF useEffect() is always at TOP LEVEL, AFTER State Declarations",
+                "THE SIMPLE RULE: useEffect goes in the same place as useState - right at the top of your component function!"
             ]
         },
         {
