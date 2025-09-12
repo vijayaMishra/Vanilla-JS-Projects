@@ -19,6 +19,13 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "12 Sep 2025", "day": "fri", "learnings": [
+                "RULE #1: useEffect ONLY Goes At Component Level",
+                "Never use useEffect() in Event Handlers(), Never Use Inside Other Functions, No! Never Inside 'If/Else' statements, NO! Never Inside Loops",
+                "What is Event Handler? For Eg., function handleClick() {}"
+            ]
+        },
+        {
             "date": "11 Sep 2025", "day": "thu", "learnings": [
                 "localStorage basics revision about getItem, setItem",
                 "studied how without using useEffect what loophole can come"
@@ -40,7 +47,9 @@ let weeklyStudyData = [
             "date": "08 Sep 2025", "day": "mon", "learnings": [
                 "Studied about local storage and with Pam's help added that part in Sacredly Free app"
             ]
-        },
+        }
+    ],
+    [
         {
             "date": "07 Sep 2025", "day": "sun", "learnings": [
                 "No study, got busy"
