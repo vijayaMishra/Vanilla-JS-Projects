@@ -33,6 +33,9 @@
         const [userInput, setUserInput] = React.useState("");
         console.log("userInput in App component: ", userInput);
 
+        React.useEffect(() => {
+            localStorage.setItem("bhajanListLocalStorage", JSON.stringify(bhajanList));
+        }, [bhajanList]);
         //Step 1 & Step 4: Showing bhajans (Filtered)
         function renderBhajanList() {
             let filtered = filterLogic();
@@ -46,6 +49,7 @@
         //Step 2 : update search input
         function onChangeHandler(event) {
             setUserInput(event.target.value);
+
             console.log("userInput: ", userInput);
         }
 
@@ -74,7 +78,7 @@
         function addSong() {
             if(newSong !== "") {
                 setBhajanList([...bhajanList, newSong]);
-                localStorage.setItem("bhajanListLocalStorage", JSON.stringify(bhajanList));
+                
                 setNewSong(""); //clear the input
             }
         }
