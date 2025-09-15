@@ -19,6 +19,24 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "15 Sep 2025", "day": "mon", "learnings": [
+                "React.useEffect(() => { localStorage.setItem('bhajanListLocalStorage', JSON.stringify(bhajanList)); }, bhajanList); can we use it this way? why [bhajanList] has to be an array? and what is the second parameter of useEffect at all about?",
+                "A. Excellent question, this is the heart of useEffect(), the second parameter is called dependency array. React.useEffect(effectFunction, dependencyArray) i) effectFunction: THE FUNCTION REACT WILL RUN AFTER RE-RENDER"
+            ]
+        }
+    ],
+    [
+        {
+            "date": "13th Sept 2025", "day": "sun", "learnings": [
+                "ND0B"
+            ]
+        },
+        {
+            "date": "14th Sept 2025", "day": "sat", "learnings": [
+                "ND0B"
+            ]
+        },
+        {
             "date": "12 Sep 2025", "day": "fri", "learnings": [
                 "RULE #1: useEffect ONLY Goes At Component Level",
                 "Never use useEffect() in Event Handlers(), Never Use Inside Other Functions, No! Never Inside 'If/Else' statements, NO! Never Inside Loops",
