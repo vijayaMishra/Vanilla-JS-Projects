@@ -36,12 +36,12 @@
         const [userInput, setUserInput] = React.useState("");
         console.log("userInput in App component: ", userInput);
 
-        React.useEffect(() => {
-            console.log("Inside useEffect");
-            console.log("bhajanList inside useEffect: ", bhajanList);
-            localStorage.setItem("bhajanListLocalStorage", JSON.stringify(bhajanList));
+        // React.useEffect(() => {
+        //     console.log("Inside useEffect");
+        //     console.log("bhajanList inside useEffect: ", bhajanList);
+        //     localStorage.setItem("bhajanListLocalStorage", JSON.stringify(bhajanList));
             
-        }, [bhajanList]);
+        // }, [bhajanList]);
         //Step 1 & Step 4: Showing bhajans (Filtered)
         function renderBhajanList() {
             console.log("Inside renderBhajanList");
@@ -97,6 +97,7 @@
                 setBhajanList([...bhajanList, newSong]);
                 console.log("bhajanList inside addSong(): ");
                 setNewSong(""); //clear the input
+                localStorage.setItem("bhajanListLocalStorage", JSON.stringify([...bhajanList, newSong]));
             }
         }
         console.log("Rendering JSX component now, below -> ");
