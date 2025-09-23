@@ -23,7 +23,8 @@ let weeklyStudyData = [
                 "Typical React Approach",
                 "After designing the UI think about what data you need to store",
                 "If your app is about a list of things, start with an empty array in state.",
-                "Each item in the array can be an object with the relevant fields."
+                "Each item in the array can be an object with the relevant fields.",
+                "SUMMARY: i) Use an array to store multiple items. ii) Each item can be an object with key-value pairs. iii) This is a common and recommended pattern in React for list-based UIs."
             ]
         }
     ],
