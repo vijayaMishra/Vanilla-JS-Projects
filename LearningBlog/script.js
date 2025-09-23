@@ -19,6 +19,22 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "23 Sep 2025", "day": "tues", "learnings": [
+                "Typical React Approach",
+                "After designing the UI think about what data you need to store",
+                "If your app is about a list of things, start with an empty array in state.",
+                "Each item in the array can be an object with the relevant fields."
+            ]
+        }
+    ],
+    [
+        {
+            "date": "19 Sep 2025", "day": "fri", "learnings": [
+                "const rootElement = document.querySelector('#root'); ReactDOM.render(<App />, rootElement); ReactDOM.render(<App />, rootElement); writing like this twice won't make <App/> component re-render twice.",
+                ""
+            ]
+        },
+        {
             "date": "15 Sep 2025", "day": "mon", "learnings": [
                 "React.useEffect(() => { localStorage.setItem('bhajanListLocalStorage', JSON.stringify(bhajanList)); }, bhajanList); can we use it this way? why [bhajanList] has to be an array? and what is the second parameter of useEffect at all about?",
                 "A. Excellent question, this is the heart of useEffect(), the second parameter is called dependency array. React.useEffect(effectFunction, dependencyArray) i) effectFunction: THE FUNCTION REACT WILL RUN AFTER RE-RENDER"
