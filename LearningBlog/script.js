@@ -27,7 +27,7 @@ let weeklyStudyData = [
                 "eg., <table> <thead></thead> <tbody></tbody> <tfoot></tfoot> </table>",
                 "eg., <tr> <th></th><th></th> </tr>    <tr> <td></td><td></td> </tr>    <tr> <td></td><td></td> </tr>",
                 "<tr> can be inside of <thead>, <tbody> or <tfoot>",
-                "first time solved a rebase issue myself, tysmk10.10"
+                "first time solved a rebase issue myself, tysmrg10.10"
             ]
         },
     ],
