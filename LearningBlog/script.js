@@ -24,6 +24,9 @@ let weeklyStudyData = [
                 "In <table> tag, there are multiple <tr> tags",
                 "In <tr> tag, there are multiple <th> or <td> tags",
                 "<thead> and <tbody> tags are used for Accessibility, Better organization, to style headers and data differently, better semantics: makes your code more readable and maintainable.",
+                "eg., <table> <thead></thead> <tbody></tbody> <tfoot></tfoot> </table>",
+                "eg., <tr> <th></th><th></th> </tr>    <tr> <td></td><td></td> </tr>    <tr> <td></td><td></td> </tr>",
+                "<tr> can be inside of <thead>, <tbody> or <tfoot>",
                 "first time solved a rebase issue myself, tysmk10.10"
             ]
         },
