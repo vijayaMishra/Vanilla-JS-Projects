@@ -23,6 +23,7 @@ let weeklyStudyData = [
                 "table tag has tr, th, td tags -> meaning tr: table row, th: table header, td: table data ",
                 "In <table> tag, there are multiple <tr> tags",
                 "In <tr> tag, there are multiple <th> or <td> tags",
+                "<thead> and <tbody> tags are used for Accessibility, Better organization, to style headers and data differently, better semantics: makes your code more readable and maintainable.",
                 "first time solved a rebase issue myself, tysmk10.10"
             ]
         },
