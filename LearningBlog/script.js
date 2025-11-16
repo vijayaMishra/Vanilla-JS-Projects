@@ -19,6 +19,14 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "16 Nov 2025", "day": "Sun", "learnings": [
+                "table tag has tr, th, td tags -> meaning tr: table row, th: table header, td: table data ",
+                "In <table> tag, there are multiple <tr> tags",
+                "In <tr> tag, there are multiple <th> or <td> tags",
+                "first time solved a rebase issue myself, tysmk10.10"
+            ]
+        },
+        {
             "date": "23 Sep 2025", "day": "tues", "learnings": [
                 "Typical React Approach",
                 "After designing the UI think about what data you need to store",
