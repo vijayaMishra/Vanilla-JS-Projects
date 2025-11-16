@@ -26,6 +26,15 @@ let weeklyStudyData = [
                 "first time solved a rebase issue myself, tysmk10.10"
             ]
         },
+    ],
+    [
+        {
+            "date": "", "day": "Gap of More than a Month, Struggling somewhere b/w Life & Death", "learnings": [  
+                "Saved by RG's Mercy, Back to Life now after Tragic Road Accident" 
+            ]
+        },
+    ],
+    [
         {
             "date": "23 Sep 2025", "day": "tues", "learnings": [
                 "Typical React Approach",
