@@ -19,6 +19,13 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "19 nov '25", "day": "Wed", "learnings": [
+                "margin-top: 0 removes the extra whitespace on the top of the screen (i.e., above the main heading)"
+            ]
+        }
+    ],
+    [
+        {
             "date": "16 Nov 2025", "day": "Sun", "learnings": [
                 "table tag has tr, th, td tags -> meaning tr: table row, th: table header, td: table data ",
                 "In <table> tag, there are multiple <tr> tags",
