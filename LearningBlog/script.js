@@ -19,6 +19,11 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "20 nov '25", "day": "thu", "learnings": [
+                "working on making Everyday Tracker project's amazing accordions! And I love It!!"
+            ]
+        },
+        {
             "date": "19 nov '25", "day": "Wed", "learnings": [
                 "margin-top: 0 removes the extra whitespace on the top of the screen (i.e., above the main heading)",
                 "var accordions = document.querySelectorAll('.accordion'); does this accordions become an array because of querySelectorAll()? Yes, exactly! Good observation! But technically, it's not exactly an array - it's something called a NodeList. ",
