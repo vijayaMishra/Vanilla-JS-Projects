@@ -20,7 +20,8 @@ let weeklyStudyData = [
     [
         {
             "date": "20 nov '25", "day": "thu", "learnings": [
-                "working on making Everyday Tracker project's amazing accordions! And I love It!!"
+                "working on making Everyday Tracker project's amazing accordions! And I love It!!",
+                "querySelectorAll() gives you a collection/list of elements. You can treat it like an array for basic operations (looping, accessing by index). So yes, you're thinking correctly! It behaves like an array for our purposes. 👍"
             ]
         },
         {
