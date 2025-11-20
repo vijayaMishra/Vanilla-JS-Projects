@@ -20,7 +20,10 @@ let weeklyStudyData = [
     [
         {
             "date": "19 nov '25", "day": "Wed", "learnings": [
-                "margin-top: 0 removes the extra whitespace on the top of the screen (i.e., above the main heading)"
+                "margin-top: 0 removes the extra whitespace on the top of the screen (i.e., above the main heading)",
+                "var accordions = document.querySelectorAll('.accordion'); does this accordions become an array because of querySelectorAll()? Yes, exactly! Good observation! But technically, it's not exactly an array - it's something called a NodeList. ",
+                "A NodeList is a list of elements (similar to an array), You can loop through it using a for loop (like we did), You can access items using index: accordions[0], accordions[1], etc.; It has a .length property: accordions.length",
+                "Difference from a real Array: i). A NodeList doesn't have all array methods (like .map(), .filter(), etc.) ii). But for basic operations like looping, it works just like an array! "
             ]
         }
     ],
