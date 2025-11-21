@@ -19,6 +19,12 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "21 nov '25", "day": "fri", "learnings": [
+                "this.classList.toggle('active') what is 'this'?  'this' means 'the button that was clicked'",
+                "What is classList? classList is a way to add or remove classes using JavaScript"
+            ]
+        },
+        {
             "date": "20 nov '25", "day": "thu", "learnings": [
                 "working on making Everyday Tracker project's amazing accordions! And I love It!!",
                 "querySelectorAll() gives you a collection/list of elements. You can treat it like an array for basic operations (looping, accessing by index). So yes, you're thinking correctly! It behaves like an array for our purposes. 👍"
