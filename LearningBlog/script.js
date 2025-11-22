@@ -19,10 +19,17 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "22 nov '25", "day": "sat", "learnings": [
+                "working on making the accordions actually work in the everyday tracker project",
+                "HG Radheshyam prji came!!! went for class, mangala bela jap with prji, Heart FULL of Gratitude!!"
+            ]
+        },
+        {
             "date": "21 nov '25", "day": "fri", "learnings": [
                 "this.classList.toggle('active') what is 'this'?  'this' means 'the button that was clicked'",
                 "What is classList? classList is a way to add or remove classes using JavaScript",
-                "What is toggle? toggle means switch on / off"
+                "What is toggle? toggle means switch on / off",
+                "If the class exists -> Add it; If the class doesn't exist -> Remove it   "
             ]
         },
         {
