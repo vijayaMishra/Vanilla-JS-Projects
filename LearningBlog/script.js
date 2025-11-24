@@ -19,6 +19,18 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "24 nov '25", "day": "mon", "learnings": [
+                "still working to get the accordions work!"
+            ]
+        }
+    ],
+    [
+        {
+            "date": "23 nov '25", "day": "sun", "learnings": [
+                "ND0SB"
+            ]
+        },
+        {
             "date": "22 nov '25", "day": "sat", "learnings": [
                 "working on making the accordions actually work in the everyday tracker project",
                 "HG Radheshyam prji came!!! went for class, mangala bela jap with prji, Heart FULL of Gratitude!!"
