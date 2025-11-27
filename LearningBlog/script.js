@@ -23,7 +23,10 @@ let weeklyStudyData = [
                 "Accordions working! i.e., expand/collapse feature of the section heading working.",
                 "There's still a catch that on first click, expand is not happening, R&D in progress.",
                 "Found the Catch -> when display is set as none is .css file, JavaScript takes sectionDetails.style.display as '' instead of none, so on first click it's not matching with none JS is interpreting style.display as empty string.",
-                "element.style.display only reads inline styles (styles set directly on the HTML element like <div style='display: none'>) and not from CSS files or <style> tag."
+                "element.style.display only reads inline styles (styles set directly on the HTML element like <div style='display: none'>) and not from CSS files or <style> tag.",
+                "The issue is that you're setting width: 100% on the accordion button, which makes it 100% of its parent container's width. When you add margin: 5px 10px, that extra space pushes it beyond the container since the margin is added outside the width calculation. Solution: Add calc() to account for the margins:",
+                "width: calc(100% - 20px) -> When you use calc(100% - 10px), you're only subtracting the left margin, leaving the right margin (10px) unaccounted for. This causes the button to still overflow on the right side.",
+                "With calc(100% - 20px), you're subtracting both left and right margins, so the button fits perfectly. So always subtract the total horizontal margins (left + right) from your width calculation!"
             ]
         },
         {
