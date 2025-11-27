@@ -32,6 +32,11 @@ let weeklyStudyData = [
             ]
         },
         {
+            "date": "25th, 26th nov '25", "day": "tues, wed", "learnings": [
+                "dealing with serious adhibhautika klesh, that's life (in mw)!"
+            ]
+        },
+        {
             "date": "24 nov '25", "day": "mon", "learnings": [
                 "still working to get the accordions work!"
             ]
