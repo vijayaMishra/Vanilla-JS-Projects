@@ -26,7 +26,9 @@ let weeklyStudyData = [
                 "element.style.display only reads inline styles (styles set directly on the HTML element like <div style='display: none'>) and not from CSS files or <style> tag.",
                 "The issue is that you're setting width: 100% on the accordion button, which makes it 100% of its parent container's width. When you add margin: 5px 10px, that extra space pushes it beyond the container since the margin is added outside the width calculation. Solution: Add calc() to account for the margins:",
                 "width: calc(100% - 20px) -> When you use calc(100% - 10px), you're only subtracting the left margin, leaving the right margin (10px) unaccounted for. This causes the button to still overflow on the right side.",
-                "With calc(100% - 20px), you're subtracting both left and right margins, so the button fits perfectly. So always subtract the total horizontal margins (left + right) from your width calculation!"
+                "With calc(100% - 20px), you're subtracting both left and right margins, so the button fits perfectly. So always subtract the total horizontal margins (left + right) from your width calculation!",
+                "Completed Visually appealing part of the everyday tracker project, accordions working ++ all this were big chunks for me as you can see from past few days of work",
+                "Now starting with 'SadhanaTracker project' once those small charts for tracker activity are done same to be implemented all over the everyday tracker for the multiple activities that it contains"
             ]
         },
         {
