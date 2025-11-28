@@ -19,6 +19,11 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "28 nov '25", "day": "fri", "learnings": [
+                "just trying to catch up with no day 0 streak here in study"
+            ]
+        },
+        {
             "date": "27 nov '25", "day": "thu", "learnings": [
                 "Accordions working! i.e., expand/collapse feature of the section heading working.",
                 "There's still a catch that on first click, expand is not happening, R&D in progress.",
