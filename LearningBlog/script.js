@@ -20,7 +20,8 @@ let weeklyStudyData = [
     [
         {
             "date": "28 nov '25", "day": "fri", "learnings": [
-                "just trying to catch up with no day 0 streak here in study"
+                "just trying to catch up with no day 0 streak here in study",
+                "Made UI a looootttttt better (than before) of Sadhana Chart Tracker web app, for mob view, ofc! :')"
             ]
         },
         {
