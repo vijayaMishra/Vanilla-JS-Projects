@@ -17,6 +17,17 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 });
 
 let weeklyStudyData = [
+    
+    [
+        {
+            "date": "28 nov '25", "day": "fri", "learnings": [
+                "Na Re started",
+                "Browsers have a JS engine in it that executes these JavaScript eg., innerHTML, createElement, document, appendChild",
+                "But browsers does not know the React code and neither our project is configured to use React in our project",
+                "First way to get React in our project is via CDN"
+            ]
+        },
+    ],
     [
         {
             "date": "28 nov '25", "day": "fri", "learnings": [
