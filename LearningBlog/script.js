@@ -17,7 +17,16 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 });
 
 let weeklyStudyData = [
-    
+    [
+        {
+            "date": "16 Dec '25", "day": "tues", "learnings": [
+                "How does a browser understand 'document', 'createElement', 'innerHTML', 'getElementById', 'appendChild'?",
+                "Browser does not understand React code.",
+                "First thing is we have to get React inside our project",
+                "HW: What is CDN?, What is a CDN?"
+            ]
+        }
+    ],
     [
         {
             "date": "28 nov '25", "day": "fri", "learnings": [
