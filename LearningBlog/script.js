@@ -23,7 +23,8 @@ let weeklyStudyData = [
                 "How does a browser understand 'document', 'createElement', 'innerHTML', 'getElementById', 'appendChild'?",
                 "Browser does not understand React code.",
                 "First thing is we have to get React inside our project",
-                "HW: What is CDN?, What is a CDN?"
+                "HW: What is CDN?, What is a CDN?",
+                "HW2: What is this crossorigin"
             ]
         }
     ],
