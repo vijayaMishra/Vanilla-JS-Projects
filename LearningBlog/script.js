@@ -19,6 +19,12 @@ scrollToBottomBtnElement.addEventListener("click", function handleArrowBtnClick(
 let weeklyStudyData = [
     [
         {
+            "date": "20 Dec '25", "day": "sat", "learnings": [
+                "Notice that <MyButton /> starts with a capital letter. That’s how you know it’s a React component. React component names must always start with a capital letter, while HTML tags must be lowercase.",
+                "JSX is stricter than HTML. You have to close tags like <br />. Your component also can’t return multiple JSX tags. You have to wrap them into a shared parent, like a <div>...</div> or an empty <>...</> wrapper."
+            ]
+        },
+        {
             "date": "16 Dec '25", "day": "tues", "learnings": [
                 "How does a browser understand 'document', 'createElement', 'innerHTML', 'getElementById', 'appendChild'?",
                 "Browser does not understand React code.",
@@ -36,7 +42,7 @@ let weeklyStudyData = [
                 "But browsers does not know the React code and neither our project is configured to use React in our project",
                 "First way to get React in our project is via CDN"
             ]
-        },
+        }
     ],
     [
         {
